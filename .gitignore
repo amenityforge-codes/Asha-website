@@ -1,0 +1,15 @@
+# Local AI harness and vendor skills
+.agents/
+.codex/
+.cursor/
+.impeccable/
+skills-lock.json
+
+# Dependencies and OS
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*

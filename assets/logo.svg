@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" role="img" aria-labelledby="markTitle">
+  <title id="markTitle">SHAAP</title>
+  <rect width="38" height="38" fill="#e0b13a"/>
+  <path d="M3 35 L35 3" stroke="#12100e" stroke-width="3"/>
+  <path fill="#12100e" d="M19 7.2l1.85 5.7h6.02l-4.87 3.54 1.86 5.72L19 18.62l-4.86 3.54 1.86-5.72-4.87-3.54h6.02z"/>
+</svg>
