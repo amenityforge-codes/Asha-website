@@ -1,24 +1,30 @@
 ---
 name: ASHA
-description: Light institutional site for Andhra Pradesh Star Hotels Association. Cream-white canvas, navy ink, orange as the only UI accent. ASHA lockup is the brand mark.
+description: Blush Rose and Plum, creative studio consumer-brand light mode for Andhra Pradesh Star Hotels Association. Blush page, white surfaces, plum charcoal type, coral rose accent. ASHA lockup is the brand mark.
 colors:
-  navy: "#07325a"
-  orange: "#e37222"
-  paper: "#f6f0e6"
-  raised: "#fffaf3"
+  paper: "#FAF5F5"
+  raised: "#FFFFFF"
+  ink: "#211B1D"
+  muted: "#7A6E73"
+  rose: "#E05A67"
 typography:
-  display: "Alumni Sans"
-  body: "Albert Sans"
+  display: "Fraunces"
+  body: "Outfit"
   mono: "IBM Plex Mono"
 ---
 
 # Design System: ASHA
 
-Light theme in the spirit of [Taste Skill](https://www.tasteskill.dev/): cream-white ground, bold display type, hairline structure, one accent.
+Blush Rose and Plum. Creative studio and consumer-brand light mode.
 
-- Page ground is cream mixed with white `#f6f0e6`, never lacquer black or stark white.
-- Ink and headlines are ASHA navy `#07325a`.
-- Orange `#e37222` is the only accent (CTAs, clause numbers, current nav).
-- Green and wave-blue live in the logo only.
-- Display: Alumni Sans. Body: Albert Sans.
+- Page ground is soft blush white `#FAF5F5`.
+- Surfaces and cards are pure white `#FFFFFF`.
+- Primary type is dark plum charcoal `#211B1D`. Secondary type is muted mauve `#7A6E73`.
+- Coral rose `#E05A67` is the accent. Buttons use plum charcoal on rose, not white on rose.
+- Links and focus use a deeper rose `#B03C48` so they stay readable on blush.
+- Green and wave-blue live in the logo photograph only and cannot be restyled.
+- Display: Fraunces. Body: Outfit.
 - Logo: `assets/asha-logo.jpg` full lockup. Do not add a second wordmark beside it.
+- Cards are white with a hairline and a soft ambient shadow. Do not nest cards. Home Aims and Objectives read as typographic lists, not boxed tiles.
+
+A corner control still offers other combinations for comparison. Default is this blush palette.

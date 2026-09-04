@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("asha-theme-v6");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
   <title>About | ASHA</title>
   <meta name="description" content="Non-profit society representing 3-star and above hotels across all 26 districts of Andhra Pradesh." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,500;0,600;0,700&family=Alumni+Sans:wght@600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=blush" />
   <link rel="icon" href="assets/asha-logo.jpg" type="image/jpeg" />
 </head>
 <body>
@@ -25,6 +33,7 @@
         <a href="mission.html">Mission</a>
         <a href="objectives.html">Objectives</a>
         <a href="documents.html">Governing text</a>
+        <a href="associates.html">Associates</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -82,6 +91,17 @@
       <p class="legal">© <span id="year">2026</span> Star Hotels Association of Andhra Pradesh.</p>
     </div>
   </footer>
+  <div class="palette-dock" role="group" aria-label="Colour combination">
+    <button type="button" class="palette-swatch" data-theme-id="blush" aria-pressed="true" title="Blush rose and plum" aria-label="Blush rose and plum"></button>
+    <button type="button" class="palette-swatch" data-theme-id="nordic" aria-pressed="false" title="Nordic slate and cobalt" aria-label="Nordic slate and cobalt"></button>
+    <button type="button" class="palette-swatch" data-theme-id="champagne" aria-pressed="false" title="Champagne and espresso" aria-label="Champagne and espresso"></button>
+    <button type="button" class="palette-swatch" data-theme-id="sage" aria-pressed="false" title="Soft sage and oatmeal" aria-label="Soft sage and oatmeal"></button>
+    <button type="button" class="palette-swatch" data-theme-id="terracotta" aria-pressed="false" title="Warm alabaster and terracotta" aria-label="Warm alabaster and terracotta"></button>
+    <button type="button" class="palette-swatch" data-theme-id="navy" aria-pressed="false" title="ASHA navy and orange" aria-label="ASHA navy and orange"></button>
+    <button type="button" class="palette-swatch" data-theme-id="olive" aria-pressed="false" title="Olive grove" aria-label="Olive grove"></button>
+    <button type="button" class="palette-swatch" data-theme-id="clay" aria-pressed="false" title="Clay and rust" aria-label="Clay and rust"></button>
+    <button type="button" class="palette-swatch" data-theme-id="copper" aria-pressed="false" title="Sand and copper" aria-label="Sand and copper"></button>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>

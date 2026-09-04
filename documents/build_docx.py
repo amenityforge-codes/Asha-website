@@ -7,10 +7,10 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_TAB_ALIGNMENT
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
 
-ACCENT = RGBColor(0x07, 0x32, 0x5A)
-MARK = RGBColor(0xE3, 0x72, 0x22)
-INK = RGBColor(0x1D, 0x35, 0x50)
-MUTED = RGBColor(0x4D, 0x64, 0x78)
+ACCENT = RGBColor(0x2D, 0x3A, 0x2F)
+MARK = RGBColor(0xD9, 0x6B, 0x27)
+INK = RGBColor(0x1A, 0x19, 0x17)
+MUTED = RGBColor(0x6E, 0x6A, 0x63)
 
 OUT = Path(__file__).with_name("Aims-Mission-and-Objectives-of-the-Association.docx")
 
