@@ -493,7 +493,7 @@ a.ks-bento-tile:hover {
 
 .clause {
   display: grid;
-  grid-template-columns: 7.2rem 1fr;
+  grid-template-columns: 8.75rem minmax(0, 1fr);
   gap: 16px;
   padding: 12px 0;
   border-top: 1px solid var(--ks-rule);
@@ -506,9 +506,10 @@ a.ks-bento-tile:hover {
 .clause .num {
   font-family: var(--ks-font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   color: var(--ks-kinpaku);
   padding-top: 6px;
+  white-space: nowrap;
 }
 
 .clause p {

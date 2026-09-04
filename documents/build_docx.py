@@ -7,9 +7,10 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_TAB_ALIGNMENT
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
 
-ACCENT = RGBColor(0x7A, 0x1F, 0x2B)
-INK = RGBColor(0x1A, 0x1A, 0x1A)
-MUTED = RGBColor(0x4A, 0x4A, 0x4A)
+ACCENT = RGBColor(0x07, 0x32, 0x5A)
+MARK = RGBColor(0xE3, 0x72, 0x22)
+INK = RGBColor(0x1D, 0x35, 0x50)
+MUTED = RGBColor(0x4D, 0x64, 0x78)
 
 OUT = Path(__file__).with_name("Aims-Mission-and-Objectives-of-the-Association.docx")
 
@@ -76,14 +77,14 @@ def add_clause(doc, number, text):
     p.paragraph_format.space_before = Pt(0)
     p.paragraph_format.space_after = Pt(6)
     p.paragraph_format.line_spacing = 1.2
-    p.paragraph_format.left_indent = Cm(1.9)
-    p.paragraph_format.first_line_indent = Cm(-1.9)
+    p.paragraph_format.left_indent = Cm(2.7)
+    p.paragraph_format.first_line_indent = Cm(-2.7)
     num = p.add_run(f"{number}\t")
-    set_run(num, size=11, bold=True)
+    set_run(num, size=11, bold=True, color=MARK)
     body = p.add_run(text)
     set_run(body, size=11)
     tab_stops = p.paragraph_format.tab_stops
-    tab_stops.add_tab_stop(Cm(1.9), WD_TAB_ALIGNMENT.LEFT)
+    tab_stops.add_tab_stop(Cm(2.7), WD_TAB_ALIGNMENT.LEFT)
     return p
 
 
@@ -345,7 +346,7 @@ def main():
     footer.is_linked_to_previous = False
     fp = footer.paragraphs[0]
     fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = fp.add_run("Clause 3 — Aims, Mission and Objectives  |  Non-profit society  |  Andhra Pradesh")
+    run = fp.add_run("Clause 3 - Aims, Mission and Objectives  |  Non-profit society  |  Andhra Pradesh")
     set_run(run, size=9, italic=True, color=MUTED)
 
     doc.save(OUT)
