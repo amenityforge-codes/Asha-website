@@ -1,28 +1,26 @@
 ---
 name: ASHA
-description: Warm Alabaster and Terracotta editorial light mode for Andhra Pradesh Star Hotels Association. Alabaster page, white surfaces, charcoal type, terracotta orange accent. ASHA lockup is the brand mark.
+description: Premium hospitality editorial for Andhra Pradesh Star Hotels Association. Ivory page, charcoal type, terracotta orange accent, cinematic Andhra landscape, ASHA lockup.
 colors:
   paper: "#FAF8F5"
   raised: "#FFFFFF"
   ink: "#1A1917"
   muted: "#6E6A63"
   terracotta: "#D96B27"
-  olive: "#2D3A2F"
+  navy: "#07325A"
 typography:
   display: "Fraunces"
   body: "Outfit"
-  mono: "IBM Plex Mono"
+  script: "Great Vibes"
 ---
 
 # Design System: ASHA
 
-Warm Alabaster and Terracotta. Modern editorial light mode. This is the only public palette.
+Premium Andhra Pradesh hospitality association. Ivory canvas, charcoal type, terracotta orange as the only UI accent.
 
-- Page ground is warm off-white `#FAF8F5`.
-- Surfaces and cards are pure white `#FFFFFF`.
-- Primary type is deep charcoal `#1A1917`. Secondary type is warm taupe `#6E6A63`.
-- Terracotta orange `#D96B27` is the accent (CTAs, clause numbers, current nav). Olive `#2D3A2F` is used sparingly.
-- Green and wave-blue live in the logo photograph only and cannot be restyled.
-- Display: Fraunces. Body: Outfit.
-- Logo: `assets/asha-logo.jpg` full lockup. Do not add a second wordmark beside it.
-- Cards are white with a hairline and a soft ambient shadow. Do not nest cards. Home Aims and Objectives read as typographic lists, not boxed tiles.
+- Page ground `#FAF8F5`. Surfaces `#FFFFFF`.
+- Type `#1A1917` / `#6E6A63`. Accent `#D96B27`. Navy lives in the logo.
+- Display Fraunces. Body Outfit. Script Great Vibes for cultural flourishes only.
+- Logo `assets/asha-logo.jpg` full lockup. Hero plate `assets/hero-andhra.jpg`.
+- Home first viewport: landscape hero, four overlapping pillar cards, member CTA in the header.
+- Do not invent membership counts. Stats use facts already in the copy: 26 districts, 3-star and above, non-profit.
