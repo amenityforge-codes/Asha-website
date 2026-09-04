@@ -52,7 +52,7 @@
           revealObserver.unobserve(entry.target);
         });
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+      { rootMargin: "0px 0px -8% 0px", threshold: 0 }
     );
     reveals.forEach(function (el, index) {
       el.style.setProperty("--reveal-delay", index * 40 + "ms");

@@ -156,24 +156,6 @@ p {
   margin-inline: auto;
 }
 
-.topbar {
-  background: var(--ks-raised);
-  border-bottom: 1px solid var(--ks-rule);
-  color: var(--ks-muted);
-  font-family: var(--ks-font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-}
-
-.topbar .wrap {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 10px 0;
-  flex-wrap: wrap;
-}
-
 header.site {
   position: sticky;
   top: 0;
@@ -267,15 +249,6 @@ nav.primary a[aria-current="page"] {
     radial-gradient(ellipse 50% 60% at 0% 100%, rgb(7 50 90 / 0.06), transparent 50%);
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 2px;
-  background: linear-gradient(to bottom, transparent, var(--asha-orange), transparent);
-  left: max(0px, calc((100% - var(--ks-max)) / 2));
-}
-
 .hero h1 {
   max-width: 16ch;
   animation: settle 480ms var(--ease-out) both;
@@ -349,13 +322,6 @@ a.ks-button-primary,
   color: var(--ks-muted);
   max-width: 68ch;
   font-weight: 600;
-}
-
-.gold-rule {
-  height: 1px;
-  background: var(--ks-rule-strong);
-  border: 0;
-  margin: 0;
 }
 
 .quote {
@@ -465,6 +431,8 @@ a.ks-bento-tile:hover {
 .obj-side {
   position: sticky;
   top: calc(var(--header) + 20px);
+  max-height: calc(100vh - var(--header) - 32px);
+  overflow: auto;
   border: 1px solid var(--ks-rule);
   background: var(--ks-raised);
   padding: 12px 8px;
@@ -493,8 +461,10 @@ a.ks-bento-tile:hover {
 
 .clause {
   display: grid;
-  grid-template-columns: 8.75rem minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 20px;
+  row-gap: 4px;
+  align-items: start;
   padding: 12px 0;
   border-top: 1px solid var(--ks-rule);
 }
@@ -508,8 +478,9 @@ a.ks-bento-tile:hover {
   font-size: 0.75rem;
   letter-spacing: 0.04em;
   color: var(--ks-kinpaku);
-  padding-top: 6px;
+  padding-top: 0.35em;
   white-space: nowrap;
+  line-height: 1.8;
 }
 
 .clause p {
@@ -672,8 +643,7 @@ footer.site a {
 
   .obj-layout,
   .contact-grid,
-  .foot-grid,
-  .clause {
+  .foot-grid {
     grid-template-columns: 1fr;
   }
 
