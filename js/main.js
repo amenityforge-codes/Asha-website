@@ -1,28 +1,4 @@
 (function () {
-  const themes = ["blush", "nordic", "champagne", "sage", "terracotta", "navy"];
-  const themeKey = "asha-theme-v6";
-
-  function applyTheme(id) {
-    const theme = themes.indexOf(id) !== -1 ? id : "blush";
-    document.documentElement.setAttribute("data-theme", theme);
-    try {
-      localStorage.setItem(themeKey, theme);
-    } catch (error) {}
-    document.querySelectorAll("[data-theme-id]").forEach(function (button) {
-      button.setAttribute(
-        "aria-pressed",
-        button.getAttribute("data-theme-id") === theme ? "true" : "false"
-      );
-    });
-  }
-
-  applyTheme(document.documentElement.getAttribute("data-theme") || "blush");
-  document.querySelectorAll("[data-theme-id]").forEach(function (button) {
-    button.addEventListener("click", function () {
-      applyTheme(button.getAttribute("data-theme-id"));
-    });
-  });
-
   const header = document.querySelector("header.site");
   const toggle = document.querySelector(".menu-toggle");
   if (toggle && header) {
