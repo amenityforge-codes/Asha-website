@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mission and Aims | ASHA</title>
-  <meta name="description" content="Mission and Aims of the Star Hotels Association of Andhra Pradesh." />
-  <meta property="og:title" content="Mission and Aims | ASHA" />
-  <meta property="og:description" content="Mission and Aims of the Star Hotels Association of Andhra Pradesh." />
+  <title>News and Events | ASHA</title>
+  <meta name="description" content="News and events from the Star Hotels Association of Andhra Pradesh." />
+  <meta property="og:title" content="News and Events | ASHA" />
+  <meta property="og:description" content="News and events from the Star Hotels Association of Andhra Pradesh." />
   <meta property="og:image" content="https://asha-website-three.vercel.app/assets/og-image.png" />
-  <meta property="og:url" content="https://asha-website-three.vercel.app/mission.html" />
+  <meta property="og:url" content="https://asha-website-three.vercel.app/news.html" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,7 @@
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 </head>
-<body class="inner-page mission-page">
+<body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site">
     <div class="wrap nav-row">
@@ -29,11 +29,11 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="primary" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <div class="nav-item has-sub is-current">
+        <div class="nav-item has-sub">
           <button type="button" class="nav-parent" aria-expanded="false" aria-controls="about-sub" aria-haspopup="true">About ASHA</button>
           <ul id="about-sub" class="nav-sub">
             <li><a href="about.html">About ASHA</a></li>
-            <li><a href="mission.html" aria-current="page">Mission</a></li>
+            <li><a href="mission.html">Mission</a></li>
             <li><a href="objectives.html">Objectives</a></li>
             <li><a href="leadership.html">Leadership</a></li>
             <li><a href="documents.html">Governing Documents</a></li>
@@ -41,7 +41,7 @@
         </div>
         <a href="members.html">Members</a>
         <a href="initiatives.html">Initiatives</a>
-        <a href="news.html">News &amp; Events</a>
+        <a href="news.html" aria-current="page">News &amp; Events</a>
         <a href="resources.html">Resources</a>
         <a href="contact.html">Contact</a>
         <a class="nav-cta" href="membership.html">Become a Member</a>
@@ -50,47 +50,18 @@
   </header>
 
   <main id="main">
-    <section class="page-hero page-hero--editorial">
-      <div class="wrap page-hero-grid">
-        <div class="page-hero-copy">
-          <p class="page-kicker">Mission &amp; Aims</p>
-          <h1>Hospitality excellence in service of <em>Andhra Pradesh.</em></h1>
-          <p>ASHA exists to represent star hotels across Andhra Pradesh and to raise the standard of hospitality in the State. Five public commitments sit under that purpose.</p>
-        </div>
-        <p class="page-hero-script">Atithi Devo Bhava</p>
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>News and Events</h1>
+        <p>Confirmed meetings, notices, and public updates will appear here. No sample events are listed.</p>
       </div>
     </section>
 
-    <section class="ks-section inner-section reveal">
+    <section class="ks-section" style="padding-top: 0;" data-updates data-kind="news,event">
       <div class="wrap">
-        <div class="ks-section-head">
-          <p class="section-index">01 / Our north star</p>
-          <h2>Mission statement</h2>
-        </div>
-        <div class="mission-statement-card">
-          <span class="statement-mark" aria-hidden="true">“</span>
-          <blockquote class="statement">ASHA represents star hotels across Andhra Pradesh. It works for better service, safety, and professional standards; for tourism-friendly public policy; and for the State as a hospitality destination.</blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section class="ks-section inner-section inner-section--tint reveal">
-      <div class="wrap">
-        <div class="ks-section-head">
-          <p class="section-index">02 / Public commitments</p>
-          <h2>Aims</h2>
-          <p class="ks-section-sub">These commitments are stated here in plain language. The clause-numbered Aims remain on <a href="documents.html">Governing Documents</a>.</p>
-        </div>
-        <ol class="plain-aims">
-          <li>Represent member hotels on public policy, investment, tourism development, and industry regulation.</li>
-          <li>Give government, private stakeholders, educational institutions, and the hospitality industry one platform to work on.</li>
-          <li>Uphold service quality, hygiene, food safety, guest and operational safety, and sustainability.</li>
-          <li>Promote Andhra Pradesh as a tourism and hospitality destination through advocacy, training, and public engagement.</li>
-          <li>Support growth, collaboration, and professional excellence in the organised hotel sector.</li>
-        </ol>
-        <div class="ks-button-row">
-          <a class="ks-button ks-button-primary" href="objectives.html">See the Objectives</a>
-        </div>
+        <p class="needs-flag" data-updates-needs>[NEEDS: 2–3 real updates - government representations, meetings, training programmes, campaigns, etc.]</p>
+        <p class="update-empty" data-updates-empty hidden>No news or events match this listing yet.</p>
+        <div class="update-list" data-updates-list></div>
       </div>
     </section>
   </main>
@@ -122,6 +93,8 @@
     </div>
     <img class="foot-skyline" src="assets/ap-skyline.png?v=ink" alt="" />
   </footer>
-  <script src="js/main.js?v=ia9"></script>
+  <script src="js/main.js?v=ia8"></script>
+  <script src="js/updates-data.js"></script>
+  <script src="js/updates.js"></script>
 </body>
 </html>

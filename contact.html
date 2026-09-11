@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | ASHA</title>
   <meta name="description" content="Contact the Star Hotels Association of Andhra Pradesh. Institutional liaison in Vijayawada or Amaravati." />
+  <meta property="og:title" content="Contact | ASHA" />
+  <meta property="og:description" content="Contact the Star Hotels Association of Andhra Pradesh. Institutional liaison in Vijayawada or Amaravati." />
+  <meta property="og:image" content="https://asha-website-three.vercel.app/assets/og-image.png" />
+  <meta property="og:url" content="https://asha-website-three.vercel.app/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=engrave" />
-  <link rel="icon" href="assets/asha-logo.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="css/styles.css?v=ia10" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -21,13 +29,22 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="primary" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="mission.html">Mission</a>
-        <a href="objectives.html">Objectives</a>
-        <a href="documents.html">Governing text</a>
-        <a href="associates.html">Associates</a>
+        <div class="nav-item has-sub">
+          <button type="button" class="nav-parent" aria-expanded="false" aria-controls="about-sub" aria-haspopup="true">About ASHA</button>
+          <ul id="about-sub" class="nav-sub">
+            <li><a href="about.html">About ASHA</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="objectives.html">Objectives</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="documents.html">Governing Documents</a></li>
+          </ul>
+        </div>
+        <a href="members.html">Members</a>
+        <a href="initiatives.html">Initiatives</a>
+        <a href="news.html">News &amp; Events</a>
+        <a href="resources.html">Resources</a>
         <a href="contact.html" aria-current="page">Contact</a>
-        <a class="nav-cta" href="contact.html">Become a Member</a>
+        <a class="nav-cta" href="membership.html">Become a Member</a>
       </nav>
     </div>
   </header>
@@ -42,33 +59,79 @@
 
     <section class="ks-section reveal" style="padding-top: 0;">
       <div class="wrap contact-grid">
-        <form class="panel" id="contact-form">
+        <form class="panel asha-form" id="contact-form" novalidate>
           <h2>Enquiry</h2>
+          <p>The form is ready for the secretariat. Delivery and a confirmation email wait until the Association's mail service is connected.</p>
+          <p class="needs-flag">[NEEDS: form delivery endpoint so a confirmation email can be sent]</p>
+
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" data-honeypot />
+          </div>
+
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required autocomplete="name" />
+
           <label for="org">Hotel or organisation</label>
           <input id="org" name="org" type="text" required />
+
           <label for="role">I am contacting as</label>
-          <select id="role" name="role">
+          <select id="role" name="role" required>
+            <option value="">Select a role</option>
             <option>Member hotel</option>
             <option>Prospective member</option>
             <option>Government or statutory body</option>
             <option>Industry partner</option>
             <option>Press or public</option>
           </select>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required autocomplete="email" />
+
+          <div class="form-pair">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+          </div>
+
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
+
+          <div class="consent">
+            <input id="privacy" name="privacy" type="checkbox" required />
+            <label for="privacy">I consent to ASHA storing this enquiry so the secretariat can respond, as described in the <a href="privacy.html">Privacy</a> page. ASHA will not share it for marketing.</label>
+          </div>
+          <p class="form-error" data-form-error hidden>Please complete the required fields and the privacy consent.</p>
+
           <div class="ks-button-row">
             <button class="ks-button ks-button-primary" type="submit">Send enquiry</button>
           </div>
-          <p class="form-status" id="form-status">Thank you. This form is a holding record until the Association’s registered office and email are published. Please retain a copy of your message.</p>
+          <p class="form-status" id="form-status">Thank you. We have received your enquiry.</p>
         </form>
+
         <aside class="panel">
-          <h2>Institutional liaison</h2>
+          <h2>Secretariat</h2>
+          <ul class="contact-points">
+            <li>
+              <strong>Named contact</strong>
+              <p class="needs-flag">[NEEDS: named secretariat contact]</p>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <p class="needs-flag">[NEEDS: official email]</p>
+            </li>
+            <li>
+              <strong>Phone or WhatsApp</strong>
+              <p class="needs-flag">[NEEDS: phone / WhatsApp]</p>
+            </li>
+            <li>
+              <strong>Registered or correspondence address</strong>
+              <p class="needs-flag">[NEEDS: registered / correspondence address]</p>
+            </li>
+          </ul>
           <p>The Association coordinates with government departments, Andhra Pradesh Tourism authorities, local authorities, and other institutions from Vijayawada or Amaravati.</p>
-          <p>Until the registered office is notified, enquiries from member hotels, departments, and partners may be recorded through this page.</p>
           <p>The Association serves the collective interests of its members. Correspondence concerning commercial services of individual hotels should be directed to those hotels.</p>
         </aside>
       </div>
@@ -81,21 +144,27 @@
       <div class="foot-grid">
         <div>
           <img class="footer-logo" src="assets/asha-logo.jpg" alt="ASHA, Andhra Pradesh Star Hotels Association" />
-          <p>An association representing three-star and above hotels across Andhra Pradesh.</p>
+          <p>An association representing star hotels across Andhra Pradesh.</p>
         </div>
         <div>
           <h3>Explore</h3>
-          <p><a href="about.html">About</a><br /><a href="objectives.html">Objectives</a></p>
+          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News &amp; Events</a><br /><a href="resources.html">Resources</a></p>
         </div>
         <div>
           <h3>Documents</h3>
-          <p><a href="documents.html">Governing text</a><br /><a href="documents/Aims-Mission-and-Objectives-of-the-Association.docx">Download Word</a></p>
+          <p><a href="documents.html">Governing Documents</a><br /><a href="documents/Aims-Mission-and-Objectives-of-the-Association.docx">Download Word</a></p>
         </div>
       </div>
       <p class="legal">© <span id="year">2026</span> Star Hotels Association of Andhra Pradesh.</p>
+      <p class="legal-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of use</a> · <a href="disclaimer.html">Membership disclaimer</a></p>
+      <div class="foot-needs">
+        <p class="needs-flag">[NEEDS: social URLs]</p>
+        <p class="needs-flag">[NEEDS: confirm registration status]</p>
+        <p class="needs-flag">[NEEDS: analytics]</p>
+      </div>
     </div>
     <img class="foot-skyline" src="assets/ap-skyline.png?v=ink" alt="" />
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=ia4"></script>
 </body>
 </html>

@@ -4,12 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | ASHA</title>
-  <meta name="description" content="An association representing 3-star and above hotels across all 26 districts of Andhra Pradesh." />
+  <meta name="description" content="An association representing star hotels across Andhra Pradesh." />
+  <meta property="og:title" content="About | ASHA" />
+  <meta property="og:description" content="An association representing star hotels across Andhra Pradesh." />
+  <meta property="og:image" content="https://asha-website-three.vercel.app/assets/og-image.png" />
+  <meta property="og:url" content="https://asha-website-three.vercel.app/about.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=engrave" />
-  <link rel="icon" href="assets/asha-logo.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="css/styles.css?v=ia10" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 </head>
 <body class="inner-page about-page">
   <a class="skip" href="#main">Skip to content</a>
@@ -21,13 +29,22 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="primary" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="mission.html">Mission</a>
-        <a href="objectives.html">Objectives</a>
-        <a href="documents.html">Governing text</a>
-        <a href="associates.html">Associates</a>
+        <div class="nav-item has-sub is-current">
+          <button type="button" class="nav-parent" aria-expanded="false" aria-controls="about-sub" aria-haspopup="true">About ASHA</button>
+          <ul id="about-sub" class="nav-sub">
+            <li><a href="about.html" aria-current="page">About ASHA</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="objectives.html">Objectives</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="documents.html">Governing Documents</a></li>
+          </ul>
+        </div>
+        <a href="members.html">Members</a>
+        <a href="initiatives.html">Initiatives</a>
+        <a href="news.html">News &amp; Events</a>
+        <a href="resources.html">Resources</a>
         <a href="contact.html">Contact</a>
-        <a class="nav-cta" href="contact.html">Become a Member</a>
+        <a class="nav-cta" href="membership.html">Become a Member</a>
       </nav>
     </div>
   </header>
@@ -38,7 +55,7 @@
         <div class="page-hero-copy">
           <p class="page-kicker">About the Association</p>
           <h1>Established for the organised <em>hotel sector.</em></h1>
-          <p>The Association exists to represent, strengthen, and develop three-star and above hotels across Andhra Pradesh for the collective advancement of the sector.</p>
+          <p>The Association exists to represent star hotels across Andhra Pradesh and to strengthen the organised hotel sector.</p>
         </div>
         <div class="page-hero-mark" aria-hidden="true"><strong>26</strong><span>districts.<br />one unified voice.</span></div>
       </div>
@@ -51,9 +68,9 @@
           <h2>Core purpose</h2>
         </div>
         <div class="editorial-copy">
-          <p>The Association is established to promote the growth, collaboration, representation, professional excellence, and sustainable development of hotels classified as three-star and above across all twenty-six (26) districts of the State of Andhra Pradesh.</p>
-          <p>The Association shall serve as a unified institutional platform representing the hospitality industry and facilitating cooperation among member hotels, government departments, Andhra Pradesh Tourism authorities, local authorities, industry stakeholders, educational and training institutions, national and international hospitality organisations, and other relevant public and private institutions.</p>
-          <p>All activities of the Association shall be carried out solely in furtherance of the Mission, Aims, and Objectives set out in its governing documents and for the collective benefit of the sector.</p>
+          <p>ASHA exists so star hotels across Andhra Pradesh have a single voice. It works for growth, collaboration, professional standards, and the sustainable development of the organised hotel sector.</p>
+          <p>The Association is a platform for member hotels, government departments, Andhra Pradesh Tourism, local authorities, industry partners, and training institutions.</p>
+          <p>Everything ASHA does is for the collective benefit of the sector. The clause-numbered wording is on <a href="documents.html">Governing Documents</a>.</p>
         </div>
       </div>
     </section>
@@ -63,14 +80,84 @@
         <div class="ks-section-head">
           <p class="section-index">02 / Principle</p>
           <h2>Governing character</h2>
-          <p class="ks-section-sub">This is a founding condition of every activity the Association undertakes.</p>
+          <p class="ks-section-sub">ASHA is a non-profit association. Income and assets are used for its stated purposes, not for private profit.</p>
         </div>
-        <div class="clause-grid clause-grid--about">
-          <div class="clause"><span class="num">3.4.1</span><p>The Association is constituted and shall function exclusively in furtherance of its stated Aims and Objectives.</p></div>
-          <div class="clause"><span class="num">3.4.2</span><p>The income, property, funds, and assets of the Association shall be applied solely towards the attainment of its Aims and Objectives.</p></div>
-          <div class="clause clause--wide"><span class="num">3.4.3</span><p>The income and property of the Association shall be administered in accordance with its governing documents and applicable laws and regulations.</p></div>
-          <div class="clause clause--wide"><span class="num">3.4.4</span><p>Any activity of a commercial, trading, or revenue-generating nature that the Association may lawfully undertake shall be incidental or ancillary to the Objectives, and the proceeds thereof shall be applied exclusively to the Association’s stated purposes.</p></div>
+        <div class="obj-plain">
+          <p>Any commercial activity the Association may lawfully undertake is incidental to those purposes, and the proceeds stay with them. The full governing character is on <a href="documents.html">Governing Documents</a>.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="ks-section inner-section reveal" id="record">
+      <div class="wrap">
+        <div class="ks-section-head">
+          <h2>Institutional record</h2>
+          <p class="ks-section-sub">These fields stay visible until the Association supplies verified facts. The authorised territory of 26 districts is not the same as districts with listed members.</p>
+        </div>
+        <dl class="proof-facts">
+          <div>
+            <dt>Founding member hotels</dt>
+            <dd class="needs-flag">[NEEDS: founding member hotels]</dd>
+          </div>
+          <div>
+            <dt>Verified members</dt>
+            <dd class="needs-flag">[NEEDS: number of verified members]</dd>
+          </div>
+          <div>
+            <dt>Districts represented</dt>
+            <dd class="needs-flag">[NEEDS: districts represented]</dd>
+          </div>
+          <div>
+            <dt>Registration number and legal status</dt>
+            <dd class="needs-flag">[NEEDS: registration number and legal status]</dd>
+          </div>
+          <div>
+            <dt>Registration status</dt>
+            <dd class="needs-flag">[NEEDS: confirm registration status]</dd>
+          </div>
+          <div>
+            <dt>Key institutional affiliations</dt>
+            <dd class="needs-flag">[NEEDS: key institutional affiliations]</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="ks-section inner-section inner-section--tint reveal" id="figures">
+      <div class="wrap">
+        <div class="ks-section-head">
+          <h2>Measurable figures</h2>
+          <p class="ks-section-sub">Tiles fill only from verified counts. Districts covered will not default to 26.</p>
+        </div>
+        <div class="proof-stats" data-proof-stats>
+          <p class="needs-flag" data-figures-needs>[NEEDS: verified figures]</p>
+          <div class="proof-stat-grid">
+            <div class="proof-stat"><strong data-stat="members"></strong><span>Members</span></div>
+            <div class="proof-stat"><strong data-stat="rooms"></strong><span>Rooms represented</span></div>
+            <div class="proof-stat"><strong data-stat="employees"></strong><span>Employees represented</span></div>
+            <div class="proof-stat"><strong data-stat="districts"></strong><span>Districts covered</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ks-section inner-section reveal" id="territory">
+      <div class="wrap">
+        <div class="ks-section-head">
+          <h2>District representation</h2>
+          <p class="ks-section-sub">A schematic stand-in for Andhra Pradesh. Shading will mark districts with verified member listings, not the Association's legal reach.</p>
+        </div>
+        <figure class="ap-map" data-ap-map>
+          <div class="ap-map-shape">
+            <p class="ap-map-label">Placeholder shape</p>
+            <ul class="ap-map-board" data-ap-map-board></ul>
+          </div>
+          <figcaption>
+            <p class="ap-map-legend"><span class="swatch is-represented"></span> Members listed <span class="swatch"></span> Not yet listed</p>
+            <p class="needs-flag">[NEEDS: AP district boundary SVG/GeoJSON - source separately, e.g. Survey of India or a licensed GIS dataset]</p>
+            <p class="needs-flag">[NEEDS: districts represented]</p>
+          </figcaption>
+        </figure>
       </div>
     </section>
   </main>
@@ -81,11 +168,11 @@
       <div class="foot-grid">
         <div>
           <img class="footer-logo" src="assets/asha-logo.jpg" alt="ASHA, Andhra Pradesh Star Hotels Association" />
-          <p>An association representing three-star and above hotels across Andhra Pradesh. Income and assets are applied towards its Aims and Objectives.</p>
+          <p>An association representing star hotels across Andhra Pradesh. Income and assets are used for the Association's stated purposes.</p>
         </div>
         <div>
           <h3>Explore</h3>
-          <p><a href="mission.html">Mission</a><br /><a href="objectives.html">Objectives</a><br /><a href="documents.html">Governing text</a></p>
+          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News &amp; Events</a><br /><a href="resources.html">Resources</a></p>
         </div>
         <div>
           <h3>Liaison</h3>
@@ -93,9 +180,18 @@
         </div>
       </div>
       <p class="legal">© <span id="year">2026</span> Star Hotels Association of Andhra Pradesh.</p>
+      <p class="legal-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of use</a> · <a href="disclaimer.html">Membership disclaimer</a></p>
+      <div class="foot-needs">
+        <p class="needs-flag">[NEEDS: social URLs]</p>
+        <p class="needs-flag">[NEEDS: confirm registration status]</p>
+        <p class="needs-flag">[NEEDS: analytics]</p>
+      </div>
     </div>
     <img class="foot-skyline" src="assets/ap-skyline.png?v=ink" alt="" />
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=ia9"></script>
+  <script src="js/members-data.js"></script>
+  <script src="js/proof-data.js"></script>
+  <script src="js/proof.js"></script>
 </body>
 </html>

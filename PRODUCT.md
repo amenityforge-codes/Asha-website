@@ -10,4 +10,4 @@ A non-profit society representing three-star and above hotels across all 26 dist
 
 **Constraints:** no private-profit implication; clause numbers stay visible because they map to the Memorandum; display name may later be replaced by the registered legal title.
 
-**Mode by surface:** Home and Contact persuade/invite; Mission, About, Objectives, and Governing Text are for reading.
+**Mode by surface:** Home, Membership, and Contact persuade/invite. About ASHA (Mission, Objectives, Leadership, Governing Documents), Members, Initiatives, News, and Resources are for reading. Membership is reached from Become a Member, not from a primary nav item.

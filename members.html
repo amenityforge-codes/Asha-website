@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Members | ASHA</title>
+  <meta name="description" content="Hotel members, industry partners, and institutional partners of the Star Hotels Association of Andhra Pradesh." />
+  <meta property="og:title" content="Members | ASHA" />
+  <meta property="og:description" content="Hotel members, industry partners, and institutional partners of the Star Hotels Association of Andhra Pradesh." />
+  <meta property="og:image" content="https://asha-website-three.vercel.app/assets/og-image.png" />
+  <meta property="og:url" content="https://asha-website-three.vercel.app/members.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=ia10" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap nav-row">
+      <a class="ks-brand" href="index.html">
+        <img class="brand-logo" src="assets/asha-logo.jpg" alt="ASHA, Andhra Pradesh Star Hotels Association" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="primary" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <div class="nav-item has-sub">
+          <button type="button" class="nav-parent" aria-expanded="false" aria-controls="about-sub" aria-haspopup="true">About ASHA</button>
+          <ul id="about-sub" class="nav-sub">
+            <li><a href="about.html">About ASHA</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="objectives.html">Objectives</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="documents.html">Governing Documents</a></li>
+          </ul>
+        </div>
+        <a href="members.html" aria-current="page">Members</a>
+        <a href="initiatives.html">Initiatives</a>
+        <a href="news.html">News &amp; Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="membership.html">Become a Member</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Members</h1>
+        <p>Hotel members are three-star and above properties in Andhra Pradesh. Industry partners are suppliers, consultants, and service providers. Institutional partners are tourism bodies, universities, and associations.</p>
+      </div>
+    </section>
+
+    <section class="ks-section" style="padding-top: 0;" id="member-directory">
+      <div class="wrap">
+        <form class="member-filters" id="member-filters">
+          <label for="filter-category">Category
+            <select id="filter-category" name="category">
+              <option value="">All categories</option>
+              <option value="hotel">Hotel Members</option>
+              <option value="industry">Industry Partners</option>
+              <option value="institution">Institutional Partners</option>
+            </select>
+          </label>
+          <label for="filter-district">District
+            <select id="filter-district" name="district">
+              <option value="">All districts</option>
+              <option>Alluri Sitharama Raju</option>
+              <option>Anakapalli</option>
+              <option>Ananthapuramu</option>
+              <option>Annamayya</option>
+              <option>Bapatla</option>
+              <option>Chittoor</option>
+              <option>Dr. B.R. Ambedkar Konaseema</option>
+              <option>East Godavari</option>
+              <option>Eluru</option>
+              <option>Guntur</option>
+              <option>Kakinada</option>
+              <option>Krishna</option>
+              <option>Kurnool</option>
+              <option>Nandyal</option>
+              <option>NTR</option>
+              <option>Palnadu</option>
+              <option>Parvathipuram Manyam</option>
+              <option>Prakasam</option>
+              <option>Sri Potti Sriramulu Nellore</option>
+              <option>Sri Sathya Sai</option>
+              <option>Srikakulam</option>
+              <option>Tirupati</option>
+              <option>Visakhapatnam</option>
+              <option>Vizianagaram</option>
+              <option>West Godavari</option>
+              <option>YSR Kadapa</option>
+            </select>
+          </label>
+          <label for="filter-city">City
+            <select id="filter-city" name="city" disabled>
+              <option value="">No cities yet</option>
+            </select>
+          </label>
+          <label for="filter-classification">Classification
+            <select id="filter-classification" name="classification">
+              <option value="">All classifications</option>
+              <option value="3-star">3-star</option>
+              <option value="4-star">4-star</option>
+              <option value="5-star">5-star</option>
+            </select>
+          </label>
+          <button class="ks-button ks-button-secondary" type="reset">Clear filters</button>
+        </form>
+
+        <p class="needs-flag" id="member-needs">[NEEDS: real member data — logos, names, districts]</p>
+        <p class="member-empty" id="member-empty" hidden>No listings match these filters.</p>
+
+        <section class="member-group" data-section="hotel" hidden>
+          <h2>Hotel Members</h2>
+          <div class="member-grid" data-list="hotel"></div>
+        </section>
+        <section class="member-group" data-section="industry" hidden>
+          <h2>Industry Partners</h2>
+          <div class="member-grid" data-list="industry"></div>
+        </section>
+        <section class="member-group" data-section="institution" hidden>
+          <h2>Institutional Partners</h2>
+          <div class="member-grid" data-list="institution"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <template id="member-card-template">
+    <article class="member-card">
+      <div class="member-card-media">
+        <img data-field="image" alt="" />
+        <span class="member-card-fallback" data-field="fallback" hidden></span>
+      </div>
+      <div>
+        <p class="member-card-category" data-field="category"></p>
+        <h3 data-field="name"></h3>
+        <p class="member-card-meta" data-field="meta"></p>
+        <p class="member-card-profile" data-field="profile"></p>
+        <a class="member-card-link" data-field="website" rel="noopener noreferrer">Website</a>
+      </div>
+    </article>
+  </template>
+
+  <footer class="site">
+    <div class="wrap">
+      <p class="foot-script">Atithi Devo Bhava</p>
+      <div class="foot-grid">
+        <div>
+          <img class="footer-logo" src="assets/asha-logo.jpg" alt="ASHA, Andhra Pradesh Star Hotels Association" />
+          <p>An association representing star hotels across Andhra Pradesh.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News &amp; Events</a><br /><a href="resources.html">Resources</a></p>
+        </div>
+        <div>
+          <h3>Liaison</h3>
+          <p>Vijayawada or Amaravati.<br /><a href="contact.html">Contact</a></p>
+        </div>
+      </div>
+      <p class="legal">© <span id="year">2026</span> Star Hotels Association of Andhra Pradesh.</p>
+      <p class="legal-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of use</a> · <a href="disclaimer.html">Membership disclaimer</a></p>
+      <div class="foot-needs">
+        <p class="needs-flag">[NEEDS: social URLs]</p>
+        <p class="needs-flag">[NEEDS: confirm registration status]</p>
+        <p class="needs-flag">[NEEDS: analytics]</p>
+      </div>
+    </div>
+    <img class="foot-skyline" src="assets/ap-skyline.png?v=ink" alt="" />
+  </footer>
+  <script src="js/main.js?v=ia3"></script>
+  <script src="js/members-data.js"></script>
+  <script src="js/members.js"></script>
+</body>
+</html>

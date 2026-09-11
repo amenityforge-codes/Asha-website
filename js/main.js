@@ -4,22 +4,83 @@
   if (toggle && header) {
     toggle.addEventListener("click", function () {
       const open = header.classList.toggle("open");
+      document.documentElement.classList.toggle("nav-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  const aboutItem = document.querySelector(".nav-item.has-sub");
+  if (aboutItem) {
+    const parent = aboutItem.querySelector(".nav-parent");
+    const sub = aboutItem.querySelector(".nav-sub");
+    function setAboutOpen(open) {
+      aboutItem.classList.toggle("open", open);
+      if (parent) parent.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    if (parent) {
+      parent.addEventListener("click", function () {
+        setAboutOpen(parent.getAttribute("aria-expanded") !== "true");
+      });
+      parent.addEventListener("keydown", function (event) {
+        if (event.key !== "ArrowDown") return;
+        event.preventDefault();
+        setAboutOpen(true);
+        const first = sub && sub.querySelector("a");
+        if (first) first.focus();
+      });
+    }
+    document.addEventListener("click", function (event) {
+      if (!aboutItem.contains(event.target)) setAboutOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape") return;
+      setAboutOpen(false);
+      if (parent) parent.focus();
     });
   }
 
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  const form = document.getElementById("contact-form");
-  if (form) {
+  function bindHoldingForm(form) {
+    const error = form.querySelector("[data-form-error]");
+    const status = form.querySelector(".form-status");
+    const category = form.querySelector("[name='category']");
+    const classification = form.querySelector("[name='classification']");
+
+    function syncHotelClassification() {
+      if (!category || !classification) return;
+      classification.required = category.value === "hotel";
+    }
+
+    if (category && classification) {
+      category.addEventListener("change", syncHotelClassification);
+      syncHotelClassification();
+    }
+
+    form.addEventListener("input", function () {
+      if (error) error.hidden = true;
+      if (status) status.classList.remove("show");
+    });
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      const status = document.getElementById("form-status");
+      const trap = form.querySelector("[data-honeypot]");
+      if (trap && trap.value.trim()) return;
+      syncHotelClassification();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        if (error) error.hidden = false;
+        return;
+      }
+      if (error) error.hidden = true;
       if (status) status.classList.add("show");
       form.reset();
+      syncHotelClassification();
     });
   }
+
+  document.querySelectorAll(".asha-form").forEach(bindHoldingForm);
 
   const links = document.querySelectorAll(".obj-side a");
   const articles = document.querySelectorAll(".obj-article");
