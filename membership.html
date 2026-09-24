@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Membership | ASHA</title>
-  <meta name="description" content="Membership in the Star Hotels Association of Andhra Pradesh for star hotels." />
+  <meta name="description" content="Eligibility and ways to join the Star Hotels Association of Andhra Pradesh." />
   <meta property="og:title" content="Membership | ASHA" />
-  <meta property="og:description" content="Membership in the Star Hotels Association of Andhra Pradesh for star hotels." />
+  <meta property="og:description" content="Eligibility and ways to join the Star Hotels Association of Andhra Pradesh." />
   <meta property="og:image" content="https://asha-website-three.vercel.app/assets/og-image.png" />
   <meta property="og:url" content="https://asha-website-three.vercel.app/membership.html" />
   <meta property="og:type" content="website" />
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=ia10" />
+  <link rel="stylesheet" href="css/styles.css?v=ia23" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -33,18 +33,26 @@
           <button type="button" class="nav-parent" aria-expanded="false" aria-controls="about-sub" aria-haspopup="true">About ASHA</button>
           <ul id="about-sub" class="nav-sub">
             <li><a href="about.html">About ASHA</a></li>
-            <li><a href="mission.html">Mission</a></li>
-            <li><a href="objectives.html">Objectives</a></li>
-            <li><a href="leadership.html">Leadership</a></li>
-            <li><a href="documents.html">Governing Documents</a></li>
+            <li class="nav-mission">
+              <div class="nav-mission-row">
+                <a href="mission.html">Mission</a>
+                <button type="button" class="nav-mission-toggle" aria-expanded="false" aria-controls="mission-sub" aria-label="Mission pages"></button>
+              </div>
+              <ul id="mission-sub" class="nav-mission-sub">
+                <li><a href="objectives.html">Objectives</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="documents.html">Governing Documents</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
+        <a href="membership.html" aria-current="page">Membership</a>
         <a href="members.html">Members</a>
         <a href="initiatives.html">Initiatives</a>
-        <a href="news.html">News &amp; Events</a>
+        <a href="news.html">News</a>
         <a href="resources.html">Resources</a>
         <a href="contact.html">Contact</a>
-        <a class="nav-cta" href="membership.html" aria-current="page">Become a Member</a>
+        <a class="nav-cta" href="membership.html">Become a Member</a>
       </nav>
     </div>
   </header>
@@ -52,21 +60,22 @@
   <main id="main">
     <section class="page-hero">
       <div class="wrap">
-        <h1>Become a member.</h1>
-        <p>Hotel membership is open to properties classified as three-star and above in Andhra Pradesh. Industry and institutional partners may apply in the categories below.</p>
+        <h1>Membership</h1>
+        <p>Eligibility to join ASHA, and the ways hotels and partners can apply.</p>
       </div>
     </section>
 
     <section class="ks-section" style="padding-top: 0;">
       <div class="wrap membership-stack">
-        <div>
-          <h2>Who is eligible</h2>
+        <div id="eligibility">
+          <h2>Eligibility to join ASHA</h2>
           <p>A hotel may apply if it is classified as three-star and above and operates in Andhra Pradesh. The Association's authorised territory is the twenty-six districts of the State.</p>
           <p>Industry partners are suppliers, consultants, and service providers. Institutional partners are tourism bodies, universities, and associations.</p>
         </div>
 
-        <div>
-          <h2>Membership categories</h2>
+        <div id="ways-to-join">
+          <h2>Ways to join</h2>
+          <p>Choose the category that matches your organisation, then submit the application on this page. The secretariat can also receive an enquiry through <a href="contact.html">Contact</a>.</p>
           <dl class="membership-cats">
             <div>
               <dt>Hotel Members</dt>
@@ -81,6 +90,7 @@
               <dd>Tourism bodies, universities, and associations.</dd>
             </div>
           </dl>
+          <p><a class="mission-more" href="#apply">Go to the application</a></p>
         </div>
 
         <div>
@@ -88,25 +98,6 @@
           <p class="membership-benefit">Receive coordinated regulatory updates, representation on common industry matters, access to training programmes, participation in government consultations and visibility through ASHA's tourism-promotion initiatives.</p>
         </div>
 
-        <div>
-          <h2>Fees</h2>
-          <p class="needs-flag">[NEEDS: fee schedule, if publicly disclosed]</p>
-        </div>
-
-        <div>
-          <h2>Documents required</h2>
-          <p class="needs-flag">[NEEDS: documents required for application]</p>
-        </div>
-
-        <div>
-          <h2>Approval process</h2>
-          <p class="needs-flag">[NEEDS: approval process]</p>
-        </div>
-
-        <div>
-          <h2>Membership code of conduct</h2>
-          <p class="needs-flag">[NEEDS: membership code of conduct]</p>
-        </div>
       </div>
     </section>
 
@@ -250,7 +241,7 @@
         </div>
         <div>
           <h3>Explore</h3>
-          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News &amp; Events</a><br /><a href="resources.html">Resources</a></p>
+          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News</a><br /><a href="resources.html">Resources</a></p>
         </div>
         <div>
           <h3>Liaison</h3>
@@ -265,8 +256,8 @@
         <p class="needs-flag">[NEEDS: analytics]</p>
       </div>
     </div>
-    <img class="foot-skyline" src="assets/ap-skyline.png?v=ink" alt="" />
+    <img class="foot-skyline" src="assets/ap-skyline.png?v=ap5" alt="" />
   </footer>
-  <script src="js/main.js?v=ia4"></script>
+  <script src="js/main.js?v=ia13"></script>
 </body>
 </html>

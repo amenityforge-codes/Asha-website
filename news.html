@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=ia10" />
+  <link rel="stylesheet" href="css/styles.css?v=ia24" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -33,15 +33,23 @@
           <button type="button" class="nav-parent" aria-expanded="false" aria-controls="about-sub" aria-haspopup="true">About ASHA</button>
           <ul id="about-sub" class="nav-sub">
             <li><a href="about.html">About ASHA</a></li>
-            <li><a href="mission.html">Mission</a></li>
-            <li><a href="objectives.html">Objectives</a></li>
-            <li><a href="leadership.html">Leadership</a></li>
-            <li><a href="documents.html">Governing Documents</a></li>
+            <li class="nav-mission">
+              <div class="nav-mission-row">
+                <a href="mission.html">Mission</a>
+                <button type="button" class="nav-mission-toggle" aria-expanded="false" aria-controls="mission-sub" aria-label="Mission pages"></button>
+              </div>
+              <ul id="mission-sub" class="nav-mission-sub">
+                <li><a href="objectives.html">Objectives</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="documents.html">Governing Documents</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
+        <a href="membership.html">Membership</a>
         <a href="members.html">Members</a>
         <a href="initiatives.html">Initiatives</a>
-        <a href="news.html" aria-current="page">News &amp; Events</a>
+        <a href="news.html" aria-current="page">News</a>
         <a href="resources.html">Resources</a>
         <a href="contact.html">Contact</a>
         <a class="nav-cta" href="membership.html">Become a Member</a>
@@ -53,15 +61,82 @@
     <section class="page-hero">
       <div class="wrap">
         <h1>News and Events</h1>
-        <p>Confirmed meetings, notices, and public updates will appear here. No sample events are listed.</p>
+        <p>Government representations, meetings and campaigns, and training programmes.</p>
       </div>
     </section>
 
-    <section class="ks-section" style="padding-top: 0;" data-updates data-kind="news,event">
-      <div class="wrap">
-        <p class="needs-flag" data-updates-needs>[NEEDS: 2–3 real updates - government representations, meetings, training programmes, campaigns, etc.]</p>
-        <p class="update-empty" data-updates-empty hidden>No news or events match this listing yet.</p>
-        <div class="update-list" data-updates-list></div>
+    <section class="ks-section" style="padding-top: 0;">
+      <div class="wrap news-tabs" data-tabs>
+        <div class="news-tablist" role="tablist" aria-label="News categories">
+          <button type="button" role="tab" id="tab-btn-gov" aria-selected="true" aria-controls="tab-gov">Government representations</button>
+          <button type="button" role="tab" id="tab-btn-meetings" aria-selected="false" aria-controls="tab-meetings">Meetings and campaigns</button>
+          <button type="button" role="tab" id="tab-btn-training" aria-selected="false" aria-controls="tab-training">Training programmes</button>
+        </div>
+
+        <div class="news-panel" role="tabpanel" id="tab-gov" aria-labelledby="tab-btn-gov" data-updates data-kind="representation">
+          <p>ASHA liaises with Andhra Pradesh Tourism authorities on matters affecting star hotels. The activities below are public tourism programmes of the State. ASHA's own representations at these programmes will be listed when supplied.</p>
+          <h2>Andhra Pradesh Tourism activities</h2>
+          <p class="ks-section-sub">From the State's 2025-26 tourism events calendar, covering culture, pilgrimage, nature, and destination festivals across the 26 districts. See <a href="https://tourism.ap.gov.in/" rel="noopener noreferrer" target="_blank">tourism.ap.gov.in</a>.</p>
+          <ol class="news-activity">
+            <li>
+              <p class="update-date">5-8 June 2025</p>
+              <h3>Masula Beach Festival</h3>
+              <p>Manginapudi Beach, Machilipatnam. Beach sports, cultural performances, handicrafts, and food stalls.</p>
+            </li>
+            <li>
+              <p class="update-date">17-19 September 2025</p>
+              <h3>AP Travel Mart</h3>
+              <p>Visakhapatnam. Trade meeting for the State's tourism calendar.</p>
+            </li>
+            <li>
+              <p class="update-date">22 September-2 October 2025</p>
+              <h3>Vijayawada Utsav</h3>
+              <p>Classical and folk arts, Krishna riverfront activity, heritage walks, and night bazaars.</p>
+            </li>
+            <li>
+              <p class="update-date">24 September-2 October 2025</p>
+              <h3>Sri Venkateswara Swamy Brahmotsavam</h3>
+              <p>Tirumala. Listed on the State tourism calendar.</p>
+            </li>
+            <li>
+              <p class="update-date">14-16 November 2025</p>
+              <h3>Amaravati Diaries</h3>
+              <p>Literary and music festival, Vijayawada.</p>
+            </li>
+            <li>
+              <p class="update-date">8-10 January 2026</p>
+              <h3>Avakai Amaravati Festival</h3>
+              <p>Vijayawada. Listed on the State festival calendar.</p>
+            </li>
+            <li>
+              <p class="update-date">24 January-1 February 2026</p>
+              <h3>Visakha Utsav</h3>
+              <p>Visakhapatnam and nearby districts, including Anakapalli Utsav and Araku Utsav.</p>
+            </li>
+            <li>
+              <p class="update-date">31 January-2 February 2026</p>
+              <h3>Araku Balloon and Chali Festival</h3>
+              <p>Araku Valley. Listed on the State tourism calendar.</p>
+            </li>
+          </ol>
+          <p class="needs-flag" data-updates-needs>[NEEDS: ASHA representations, meetings, or outcomes at these AP Tourism activities]</p>
+          <p class="update-empty" data-updates-empty hidden>No ASHA representations listed for this category yet.</p>
+          <div class="update-list" data-updates-list></div>
+        </div>
+
+        <div class="news-panel" role="tabpanel" id="tab-meetings" aria-labelledby="tab-btn-meetings" hidden data-updates data-kind="meeting,campaign">
+          <p>Meetings, notices, and public campaigns will appear here when dates and outcomes are supplied. Nothing here describes work that has not taken place.</p>
+          <p class="needs-flag" data-updates-needs>[NEEDS: confirmed meetings and campaigns]</p>
+          <p class="update-empty" data-updates-empty hidden>No meetings or campaigns listed yet.</p>
+          <div class="update-list" data-updates-list></div>
+        </div>
+
+        <div class="news-panel" role="tabpanel" id="tab-training" aria-labelledby="tab-btn-training" hidden data-updates data-kind="training">
+          <p>ASHA organises training programmes, seminars, workshops, and other professional development for members, their employees, and hospitality professionals. Topics may include hotel operations, service standards, food safety, technology, sustainability, marketing, human resources, and regulatory compliance.</p>
+          <p class="needs-flag" data-updates-needs>[NEEDS: confirmed training programmes]</p>
+          <p class="update-empty" data-updates-empty hidden>No training programmes listed yet.</p>
+          <div class="update-list" data-updates-list></div>
+        </div>
       </div>
     </section>
   </main>
@@ -76,7 +151,7 @@
         </div>
         <div>
           <h3>Explore</h3>
-          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News &amp; Events</a><br /><a href="resources.html">Resources</a></p>
+          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News</a><br /><a href="resources.html">Resources</a></p>
         </div>
         <div>
           <h3>Liaison</h3>
@@ -91,9 +166,9 @@
         <p class="needs-flag">[NEEDS: analytics]</p>
       </div>
     </div>
-    <img class="foot-skyline" src="assets/ap-skyline.png?v=ink" alt="" />
+    <img class="foot-skyline" src="assets/ap-skyline.png?v=ap5" alt="" />
   </footer>
-  <script src="js/main.js?v=ia8"></script>
+  <script src="js/main.js?v=ia14"></script>
   <script src="js/updates-data.js"></script>
   <script src="js/updates.js"></script>
 </body>

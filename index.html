@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=ia10" />
+  <link rel="stylesheet" href="css/styles.css?v=ia25" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -33,15 +33,23 @@
           <button type="button" class="nav-parent" aria-expanded="false" aria-controls="about-sub" aria-haspopup="true">About ASHA</button>
           <ul id="about-sub" class="nav-sub">
             <li><a href="about.html">About ASHA</a></li>
-            <li><a href="mission.html">Mission</a></li>
-            <li><a href="objectives.html">Objectives</a></li>
-            <li><a href="leadership.html">Leadership</a></li>
-            <li><a href="documents.html">Governing Documents</a></li>
+            <li class="nav-mission">
+              <div class="nav-mission-row">
+                <a href="mission.html">Mission</a>
+                <button type="button" class="nav-mission-toggle" aria-expanded="false" aria-controls="mission-sub" aria-label="Mission pages"></button>
+              </div>
+              <ul id="mission-sub" class="nav-mission-sub">
+                <li><a href="objectives.html">Objectives</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="documents.html">Governing Documents</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
+        <a href="membership.html">Membership</a>
         <a href="members.html">Members</a>
         <a href="initiatives.html">Initiatives</a>
-        <a href="news.html">News &amp; Events</a>
+        <a href="news.html">News</a>
         <a href="resources.html">Resources</a>
         <a href="contact.html">Contact</a>
         <a class="nav-cta" href="membership.html">Become a Member</a>
@@ -51,24 +59,41 @@
 
   <main id="main">
     <section class="hero">
-      <div class="hero-media" role="img" aria-label="Andhra Pradesh landscape at dusk, from a hotel terrace"></div>
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-slides" data-hero-slides>
+          <img src="assets/hero-slide-1.jpg" alt="" class="is-active" />
+          <img src="assets/hero-slide-2.jpg" alt="" />
+          <img src="assets/hero-slide-3.jpg" alt="" />
+        </div>
+      </div>
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <h1>A stronger collective voice for <em>Andhra Pradesh's star hotels.</em></h1>
           <p class="lead">ASHA brings together star hotels across Andhra Pradesh to represent industry interests, improve professional standards, develop hospitality talent and strengthen the State's tourism economy.</p>
           <div class="ks-button-row">
             <a class="ks-button ks-button-primary" href="membership.html">Explore Membership</a>
-            <a class="ks-button ks-button-secondary" href="#partnerships">Partner With ASHA</a>
+            <a class="ks-button ks-button-secondary" href="contact.html">Partner With ASHA</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ks-section" id="join">
+    <section class="ks-section" id="what-we-do">
       <div class="wrap">
+        <div class="president-saying">
+          <p class="page-kicker">From the President</p>
+          <div class="mission-statement-card">
+            <span class="statement-mark" aria-hidden="true">“</span>
+            <blockquote class="statement">[NEEDS: President statement]</blockquote>
+            <footer class="president-attrib">
+              <cite>[NEEDS: President name]</cite>
+              <span>President, Star Hotels Association of Andhra Pradesh</span>
+            </footer>
+          </div>
+        </div>
         <div class="ks-section-head">
-          <h2>Reasons to join</h2>
-          <p class="ks-section-sub">Members receive coordinated regulatory updates, representation on common industry matters, access to training programmes, participation in government consultations and visibility through ASHA's tourism-promotion initiatives. The full Mission, Aims, and Objectives live under <a href="about.html">About ASHA</a>.</p>
+          <h2>What do we do</h2>
+          <p class="ks-section-sub">ASHA represents star hotels on shared industry matters, develops hospitality talent, convenes members and partners, and promotes Andhra Pradesh as a hospitality destination. The full Mission, Aims, and Objectives live under <a href="about.html">About ASHA</a>.</p>
         </div>
         <ol class="home-benefits">
           <li>
@@ -91,30 +116,8 @@
       </div>
     </section>
 
-    <section class="ks-section inner-section--tint" id="coverage">
+    <section class="ks-section" id="figures">
       <div class="wrap">
-        <div class="ks-section-head">
-          <h2>Member and district coverage</h2>
-          <p class="ks-section-sub">These figures stay empty until verified counts are supplied. The authorised territory of 26 districts is not the same as districts with listed members.</p>
-        </div>
-        <dl class="proof-facts">
-          <div>
-            <dt>Verified members</dt>
-            <dd class="needs-flag">[NEEDS: number of verified members]</dd>
-          </div>
-          <div>
-            <dt>Districts represented</dt>
-            <dd class="needs-flag">[NEEDS: districts represented]</dd>
-          </div>
-          <div>
-            <dt>Founding member hotels</dt>
-            <dd class="needs-flag">[NEEDS: founding member hotels]</dd>
-          </div>
-          <div>
-            <dt>Registration number and legal status</dt>
-            <dd class="needs-flag">[NEEDS: registration number and legal status]</dd>
-          </div>
-        </dl>
         <div class="proof-stats" data-proof-stats>
           <p class="needs-flag" data-figures-needs>[NEEDS: verified figures]</p>
           <div class="proof-stat-grid">
@@ -124,17 +127,6 @@
             <div class="proof-stat"><strong data-stat="districts"></strong><span>Districts covered</span></div>
           </div>
         </div>
-        <figure class="ap-map" data-ap-map>
-          <div class="ap-map-shape">
-            <p class="ap-map-label">Placeholder shape</p>
-            <ul class="ap-map-board" data-ap-map-board></ul>
-          </div>
-          <figcaption>
-            <p class="ap-map-legend"><span class="swatch is-represented"></span> Members listed <span class="swatch"></span> Not yet listed</p>
-            <p class="needs-flag">[NEEDS: AP district boundary SVG/GeoJSON - source separately, e.g. Survey of India or a licensed GIS dataset]</p>
-            <p class="needs-flag">[NEEDS: districts represented]</p>
-          </figcaption>
-        </figure>
       </div>
     </section>
 
@@ -151,19 +143,6 @@
       </div>
     </section>
 
-    <section class="ks-section" id="activity" style="padding-top: 0;" data-updates data-kind="news,event" data-limit="3">
-      <div class="wrap">
-        <div class="ks-section-head">
-          <h2>Latest activity</h2>
-          <p class="ks-section-sub">Announcements will appear here when dates and outcomes are supplied.</p>
-        </div>
-        <p class="needs-flag" data-updates-needs>[NEEDS: latest activity or achievement]</p>
-        <p class="update-empty" data-updates-empty hidden>No news or events listed yet.</p>
-        <div class="update-list" data-updates-list></div>
-        <a class="mission-more" href="news.html">News and events</a>
-      </div>
-    </section>
-
     <section class="ks-section inner-section--tint" id="featured-members">
       <div class="wrap">
         <div class="ks-section-head">
@@ -172,28 +151,6 @@
         </div>
         <p class="needs-flag">[NEEDS: featured members]</p>
         <a class="mission-more" href="members.html">View the members directory</a>
-      </div>
-    </section>
-
-    <section class="ks-section" id="partnerships">
-      <div class="wrap">
-        <div class="ks-section-head">
-          <h2>Government and industry partnerships</h2>
-          <p class="ks-section-sub">The Association facilitates cooperation among the parties named in its governing documents. Named affiliations will be listed when supplied.</p>
-        </div>
-        <div class="partner-row">
-          <span>Member hotels</span>
-          <span>Government departments</span>
-          <span>Andhra Pradesh Tourism</span>
-          <span>Local authorities</span>
-          <span>Industry stakeholders</span>
-          <span>Educational and training institutions</span>
-          <span>National hospitality organisations</span>
-          <span>International hospitality organisations</span>
-          <span>Other public and private institutions</span>
-        </div>
-        <p class="needs-flag" style="margin-top: 28px;">[NEEDS: key institutional affiliations]</p>
-        <a class="mission-more" href="contact.html">Write to the Association</a>
       </div>
     </section>
 
@@ -219,7 +176,7 @@
         </div>
         <div>
           <h3>Explore</h3>
-          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News &amp; Events</a><br /><a href="resources.html">Resources</a></p>
+          <p><a href="about.html">About ASHA</a><br /><a href="members.html">Members</a><br /><a href="membership.html">Membership</a><br /><a href="initiatives.html">Initiatives</a><br /><a href="news.html">News</a><br /><a href="resources.html">Resources</a></p>
         </div>
         <div>
           <h3>Liaison</h3>
@@ -235,10 +192,9 @@
         <p class="needs-flag">[NEEDS: analytics]</p>
       </div>
     </div>
-    <img class="foot-skyline" src="assets/ap-skyline.png?v=ink" alt="" />
+    <img class="foot-skyline" src="assets/ap-skyline.png?v=ap5" alt="" />
   </footer>
-  <script src="js/main.js?v=ia8"></script>
-  <script src="js/members-data.js"></script>
+  <script src="js/main.js?v=ia15"></script>
   <script src="js/proof-data.js"></script>
   <script src="js/proof.js"></script>
   <script src="js/updates-data.js"></script>

@@ -7,7 +7,7 @@
  *   description: "One or two sentences.",
  *   image: "assets/updates/example.jpg",
  *   link: "https://example.com",
- *   kind: "initiative" | "news" | "event"
+ *   kind: "initiative" | "news" | "event" | "representation" | "meeting" | "campaign" | "training"
  * }
  */
 window.ASHA_UPDATES = [];
