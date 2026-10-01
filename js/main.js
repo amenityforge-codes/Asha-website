@@ -13,19 +13,10 @@
   if (aboutItem) {
     const parent = aboutItem.querySelector(":scope > .nav-parent");
     const sub = aboutItem.querySelector(":scope > .nav-sub");
-    const mission = aboutItem.querySelector(".nav-mission");
-    const missionBtn = aboutItem.querySelector(".nav-mission-toggle");
-
-    function setMissionOpen(open) {
-      if (!mission || !missionBtn) return;
-      mission.classList.toggle("open", open);
-      missionBtn.setAttribute("aria-expanded", open ? "true" : "false");
-    }
 
     function setAboutOpen(open) {
       aboutItem.classList.toggle("open", open);
       if (parent) parent.setAttribute("aria-expanded", open ? "true" : "false");
-      if (!open) setMissionOpen(false);
     }
 
     if (parent) {
@@ -41,15 +32,6 @@
       });
     }
 
-    if (missionBtn) {
-      missionBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        setAboutOpen(true);
-        setMissionOpen(missionBtn.getAttribute("aria-expanded") !== "true");
-      });
-    }
-
     document.addEventListener("click", function (event) {
       if (!aboutItem.contains(event.target)) setAboutOpen(false);
     });
@@ -58,6 +40,37 @@
       setAboutOpen(false);
       if (parent) parent.focus();
     });
+  }
+
+  const missionLinks = document.querySelectorAll(".mission-nav-link");
+  if (missionLinks.length && "IntersectionObserver" in window) {
+    const sectionIds = Array.from(missionLinks).map(function (link) {
+      return link.getAttribute("href").replace("#", "");
+    });
+    const sections = sectionIds
+      .map(function (id) {
+        return document.getElementById(id);
+      })
+      .filter(Boolean);
+
+    if (sections.length) {
+      const missionObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              missionLinks.forEach(function (link) {
+                link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+              });
+            }
+          });
+        },
+        { rootMargin: "-30% 0px -60% 0px", threshold: 0 }
+      );
+      sections.forEach(function (sec) {
+        missionObserver.observe(sec);
+      });
+    }
   }
 
   const year = document.getElementById("year");
