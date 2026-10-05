@@ -3979,4 +3979,165 @@ footer.site a {
   }
 }
 
+/* --- PRESIDENT STATEMENT HERO STYLING --- */
+.president-statement-hero {
+  position: relative;
+  padding: clamp(36px, 5vw, 64px) clamp(28px, 6vw, 72px);
+  border: 1px solid rgb(217 107 39 / 0.28);
+}
+
+.president-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.president-hero-photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.president-hero-photo {
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1;
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 0.04);
+  border: 1px dashed rgb(217 107 39 / 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fecdca;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  box-shadow: inset 0 0 20px rgb(0 0 0 / 0.4);
+}
+
+.president-hero-photo::before {
+  display: none;
+}
+
+.president-hero-content {
+  min-width: 0;
+}
+
+.president-hero-kicker-row {
+  margin-bottom: 8px;
+}
+
+.president-hero-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.president-hero-title {
+  margin: 0 0 16px;
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: #fbf8f2;
+  line-height: 1.25;
+}
+
+.president-hero-quote {
+  margin: 0 0 16px;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  color: rgb(251 248 242 / 0.95);
+  line-height: 1.5;
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+  max-width: 58ch;
+}
+
+.president-hero-notice {
+  margin: 0 0 24px;
+  color: rgb(251 248 242 / 0.65);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.president-hero-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+}
+
+.president-hero-signoff strong {
+  display: block;
+  color: #fbf8f2;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.president-hero-signoff span {
+  display: block;
+  color: rgb(251 248 242 / 0.6);
+  font-size: 0.82rem;
+  margin-top: 2px;
+}
+
+.president-hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.president-hero-link:hover {
+  color: #fbf8f2;
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .president-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .president-hero-photo-col {
+    margin: 0 auto;
+  }
+
+  .president-hero-quote {
+    border-left: none;
+    border-top: 2px solid var(--accent);
+    padding-left: 0;
+    padding-top: 14px;
+    margin: 0 auto 16px;
+  }
+
+  .president-hero-notice {
+    margin: 0 auto 20px;
+  }
+
+  .president-hero-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
 
