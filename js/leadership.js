@@ -91,4 +91,33 @@
       });
     }
   }
+
+  // 4. President's Statement dynamic ingestion (if verified client content is supplied)
+  const statementData = window.ASHA_PRESIDENT_STATEMENT || (data && data.presidentStatement);
+  if (statementData && statementData.verified && statementData.content) {
+    const cardEl = document.getElementById("president-statement-state");
+    const bodyEl = document.getElementById("president-statement-body");
+    const photoEl = document.getElementById("president-statement-photo");
+
+    if (bodyEl) {
+      bodyEl.innerHTML = statementData.content;
+      bodyEl.hidden = false;
+    }
+
+    if (photoEl && statementData.photo) {
+      const img = document.createElement("img");
+      img.src = statementData.photo;
+      img.alt = statementData.title || "President of ASHA";
+      img.className = "leader-photo-img";
+      photoEl.innerHTML = "";
+      photoEl.className = "leader-photo-wrap";
+      photoEl.style.width = "140px";
+      photoEl.style.height = "140px";
+      photoEl.style.margin = "0 auto 18px";
+      photoEl.appendChild(img);
+    }
+
+    const reqBadge = cardEl ? cardEl.querySelector(".client-data-required") : null;
+    if (reqBadge) reqBadge.hidden = true;
+  }
 })();
