@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Members | ASHA</title>
+  <title>Members &amp; Partners | ASHA</title>
   <meta name="description" content="Hotel members, industry partners, and institutional partners of the Star Hotels Association of Andhra Pradesh." />
-  <meta property="og:title" content="Members | ASHA" />
+  <meta property="og:title" content="Members &amp; Partners | ASHA" />
   <meta property="og:description" content="Hotel members, industry partners, and institutional partners of the Star Hotels Association of Andhra Pradesh." />
   <meta property="og:image" content="https://asha-website-three.vercel.app/assets/og-image.png" />
   <meta property="og:url" content="https://asha-website-three.vercel.app/members.html" />
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=ia23" />
+  <link rel="stylesheet" href="css/styles.css?v=ia24" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -51,90 +51,257 @@
   <main id="main">
     <section class="page-hero">
       <div class="wrap">
-        <h1>Members</h1>
-        <p>Hotel members are three-star and above properties in Andhra Pradesh. Industry partners are suppliers, consultants, and service providers. Institutional partners are tourism bodies, universities, and associations.</p>
+        <h1>Members &amp; Partners</h1>
+        <p>ASHA brings together three-star and above hotels across Andhra Pradesh, alongside relevant industry and institutional partners.</p>
       </div>
     </section>
 
-    <section class="ks-section" style="padding-top: 0;" id="member-directory">
+    <section class="ks-section" style="padding-top: 0;" id="member-ecosystem">
       <div class="wrap">
-        <form class="member-filters" id="member-filters">
-          <label for="filter-category">Category
-            <select id="filter-category" name="category">
-              <option value="">All categories</option>
-              <option value="hotel">Hotel Members</option>
-              <option value="industry">Industry Partners</option>
-              <option value="institution">Institutional Partners</option>
-            </select>
-          </label>
-          <label for="filter-district">District
-            <select id="filter-district" name="district">
-              <option value="">All districts</option>
-              <option>Alluri Sitharama Raju</option>
-              <option>Anakapalli</option>
-              <option>Ananthapuramu</option>
-              <option>Annamayya</option>
-              <option>Bapatla</option>
-              <option>Chittoor</option>
-              <option>Dr. B.R. Ambedkar Konaseema</option>
-              <option>East Godavari</option>
-              <option>Eluru</option>
-              <option>Guntur</option>
-              <option>Kakinada</option>
-              <option>Krishna</option>
-              <option>Kurnool</option>
-              <option>Nandyal</option>
-              <option>NTR</option>
-              <option>Palnadu</option>
-              <option>Parvathipuram Manyam</option>
-              <option>Prakasam</option>
-              <option>Sri Potti Sriramulu Nellore</option>
-              <option>Sri Sathya Sai</option>
-              <option>Srikakulam</option>
-              <option>Tirupati</option>
-              <option>Visakhapatnam</option>
-              <option>Vizianagaram</option>
-              <option>West Godavari</option>
-              <option>YSR Kadapa</option>
-            </select>
-          </label>
-          <label for="filter-city">City
-            <select id="filter-city" name="city" disabled>
-              <option value="">No cities yet</option>
-            </select>
-          </label>
-          <label for="filter-classification">Classification
-            <select id="filter-classification" name="classification">
-              <option value="">All classifications</option>
-              <option value="3-star">3-star</option>
-              <option value="4-star">4-star</option>
-              <option value="5-star">5-star</option>
-            </select>
-          </label>
-          <button class="ks-button ks-button-secondary" type="reset">Clear filters</button>
-        </form>
-
-        <div class="panel" id="member-needs" style="text-align: center; padding: 48px 24px; max-width: 640px; margin: 32px auto;">
-          <h3 style="margin-bottom: 12px; font-family: var(--font-heading); font-size: 1.4rem;">Accredited Member Directory</h3>
-          <p style="color: var(--muted); margin-bottom: 20px;">The official registry of classified 3-Star, 4-Star, 5-Star, and Deluxe/Heritage hotels across all 26 districts of Andhra Pradesh is currently being updated following statutory accreditation verification.</p>
-          <div class="ks-button-row" style="justify-content: center;">
-            <a class="ks-button ks-button-primary" href="membership.html">Apply for Accreditation</a>
-            <a class="ks-button ks-button-secondary" href="contact.html">Secretariat Registry Office</a>
+        <!-- Category Segmented Control / Tablist -->
+        <nav class="member-tabs-container" aria-label="Directory Categories">
+          <div class="member-tabs" role="tablist">
+            <button type="button" class="member-tab is-active" role="tab" id="tab-hotel" aria-selected="true" aria-controls="panel-hotel" tabindex="0">
+              <span class="tab-title">Hotel Members</span>
+            </button>
+            <button type="button" class="member-tab" role="tab" id="tab-industry" aria-selected="false" aria-controls="panel-industry" tabindex="-1">
+              <span class="tab-title">Industry Partners</span>
+            </button>
+            <button type="button" class="member-tab" role="tab" id="tab-institution" aria-selected="false" aria-controls="panel-institution" tabindex="-1">
+              <span class="tab-title">Institutional Partners</span>
+            </button>
           </div>
-        </div>
-        <p class="member-empty" id="member-empty" hidden>No listings match these filters.</p>
+        </nav>
 
-        <section class="member-group" data-section="hotel" hidden>
-          <h2>Hotel Members</h2>
-          <div class="member-grid" data-list="hotel"></div>
+        <!-- Category A: Hotel Members -->
+        <section class="member-tabpanel" id="panel-hotel" role="tabpanel" aria-labelledby="tab-hotel" tabindex="0">
+          <div class="member-panel-intro">
+            <div>
+              <h2>Hotel Members</h2>
+              <p>Classified three-star, four-star, five-star, and deluxe/heritage hotels operating across Andhra Pradesh.</p>
+            </div>
+            <span class="member-panel-badge">3★+ Classified Properties</span>
+          </div>
+
+          <form class="member-filters" id="hotel-filters" action="#" method="get" onsubmit="return false;">
+            <label for="hotel-search">Search
+              <input type="search" id="hotel-search" name="search" placeholder="Search by hotel name..." autocomplete="off" />
+            </label>
+            <label for="hotel-classification">Classification
+              <select id="hotel-classification" name="classification">
+                <option value="">All classifications</option>
+                <option value="3-star">3-Star</option>
+                <option value="4-star">4-Star</option>
+                <option value="5-star">5-Star</option>
+                <option value="deluxe-heritage">Deluxe / Heritage</option>
+              </select>
+            </label>
+            <label for="hotel-district">District
+              <select id="hotel-district" name="district">
+                <option value="">All districts</option>
+                <option>Alluri Sitharama Raju</option>
+                <option>Anakapalli</option>
+                <option>Ananthapuramu</option>
+                <option>Annamayya</option>
+                <option>Bapatla</option>
+                <option>Chittoor</option>
+                <option>Dr. B.R. Ambedkar Konaseema</option>
+                <option>East Godavari</option>
+                <option>Eluru</option>
+                <option>Guntur</option>
+                <option>Kakinada</option>
+                <option>Krishna</option>
+                <option>Kurnool</option>
+                <option>Nandyal</option>
+                <option>NTR</option>
+                <option>Palnadu</option>
+                <option>Parvathipuram Manyam</option>
+                <option>Prakasam</option>
+                <option>Sri Potti Sriramulu Nellore</option>
+                <option>Sri Sathya Sai</option>
+                <option>Srikakulam</option>
+                <option>Tirupati</option>
+                <option>Visakhapatnam</option>
+                <option>Vizianagaram</option>
+                <option>West Godavari</option>
+                <option>YSR Kadapa</option>
+              </select>
+            </label>
+            <label for="hotel-city">City
+              <select id="hotel-city" name="city" disabled>
+                <option value="">All cities</option>
+              </select>
+            </label>
+            <button class="ks-button ks-button-secondary" type="reset">Clear filters</button>
+          </form>
+
+          <!-- Empty State for Hotel Members -->
+          <div class="panel member-empty-card" id="hotel-empty-state">
+            <div class="member-empty-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
+            </div>
+            <h3>Hotel Member Directory</h3>
+            <p class="member-empty-text">Hotel member profiles will appear here as verified ASHA member information is published.</p>
+            <div class="ks-button-row" style="justify-content: center;">
+              <a class="ks-button ks-button-primary" href="membership.html">Become a Member</a>
+              <a class="ks-button ks-button-secondary" href="membership.html#eligibility">Accreditation Criteria</a>
+            </div>
+          </div>
+
+          <p class="member-empty-msg" id="hotel-no-match" hidden>No hotel members match the selected filter criteria.</p>
+          <div class="member-grid" id="hotel-grid" data-list="hotel" hidden></div>
         </section>
-        <section class="member-group" data-section="industry" hidden>
-          <h2>Industry Partners</h2>
-          <div class="member-grid" data-list="industry"></div>
+
+        <!-- Category B: Industry Partners -->
+        <section class="member-tabpanel" id="panel-industry" role="tabpanel" aria-labelledby="tab-industry" tabindex="0" hidden>
+          <div class="member-panel-intro">
+            <div>
+              <h2>Industry Partners</h2>
+              <p>Relevant hospitality suppliers, consultants, technology providers, and service providers.</p>
+            </div>
+            <span class="member-panel-badge">Supply &amp; Operations Network</span>
+          </div>
+
+          <form class="member-filters" id="industry-filters" action="#" method="get" onsubmit="return false;">
+            <label for="industry-search">Search
+              <input type="search" id="industry-search" name="search" placeholder="Search by organisation name..." autocomplete="off" />
+            </label>
+            <label for="industry-type">Partner Type
+              <select id="industry-type" name="partnerType">
+                <option value="">All partner types</option>
+                <option value="Hospitality Supplier">Hospitality Supplier</option>
+                <option value="Consultant">Consultant</option>
+                <option value="Technology Provider">Technology Provider</option>
+                <option value="Training Provider">Training Provider</option>
+                <option value="Professional Service">Professional Service</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+            <label for="industry-district">District
+              <select id="industry-district" name="district">
+                <option value="">All districts</option>
+                <option>Alluri Sitharama Raju</option>
+                <option>Anakapalli</option>
+                <option>Ananthapuramu</option>
+                <option>Annamayya</option>
+                <option>Bapatla</option>
+                <option>Chittoor</option>
+                <option>Dr. B.R. Ambedkar Konaseema</option>
+                <option>East Godavari</option>
+                <option>Eluru</option>
+                <option>Guntur</option>
+                <option>Kakinada</option>
+                <option>Krishna</option>
+                <option>Kurnool</option>
+                <option>Nandyal</option>
+                <option>NTR</option>
+                <option>Palnadu</option>
+                <option>Parvathipuram Manyam</option>
+                <option>Prakasam</option>
+                <option>Sri Potti Sriramulu Nellore</option>
+                <option>Sri Sathya Sai</option>
+                <option>Srikakulam</option>
+                <option>Tirupati</option>
+                <option>Visakhapatnam</option>
+                <option>Vizianagaram</option>
+                <option>West Godavari</option>
+                <option>YSR Kadapa</option>
+              </select>
+            </label>
+            <button class="ks-button ks-button-secondary" type="reset">Clear filters</button>
+          </form>
+
+          <!-- Empty State for Industry Partners -->
+          <div class="panel member-empty-card" id="industry-empty-state">
+            <div class="member-empty-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Industry Partner Directory</h3>
+            <p class="member-empty-text">Verified industry partners will appear here as ASHA's partner network is published.</p>
+            <div class="ks-button-row" style="justify-content: center;">
+              <a class="ks-button ks-button-primary" href="membership.html#apply">Partner With ASHA</a>
+              <a class="ks-button ks-button-secondary" href="contact.html">Secretariat Partnership Enquiry</a>
+            </div>
+          </div>
+
+          <p class="member-empty-msg" id="industry-no-match" hidden>No industry partners match the selected filter criteria.</p>
+          <div class="member-grid" id="industry-grid" data-list="industry" hidden></div>
         </section>
-        <section class="member-group" data-section="institution" hidden>
-          <h2>Institutional Partners</h2>
-          <div class="member-grid" data-list="institution"></div>
+
+        <!-- Category C: Institutional Partners -->
+        <section class="member-tabpanel" id="panel-institution" role="tabpanel" aria-labelledby="tab-institution" tabindex="0" hidden>
+          <div class="member-panel-intro">
+            <div>
+              <h2>Institutional Partners</h2>
+              <p>Tourism bodies, universities, academic institutions, and hospitality associations collaborating on statewide development.</p>
+            </div>
+            <span class="member-panel-badge">Institutional &amp; Academic Alliances</span>
+          </div>
+
+          <form class="member-filters" id="institution-filters" action="#" method="get" onsubmit="return false;">
+            <label for="institution-search">Search
+              <input type="search" id="institution-search" name="search" placeholder="Search by institution name..." autocomplete="off" />
+            </label>
+            <label for="institution-type">Institution Type
+              <select id="institution-type" name="institutionType">
+                <option value="">All institution types</option>
+                <option value="Tourism Body">Tourism Body</option>
+                <option value="University / Academic Institution">University / Academic Institution</option>
+                <option value="Hospitality Association">Hospitality Association</option>
+                <option value="Government Body / Public Institution">Government Body / Public Institution</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+            <label for="institution-district">District / Region
+              <select id="institution-district" name="district">
+                <option value="">All districts</option>
+                <option>Alluri Sitharama Raju</option>
+                <option>Anakapalli</option>
+                <option>Ananthapuramu</option>
+                <option>Annamayya</option>
+                <option>Bapatla</option>
+                <option>Chittoor</option>
+                <option>Dr. B.R. Ambedkar Konaseema</option>
+                <option>East Godavari</option>
+                <option>Eluru</option>
+                <option>Guntur</option>
+                <option>Kakinada</option>
+                <option>Krishna</option>
+                <option>Kurnool</option>
+                <option>Nandyal</option>
+                <option>NTR</option>
+                <option>Palnadu</option>
+                <option>Parvathipuram Manyam</option>
+                <option>Prakasam</option>
+                <option>Sri Potti Sriramulu Nellore</option>
+                <option>Sri Sathya Sai</option>
+                <option>Srikakulam</option>
+                <option>Tirupati</option>
+                <option>Visakhapatnam</option>
+                <option>Vizianagaram</option>
+                <option>West Godavari</option>
+                <option>YSR Kadapa</option>
+              </select>
+            </label>
+            <button class="ks-button ks-button-secondary" type="reset">Clear filters</button>
+          </form>
+
+          <!-- Empty State for Institutional Partners -->
+          <div class="panel member-empty-card" id="institution-empty-state">
+            <div class="member-empty-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 18h16M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l10 5H2l10-5z"/></svg>
+            </div>
+            <h3>Institutional Partner Directory</h3>
+            <p class="member-empty-text">Verified institutional partners will appear here as partnerships are confirmed and published.</p>
+            <p class="member-empty-subtext">Verified institutional partners will be listed here.</p>
+            <div class="ks-button-row" style="justify-content: center;">
+              <a class="ks-button ks-button-primary" href="contact.html">Partner With ASHA</a>
+              <a class="ks-button ks-button-secondary" href="contact.html">Institutional Liaison</a>
+            </div>
+          </div>
+
+          <p class="member-empty-msg" id="institution-no-match" hidden>No institutional partners match the selected filter criteria.</p>
+          <div class="member-grid" id="institution-grid" data-list="institution" hidden></div>
         </section>
       </div>
     </section>
@@ -143,15 +310,21 @@
   <template id="member-card-template">
     <article class="member-card">
       <div class="member-card-media">
-        <img data-field="image" alt="" />
-        <span class="member-card-fallback" data-field="fallback" hidden></span>
+        <img class="member-card-img" data-field="image" alt="" loading="lazy" />
+        <span class="member-card-fallback" data-field="fallback" aria-hidden="true"></span>
       </div>
-      <div>
-        <p class="member-card-category" data-field="category"></p>
-        <h3 data-field="name"></h3>
+      <div class="member-card-body">
+        <div class="member-card-badge-row">
+          <span class="member-card-badge" data-field="badge"></span>
+        </div>
+        <h3 class="member-card-name" data-field="name"></h3>
         <p class="member-card-meta" data-field="meta"></p>
         <p class="member-card-profile" data-field="profile"></p>
-        <a class="member-card-link" data-field="website" rel="noopener noreferrer">Website</a>
+        <div class="member-card-actions">
+          <a class="member-card-link" data-field="website" target="_blank" rel="noopener noreferrer">
+            <span data-field="website-label">View Website</span> &rarr;
+          </a>
+        </div>
       </div>
     </article>
   </template>
@@ -180,6 +353,6 @@
   </footer>
   <script src="js/main.js?v=ia13"></script>
   <script src="js/members-data.js"></script>
-  <script src="js/members.js"></script>
+  <script src="js/members.js?v=ia24"></script>
 </body>
 </html>

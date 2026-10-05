@@ -344,13 +344,13 @@ async function processSubmission(type, body) {
   // 1. Honeypot Anti-Spam Check
   const honeypot = cleanString(body.website || body["hp-website"], 100);
   if (honeypot.length > 0) {
-    const fakeAppId = type === "membership" ? generateApplicationId() : undefined;
+    const mockAppId = type === "membership" ? generateApplicationId() : undefined;
     return {
       status: 200,
       ok: true,
-      applicationId: fakeAppId,
+      applicationId: mockAppId,
       message: type === "membership"
-        ? `Your application${fakeAppId ? ` (Reference ID: ${fakeAppId})` : ""} has been received and is pending review by the ASHA Secretariat.`
+        ? `Your application${mockAppId ? ` (Reference ID: ${mockAppId})` : ""} has been received and is pending review by the ASHA Secretariat.`
         : "Your enquiry has been received by the ASHA Secretariat."
     };
   }
