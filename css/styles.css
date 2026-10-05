@@ -371,10 +371,7 @@ nav.primary .nav-sub a[aria-current="page"] {
 }
 
 .mission-nav-link .nav-idx {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--accent);
-  opacity: 0.85;
+  display: none;
 }
 
 .mission-nav-link:hover {
