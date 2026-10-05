@@ -94,7 +94,7 @@
 
     <section class="ks-section inner-section--tint" id="apply">
       <div class="wrap contact-grid">
-        <form class="panel asha-form" id="membership-form" novalidate>
+        <form class="panel asha-form" id="membership-form" action="/api/membership" method="POST" novalidate>
           <h2>Membership Application</h2>
           <p>Submit your property or organisation details for accreditation review by the secretariat. Submitting this form initiates credential verification in accordance with Association criteria. Read the <a href="disclaimer.html">membership disclaimer</a>.</p>
 
@@ -187,12 +187,12 @@
             <input id="app-privacy" name="privacy" type="checkbox" required />
             <label for="app-privacy">I consent to ASHA storing this application so the secretariat can review it and respond, as described in the <a href="privacy.html">Privacy</a> page. ASHA will not share it for marketing.</label>
           </div>
-          <p class="form-error" data-form-error hidden>Please complete the required fields and the privacy consent.</p>
+          <p class="form-error" data-form-error role="alert" aria-live="assertive" tabindex="-1" hidden>Please complete the required fields and the privacy consent.</p>
 
           <div class="ks-button-row">
             <button class="ks-button ks-button-primary" type="submit">Submit application</button>
           </div>
-          <p class="form-status" id="membership-status">Thank you. We have received your application.</p>
+          <p class="form-status" id="membership-status" role="status" aria-live="polite" tabindex="-1">Thank you. We have received your application.</p>
         </form>
 
         <aside class="panel">

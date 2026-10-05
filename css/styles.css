@@ -725,6 +725,14 @@ nav.primary a.nav-cta[aria-current="page"] {
   transform: scale(0.98);
 }
 
+.ks-button:disabled,
+.ks-button[aria-disabled="true"] {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none !important;
+  pointer-events: none;
+}
+
 a.ks-button-primary,
 .ks-button-primary {
   background: var(--accent);
@@ -1403,6 +1411,11 @@ textarea {
   margin: 0 0 8px;
   color: var(--accent-deep);
   font-weight: 600;
+}
+
+.form-status:focus:not(:focus-visible),
+.form-error:focus:not(:focus-visible) {
+  outline: none;
 }
 
 input:user-invalid,

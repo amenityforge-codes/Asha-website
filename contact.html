@@ -58,7 +58,7 @@
 
     <section class="ks-section reveal" style="padding-top: 0;">
       <div class="wrap contact-grid">
-        <form class="panel asha-form" id="contact-form" novalidate>
+        <form class="panel asha-form" id="contact-form" action="/api/contact" method="POST" novalidate>
           <h2>Secretariat &amp; Institutional Liaison</h2>
           <p>Enquiries submitted via this portal are logged for review by the secretariat. For urgent departmental correspondence or statutory representation, please state the department or authority concerned.</p>
 
@@ -101,12 +101,12 @@
             <input id="privacy" name="privacy" type="checkbox" required />
             <label for="privacy">I consent to ASHA storing this enquiry so the secretariat can respond, as described in the <a href="privacy.html">Privacy</a> page. ASHA will not share it for marketing.</label>
           </div>
-          <p class="form-error" data-form-error hidden>Please complete the required fields and the privacy consent.</p>
+          <p class="form-error" data-form-error role="alert" aria-live="assertive" tabindex="-1" hidden>Please complete the required fields and the privacy consent.</p>
 
           <div class="ks-button-row">
             <button class="ks-button ks-button-primary" type="submit">Send enquiry</button>
           </div>
-          <p class="form-status" id="form-status">Thank you. We have received your enquiry.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1">Thank you. We have received your enquiry.</p>
         </form>
 
         <aside class="panel">

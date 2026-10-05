@@ -76,11 +76,13 @@
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  function bindHoldingForm(form) {
+  function bindProductionForm(form) {
     const error = form.querySelector("[data-form-error]");
     const status = form.querySelector(".form-status");
     const category = form.querySelector("[name='category']");
     const classification = form.querySelector("[name='classification']");
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn ? submitBtn.textContent : "Submit";
 
     function syncHotelClassification() {
       if (!category || !classification) return;
@@ -93,28 +95,127 @@
     }
 
     form.addEventListener("input", function () {
-      if (error) error.hidden = true;
-      if (status) status.classList.remove("show");
+      if (error) {
+        error.hidden = true;
+        error.textContent = "";
+      }
+      if (status) {
+        status.classList.remove("show");
+        status.textContent = "";
+      }
     });
 
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", async function (event) {
       event.preventDefault();
-      const trap = form.querySelector("[data-honeypot]");
-      if (trap && trap.value.trim()) return;
+
+      // Prevent duplicate submission while in progress
+      if (form.dataset.submitting === "true") return;
+
       syncHotelClassification();
+
+      // Client-side HTML5 validity check
       if (!form.checkValidity()) {
         form.reportValidity();
-        if (error) error.hidden = false;
+        if (error) {
+          error.textContent = "Please complete all required fields and accept the privacy consent.";
+          error.hidden = false;
+        }
         return;
       }
-      if (error) error.hidden = true;
-      if (status) status.classList.add("show");
-      form.reset();
-      syncHotelClassification();
+
+      // Collect form data as key-value JSON payload
+      const formData = new FormData(form);
+      const payload = {};
+      formData.forEach(function (value, key) {
+        payload[key] = value;
+      });
+      // Ensure boolean for privacy consent
+      payload.privacy = Boolean(form.querySelector("[name='privacy']") && form.querySelector("[name='privacy']").checked);
+
+      // Transition to Submitting state
+      form.dataset.submitting = "true";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.setAttribute("aria-disabled", "true");
+        submitBtn.textContent = form.id === "membership-form" ? "Submitting application..." : "Sending enquiry...";
+      }
+      if (error) {
+        error.hidden = true;
+        error.textContent = "";
+      }
+      if (status) {
+        status.classList.remove("show");
+        status.textContent = "";
+      }
+
+      const isMembership = form.id === "membership-form";
+      const endpoint = form.getAttribute("action") || (isMembership ? "/api/membership" : "/api/contact");
+
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json().catch(function () {
+          return { ok: false, error: null };
+        });
+
+        if (response.ok && data.ok) {
+          // SUCCESS state
+          if (status) {
+            status.textContent = data.message || (isMembership
+              ? "Your application has been received and is pending review by the ASHA Secretariat."
+              : "Your enquiry has been received by the ASHA Secretariat.");
+            status.classList.add("show");
+            status.setAttribute("role", "status");
+            status.setAttribute("aria-live", "polite");
+            status.focus();
+          }
+          form.reset();
+          syncHotelClassification();
+        } else {
+          // ERROR state - preserve entered form data, do not reset!
+          const fallbackErr = isMembership
+            ? "We could not submit your application right now. Please try again or contact the ASHA Secretariat directly."
+            : "We could not submit your enquiry right now. Please try again or contact the ASHA Secretariat directly.";
+          if (error) {
+            error.textContent = data.error || fallbackErr;
+            error.hidden = false;
+            error.setAttribute("role", "alert");
+            error.setAttribute("aria-live", "assertive");
+            error.focus();
+          }
+        }
+      } catch (err) {
+        // Network / Unexpected error - preserve entered form data!
+        const fallbackErr = isMembership
+          ? "We could not submit your application right now. Please try again or contact the ASHA Secretariat directly."
+          : "We could not submit your enquiry right now. Please try again or contact the ASHA Secretariat directly.";
+        if (error) {
+          error.textContent = fallbackErr;
+          error.hidden = false;
+          error.setAttribute("role", "alert");
+          error.setAttribute("aria-live", "assertive");
+          error.focus();
+        }
+      } finally {
+        // Restore submit button state
+        delete form.dataset.submitting;
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.removeAttribute("aria-disabled");
+          submitBtn.textContent = originalBtnText;
+        }
+      }
     });
   }
 
-  document.querySelectorAll(".asha-form").forEach(bindHoldingForm);
+  document.querySelectorAll(".asha-form").forEach(bindProductionForm);
 
   const links = document.querySelectorAll(".obj-side a");
   const articles = document.querySelectorAll(".obj-article");
