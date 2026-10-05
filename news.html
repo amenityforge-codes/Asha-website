@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>News and Events | ASHA</title>
-  <meta name="description" content="News and events from the Star Hotels Association of Andhra Pradesh." />
+  <meta name="description" content="Official communications and circulars from the Star Hotels Association of Andhra Pradesh alongside the official Andhra Pradesh tourism events calendar." />
+  <link rel="canonical" href="https://asha-website-three.vercel.app/news.html" />
   <meta property="og:title" content="News and Events | ASHA" />
-  <meta property="og:description" content="News and events from the Star Hotels Association of Andhra Pradesh." />
+  <meta property="og:description" content="Official communications and circulars from the Star Hotels Association of Andhra Pradesh alongside the official Andhra Pradesh tourism events calendar." />
   <meta property="og:image" content="https://asha-website-three.vercel.app/assets/og-image.png" />
   <meta property="og:url" content="https://asha-website-three.vercel.app/news.html" />
   <meta property="og:type" content="website" />
@@ -14,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=ia24" />
+  <link rel="stylesheet" href="css/styles.css?v=ia25" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -61,31 +62,57 @@
 
     <section class="ks-section" style="padding-top: 0;">
       <div class="wrap news-tabs" data-tabs>
-        <div class="news-tablist" role="tablist" aria-label="News categories">
+        <div class="news-tablist" role="tablist" aria-label="News and Event categories">
           <button type="button" role="tab" id="tab-btn-asha" aria-selected="true" aria-controls="tab-asha">Specific ASHA News</button>
+          <button type="button" role="tab" id="tab-btn-events" aria-selected="false" aria-controls="tab-events">ASHA Events &amp; Meetings</button>
           <button type="button" role="tab" id="tab-btn-tourism" aria-selected="false" aria-controls="tab-tourism">Broad Tourism Andhra Pradesh News</button>
         </div>
 
         <!-- 1. Specific ASHA News -->
-        <div class="news-panel" role="tabpanel" id="tab-asha" aria-labelledby="tab-btn-asha" data-updates data-kind="news,representation,meeting,campaign,asha">
+        <div class="news-panel" role="tabpanel" id="tab-asha" aria-labelledby="tab-btn-asha">
           <h2>Specific ASHA News</h2>
-          <p class="ks-section-sub">Official statements, government representations, policy advisories, meeting notices, and updates from the Star Hotels Association of Andhra Pradesh.</p>
+          <p class="ks-section-sub">Official statements, government representations, policy advisories, and administrative updates from the Star Hotels Association of Andhra Pradesh.</p>
           
-          <div class="update-list" data-updates-list></div>
-          <p class="update-empty" data-updates-empty hidden>No official statements listed at this time.</p>
+          <div class="update-list" data-news-list hidden></div>
 
-          <div style="background: var(--paper-deep); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: 28px; margin-top: 24px; max-width: 48rem;">
-            <p class="update-date">Official Association Communications</p>
-            <h3 style="margin: 0 0 10px; font-size: 1.25rem;">Representations &amp; Policy Advocacy</h3>
-            <p class="update-empty" data-updates-needs style="display: block; margin: 0; font-size: 0.95rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 12px;">Official circulars and notifications for the current quarter are dispatched directly to accredited member properties and will appear here upon public publication.</p>
+          <div class="client-data-required client-data-required--block" data-news-empty style="text-align: left; padding: 26px; max-width: 48rem;">
+            <div style="margin-bottom: 12px;">
+              <span class="client-data-required">ASHA NEWS DATA REQUIRED</span>
+            </div>
+            <h3 style="margin: 0 0 8px; font-size: 1.15rem; color: var(--navy); font-family: var(--font-heading);">Official Communications &amp; Circulars Registry</h3>
+            <p style="margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.55;">Official statements, policy submissions, and institutional circulars from the ASHA Secretariat are recorded here upon formal publication. No verified news records have been supplied to date.</p>
           </div>
         </div>
 
-        <!-- 2. Broad Tourism Andhra Pradesh News -->
-        <div class="news-panel" role="tabpanel" id="tab-tourism" aria-labelledby="tab-btn-tourism" hidden data-updates data-kind="tourism,ap-tourism,state-tourism">
+        <!-- 2. ASHA Events & Meetings -->
+        <div class="news-panel" role="tabpanel" id="tab-events" aria-labelledby="tab-btn-events" hidden>
+          <h2>ASHA Events &amp; Meetings</h2>
+          <p class="ks-section-sub">General Body meetings, Executive Committee sessions, training workshops, and industry conferences convened by ASHA.</p>
+
+          <div class="update-list" data-events-list hidden></div>
+
+          <div class="client-data-required client-data-required--block" data-events-empty style="text-align: left; padding: 26px; max-width: 48rem;">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+              <span class="client-data-required">ASHA EVENT DATA REQUIRED</span>
+              <span class="client-data-required">CLIENT PHOTOS REQUIRED</span>
+            </div>
+            <h3 style="margin: 0 0 8px; font-size: 1.15rem; color: var(--navy); font-family: var(--font-heading);">Association Events &amp; Assembly Registry</h3>
+            <p style="margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.55;">Official scheduling for General Body meetings, Executive Committee sessions, professional development workshops, and industry conferences will appear here upon secretariat notification.</p>
+          </div>
+        </div>
+
+        <!-- 3. Broad Tourism Andhra Pradesh News / Tourism Information -->
+        <div class="news-panel" role="tabpanel" id="tab-tourism" aria-labelledby="tab-btn-tourism" hidden>
           <h2>Broad Tourism Andhra Pradesh News</h2>
-          <p class="ks-section-sub">From the State's 2025–26 tourism events calendar, covering culture, pilgrimage, nature, and destination festivals across all 26 districts. See <a href="https://tourism.ap.gov.in/" rel="noopener noreferrer" target="_blank">tourism.ap.gov.in</a>.</p>
+          <p class="ks-section-sub">State tourism developments and calendar from the Department of Tourism, Government of Andhra Pradesh (<a href="https://tourism.ap.gov.in/" rel="noopener noreferrer" target="_blank">tourism.ap.gov.in</a>).</p>
           
+          <div style="background: var(--paper-deep); border: 1px solid var(--rule); border-left: 4px solid var(--gold); border-radius: var(--radius-md); padding: 18px 22px; margin-bottom: 24px; max-width: 52rem;">
+            <strong style="color: var(--navy); display: block; margin-bottom: 6px; font-size: 0.95rem;">Andhra Pradesh Tourism / Tourism Information Notice</strong>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.55;">
+              The festival dates below are drawn directly from the official State 2025&ndash;26 tourism calendar published by the Department of Tourism, Government of Andhra Pradesh. These events are organized by state and district authorities, <strong>not by ASHA</strong>. They are presented here as an operational reference for member hotel occupancy planning and staffing across the 26 districts.
+            </p>
+          </div>
+
           <ol class="news-activity">
             <li>
               <p class="update-date">5-8 June 2025</p>
@@ -128,9 +155,6 @@
               <p>Araku Valley. Listed on the State tourism calendar.</p>
             </li>
           </ol>
-
-          <div class="update-list" data-updates-list></div>
-          <p class="update-empty" data-updates-empty hidden>No additional tourism notices listed yet.</p>
         </div>
       </div>
     </section>
@@ -153,8 +177,8 @@
           <p>Vijayawada or Amaravati.<br /><a href="contact.html">Contact</a></p>
         </div>
       </div>
-      <p class="legal">© <span id="year">2026</span> Star Hotels Association of Andhra Pradesh.</p>
-      <p class="legal-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of use</a> · <a href="disclaimer.html">Membership disclaimer</a></p>
+      <p class="legal">&copy; <span id="year">2026</span> Star Hotels Association of Andhra Pradesh.</p>
+      <p class="legal-links"><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms of use</a> &middot; <a href="disclaimer.html">Membership disclaimer</a></p>
     </div>
     <img class="foot-skyline" src="assets/ap-skyline.png?v=ap5" alt="" />
   </footer>
