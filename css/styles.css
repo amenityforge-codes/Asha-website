@@ -3415,3 +3415,215 @@ footer.site a {
     border-bottom: 1px solid var(--rule);
   }
 }
+
+/* --- CLIENT DATA REQUIRED (Development & Review Indicator) --- */
+.client-data-required {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #b42318;
+  background: #fef3f2;
+  border: 1px solid #fecdca;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.client-data-required::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d92d20;
+}
+
+.client-data-required--block {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 24px 20px;
+  margin: 16px 0;
+  border-radius: var(--radius-lg);
+  font-size: 0.82rem;
+  border: 1px dashed #fecdca;
+}
+
+.client-data-required--block::before {
+  display: block;
+  margin: 0 auto 8px;
+  width: 8px;
+  height: 8px;
+}
+
+.client-data-required--photo {
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 240px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  background: #fef3f2;
+  border: 1px dashed #fecdca;
+  border-radius: var(--radius-lg);
+  color: #b42318;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.client-data-required--photo::before {
+  display: none;
+}
+
+/* --- LEADERSHIP ARCHITECTURE --- */
+.leader-grid-duo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin: 32px 0 48px;
+}
+
+.leader-card-primary {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  padding: 28px;
+  background: var(--raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.leader-card-photo-wrap {
+  width: 100%;
+}
+
+.leader-card-info h3 {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--navy);
+  line-height: 1.25;
+}
+
+.leader-card-role {
+  margin: 0 0 4px;
+  color: var(--accent-deep);
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.leader-card-liaison {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.leader-card-bio {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Institutional Credibility Cards */
+.credibility-section {
+  margin: 48px 0;
+}
+
+.credibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.credibility-card {
+  padding: 28px;
+  background: var(--raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.credibility-card h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--navy);
+}
+
+.credibility-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.credibility-dl {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 10px 16px;
+  font-size: 0.92rem;
+  margin: 16px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+
+.credibility-dl dt {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.credibility-dl dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Event Photo / ASHA in Action Gallery */
+.events-gallery-wrap {
+  margin-top: 24px;
+}
+
+@media (max-width: 980px) {
+  .leader-grid-duo {
+    grid-template-columns: 1fr;
+  }
+
+  .credibility-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .leader-card-primary {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-card-photo-wrap .client-data-required--photo {
+    max-width: 100%;
+  }
+
+  .credibility-dl {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .credibility-dl dt {
+    margin-top: 8px;
+  }
+}
+
