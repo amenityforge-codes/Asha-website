@@ -1631,14 +1631,7 @@ footer.site a {
 }
 
 .foot-needs {
-  display: grid;
-  gap: 8px;
-  max-width: 62ch;
-  margin-top: 16px;
-}
-
-.foot-needs .needs-flag {
-  margin: 0;
+  display: none !important;
 }
 
 .consent a {
