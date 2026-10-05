@@ -3979,30 +3979,4 @@ footer.site a {
   }
 }
 
-/* --- PRESIDENT'S STATEMENT SECTION --- */
-.president-statement-card {
-  background: var(--paper-deep);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius-lg);
-  padding: 40px 28px;
-  text-align: center;
-  max-width: 52rem;
-  margin: 0 auto;
-}
-
-.president-statement-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.president-statement-body {
-  margin-top: 24px;
-  padding-top: 24px;
-  border-top: 1px solid var(--rule);
-  text-align: left;
-  color: var(--ink);
-  line-height: 1.7;
-}
-
 

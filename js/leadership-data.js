@@ -54,12 +54,5 @@ window.ASHA_LEADERSHIP = {
 
   // ASHA in Action / Real Event Photos (array of verified event objects)
   // Schema: { title: "", date: "", location: "", eventType: "", photo: "", description: "" }
-  events: [],
-
-  // Official Message / Statement from the President
-  // Schema: { title: "", date: "", content: "", photo: "", verified: true }
-  presidentStatement: null
+  events: []
 };
-
-// Global President's Statement entry point (strictly null until verified client data is provided)
-window.ASHA_PRESIDENT_STATEMENT = null;
