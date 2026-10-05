@@ -13,3 +13,6 @@ Thumbs.db
 # Secrets
 .env
 .env.*
+
+# Archives
+*.zip
