@@ -87,12 +87,223 @@
  * }
  */
 
-window.ASHA_INITIATIVES = [];
-window.ASHA_NEWS = [];
-window.ASHA_EVENTS = [];
-window.ASHA_GOVERNMENT_REPRESENTATIONS = [];
+window.ASHA_INITIATIVES = [
+  {
+    id: "init-gst-representation-2025",
+    title: "Representation on Input Tax Credit (ITC) for GST to Hon'ble Tourism Minister",
+    category: "advocacy",
+    description: "The Andhra Pradesh Star Hotels Association submitted a representation concerning Input Tax Credit (ITC) under GST to Hon'ble Tourism Minister Kandula Durgesh in Vijayawada, advocating for a 5% GST structure with Input Tax Credit to alleviate operational and renovation cost burdens on hotels and restaurants.",
+    date: "2025-10-08",
+    location: "Vijayawada",
+    participants: "President R.V. Swamy, General Secretary S. Murthy Chittoory, Council Member Sharan V.",
+    outcome: "Detailed memorandum submitted urging 5% GST with ITC; presented for ministerial review and state advocacy",
+    status: "Completed",
+    image: "assets/events/tourism-minister-gst-representation.jpeg",
+    link: "news-gst-representation.html"
+  }
+];
+
+window.ASHA_NEWS = [
+  {
+    id: "news-cm-meeting-2026",
+    title: "ASHA Representatives Meet the Chief Minister of Andhra Pradesh",
+    category: "Official Meeting / Government Engagement",
+    date: "2026-06-26",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "A delegation representing the association met the Chief Minister of Andhra Pradesh. The supplied photographs document the meeting and presentation materials. The accompanying Telugu newspaper clipping provides additional media context.",
+    description: "A delegation representing the Star Hotels Association of Andhra Pradesh (ASHA) met the Hon’ble Chief Minister of Andhra Pradesh. The delegation presented association materials and representations regarding the state's hospitality sector, accompanied by photographic documentation and regional press coverage.",
+    image: "assets/events/cm-meeting-presentation.jpeg",
+    thumbnail: "assets/events/cm-meeting-presentation.jpeg",
+    location: "Vijayawada / Amaravati",
+    detailUrl: "news-cm-meeting.html",
+    gallery: [
+      {
+        id: "img-presentation",
+        src: "assets/events/cm-meeting-presentation.jpeg",
+        originalFile: "assets/events/Pic 2026-06-26 CM Meeting.jpeg",
+        title: "Presentation of Association Materials",
+        alt: "ASHA delegation presenting official association representation and materials to the Chief Minister of Andhra Pradesh",
+        caption: "ASHA representatives presenting official association documents and hospitality development materials to the Hon’ble Chief Minister of Andhra Pradesh.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-delegation",
+        src: "assets/events/cm-meeting-delegation.jpeg",
+        originalFile: "assets/events/Pic 2026-06-26 CM Meeting (1).jpeg",
+        title: "Delegation with the Chief Minister",
+        alt: "Formal delegation of the Star Hotels Association of Andhra Pradesh with the Chief Minister in front of the Andhra Pradesh State emblem",
+        caption: "Delegation representing the Star Hotels Association of Andhra Pradesh with the Hon’ble Chief Minister in front of the Andhra Pradesh State emblem.",
+        type: "event-photo"
+      },
+      {
+        id: "img-portrait",
+        src: "assets/events/cm-meeting-portrait.jpeg",
+        originalFile: "assets/events/Pic 2026-06-26 CM Meeting (3).jpeg",
+        title: "Executive Representation",
+        alt: "Association executive representative alongside the Chief Minister of Andhra Pradesh",
+        caption: "Association executive representative alongside the Hon’ble Chief Minister during the delegation meeting.",
+        type: "event-photo"
+      },
+      {
+        id: "img-clipping",
+        src: "assets/events/cm-meeting-press-clipping.jpeg",
+        originalFile: "assets/events/Pic 2026-06-26 CM Meeting (2).jpeg",
+        title: "Regional Telugu Newspaper Coverage",
+        alt: "Telugu newspaper report published by Andhra Jyothy covering the Star Hotels Association meeting with the Chief Minister",
+        caption: "Telugu newspaper coverage (Andhra Jyothy print edition). Provided as supporting media context; subject to publication approval and copyright verification.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "Andhra Jyothy (ఆంధ్రజ్యోతి)",
+      portal: "www.andhrajyothy.com",
+      clippingSrc: "assets/events/cm-meeting-press-clipping.jpeg",
+      clippingOriginal: "assets/events/Pic 2026-06-26 CM Meeting (2).jpeg",
+      caption: "Telugu newspaper coverage (Andhra Jyothy print edition). Displayed as supporting media reference; subject to publication approval.",
+      verificationNotice: "Regional press coverage is archived for contextual media reference. Specific statements and financial references reported in press clippings are subject to formal confirmation by the ASHA Secretariat.",
+      // Internal review metadata (retained for administrative audit; not rendered as public alarm banners)
+      internalReviewNotes: {
+        provisionalDate: "26 June 2026 (based on image filenames; newspaper report datelined 29 June)",
+        financialReferenceFlagged: "₹50 Lakh reference in Andhra Jyothy report flagged for Secretariat review; omitted from official association statements until ratified",
+        attendeesMentionedInClipping: "Clipping reports association representatives met CM Chandrababu (names cited: RV Swamy, Pavan Karthik, C. Murthy, Malineni Rajaiah, Muttavarapu Murali Krishna, V. Sharan); preserved without unverified endorsement"
+      }
+    }
+  },
+  {
+    id: "news-gst-representation-2025",
+    title: "Representation on ITC for GST Submitted to Hon'ble Tourism Minister Kandula Durgesh",
+    category: "Government Representation / GST Policy / Hospitality Industry",
+    date: "2025-10-08",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "The Andhra Pradesh Star Hotels Association submitted a representation concerning Input Tax Credit (ITC) under GST to Hon'ble Tourism Minister Kandula Durgesh. The newspaper report discusses GST-related concerns affecting the hospitality sector, including hotels and restaurants, and requests consideration of the industry's representation.",
+    description: "The Andhra Pradesh Star Hotels Association submitted a representation concerning Input Tax Credit (ITC) under GST to Hon'ble Tourism Minister Kandula Durgesh in Vijayawada. The submission highlighted the necessity of a 5% GST structure with Input Tax Credit to alleviate cost burdens on hotels and restaurants, reduce capital expenditure inflation on renovations, and promote tourism growth.",
+    image: "assets/events/tourism-minister-gst-representation.jpeg",
+    thumbnail: "assets/events/tourism-minister-gst-representation.jpeg",
+    location: "Vijayawada",
+    detailUrl: "news-gst-representation.html",
+    gallery: [
+      {
+        id: "img-tourism-delegation",
+        src: "assets/events/tourism-minister-gst-representation.jpeg",
+        originalFile: "assets/events/Pic 2025-10-08 Tourism Minister.jpeg",
+        title: "Delegation Submitting Representation to Hon'ble Tourism Minister",
+        alt: "ASHA delegation presenting the official representation on ITC for GST to Hon'ble Tourism Minister Kandula Durgesh",
+        caption: "ASHA leadership delegation presenting the official representation on Input Tax Credit (ITC) under GST to Hon'ble Tourism Minister Kandula Durgesh in Vijayawada.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-tourism-clipping",
+        src: "assets/events/tourism-minister-gst-press-clipping.jpeg",
+        originalFile: "assets/events/News 2025-10-08 bharat ITC Fot GST.jpeg",
+        title: "Regional Newspaper Report (Bharat News)",
+        alt: "Newspaper report in Bharat News titled 'Representation on ITC fot GST Submitted to Hon'ble Tourism Minister Kandula Durgesh'",
+        caption: "Newspaper clipping from Bharat News (Vijayawada, 8 October 2025) detailing the association's representation on GST and Input Tax Credit. Reproduced for archival reference subject to publication permissions.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "Bharat News",
+      portal: "Vijayawada Print Edition",
+      clippingSrc: "assets/events/tourism-minister-gst-press-clipping.jpeg",
+      clippingOriginal: "assets/events/News 2025-10-08 bharat ITC Fot GST.jpeg",
+      caption: "Newspaper coverage (Bharat News, 8 October 2025). Provided as supporting media context; subject to publication permissions.",
+      verificationNotice: "Regional press coverage is archived for contextual reference. The report documents the submission of an industry representation to the Hon'ble Minister; government outcomes and policy changes are subject to official State and GST Council notifications.",
+      internalReviewNotes: {
+        verifiedDate: "8 October 2025 (Bharat News dateline: Vijayawada, October 08)",
+        namesInClipping: "President R.V. Swamy, General Secretary S. Murthy Chittoory, and Council Member Sharan V. (Clipping text prints 'Council Member Sharan V.', whereas submission brief cited S. V. Murthy; verified against clipping)",
+        policyStatus: "Submitted representation urging 5% GST with ITC; no policy change or outcome claimed"
+      }
+    }
+  }
+];
+
+window.ASHA_EVENTS = [
+  {
+    id: "event-cm-meeting-2026",
+    title: "ASHA Representatives Meet the Chief Minister of Andhra Pradesh",
+    type: "meeting",
+    category: "Official Meeting / Government Engagement",
+    date: "2026-06-26",
+    time: "Official Delegation Session",
+    location: "Vijayawada / Amaravati",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "A delegation representing the association met the Chief Minister of Andhra Pradesh. The supplied photographs document the meeting and presentation materials. The accompanying Telugu newspaper clipping provides additional media context.",
+    organizer: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    participants: "ASHA Delegation & State Leadership",
+    image: "assets/events/cm-meeting-presentation.jpeg",
+    thumbnail: "assets/events/cm-meeting-presentation.jpeg",
+    detailUrl: "news-cm-meeting.html",
+    gallery: window.ASHA_NEWS[0].gallery,
+    pressCoverage: window.ASHA_NEWS[0].pressCoverage
+  },
+  {
+    id: "event-gst-representation-2025",
+    title: "Representation on ITC for GST Submitted to Hon'ble Tourism Minister Kandula Durgesh",
+    type: "meeting",
+    category: "Government Representation / GST Policy / Hospitality Industry",
+    date: "2025-10-08",
+    time: "Official Ministerial Consultation",
+    location: "Vijayawada",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "The Andhra Pradesh Star Hotels Association submitted a representation concerning Input Tax Credit (ITC) under GST to Hon'ble Tourism Minister Kandula Durgesh. The newspaper report discusses GST-related concerns affecting the hospitality sector, including hotels and restaurants, and requests consideration of the industry's representation.",
+    organizer: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    participants: "ASHA Delegation (President R.V. Swamy, General Secretary S. Murthy Chittoory, Council Member Sharan V.) & Hon'ble Tourism Minister Kandula Durgesh",
+    image: "assets/events/tourism-minister-gst-representation.jpeg",
+    thumbnail: "assets/events/tourism-minister-gst-representation.jpeg",
+    detailUrl: "news-gst-representation.html",
+    gallery: [
+      {
+        id: "img-tourism-delegation",
+        src: "assets/events/tourism-minister-gst-representation.jpeg",
+        originalFile: "assets/events/Pic 2025-10-08 Tourism Minister.jpeg",
+        title: "Delegation Submitting Representation to Hon'ble Tourism Minister",
+        alt: "ASHA delegation presenting the official representation on ITC for GST to Hon'ble Tourism Minister Kandula Durgesh",
+        caption: "ASHA leadership delegation presenting the official representation on Input Tax Credit (ITC) under GST to Hon'ble Tourism Minister Kandula Durgesh in Vijayawada.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-tourism-clipping",
+        src: "assets/events/tourism-minister-gst-press-clipping.jpeg",
+        originalFile: "assets/events/News 2025-10-08 bharat ITC Fot GST.jpeg",
+        title: "Regional Newspaper Report (Bharat News)",
+        alt: "Newspaper report in Bharat News titled 'Representation on ITC fot GST Submitted to Hon'ble Tourism Minister Kandula Durgesh'",
+        caption: "Newspaper clipping from Bharat News (Vijayawada, 8 October 2025) detailing the association's representation on GST and Input Tax Credit. Reproduced for archival reference subject to publication permissions.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ]
+  }
+];
+
+window.ASHA_GOVERNMENT_REPRESENTATIONS = [
+  {
+    governmentBody: "Office of the Chief Minister, Government of Andhra Pradesh",
+    date: "2026-06-26",
+    purpose: "ASHA delegation meeting and presentation of hospitality sector representations",
+    representatives: "ASHA Delegation",
+    outcome: "Presentation of official materials and state hospitality dialogue",
+    image: "assets/events/cm-meeting-presentation.jpeg",
+    gallery: window.ASHA_NEWS[0].gallery
+  },
+  {
+    governmentBody: "Ministry of Tourism, Culture and Cinematography, Government of Andhra Pradesh",
+    date: "2025-10-08",
+    purpose: "Submission of industry representation regarding Input Tax Credit (ITC) under GST for hotels and restaurants",
+    representatives: "ASHA Delegation (President R.V. Swamy, General Secretary S. Murthy Chittoory, Council Member Sharan V.)",
+    outcome: "Detailed memorandum presented urging 5% GST with ITC; submitted for ministerial review",
+    image: "assets/events/tourism-minister-gst-representation.jpeg"
+  }
+];
+
 window.ASHA_CRISIS_ADVISORIES = [];
 window.ASHA_INDUSTRY_REPORTS = [];
 
 // Backward-compatibility alias
-window.ASHA_UPDATES = [];
+window.ASHA_UPDATES = window.ASHA_NEWS;
+
+

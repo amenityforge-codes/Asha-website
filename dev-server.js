@@ -92,7 +92,13 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  let filePath = pathname === "/" ? "/index.html" : pathname;
+  let decodedPath = "/";
+  try {
+    decodedPath = decodeURIComponent(pathname);
+  } catch (e) {
+    decodedPath = pathname;
+  }
+  let filePath = decodedPath === "/" ? "/index.html" : decodedPath;
   filePath = path.normalize(path.join(ROOT, filePath));
 
   // Security: prevent directory traversal outside ROOT

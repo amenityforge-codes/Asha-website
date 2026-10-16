@@ -15,22 +15,28 @@
   }
 
   // 1. President dynamic update
-  if (data.president && data.president.verified && data.president.name) {
-    const nameEl = document.getElementById("president-name");
-    if (nameEl) nameEl.textContent = data.president.name;
+  if (data.president) {
+    if (data.president.verified && data.president.name) {
+      const nameEl = document.getElementById("president-name");
+      if (nameEl) nameEl.textContent = data.president.name;
+    }
 
-    const bioEl = document.getElementById("president-bio");
-    if (bioEl && data.president.bio) bioEl.textContent = data.president.bio;
+    if (data.president.verified && data.president.bio) {
+      const bioEl = document.getElementById("president-bio");
+      if (bioEl) bioEl.textContent = data.president.bio;
+    }
 
-    const photoEl = document.getElementById("president-photo");
-    if (photoEl && data.president.photo) {
-      const img = document.createElement("img");
-      img.src = data.president.photo;
-      img.alt = data.president.name;
-      img.className = "leader-photo-img";
-      photoEl.innerHTML = "";
-      photoEl.className = "leader-photo-wrap";
-      photoEl.appendChild(img);
+    if (data.president.photo) {
+      const photoEl = document.getElementById("president-photo");
+      if (photoEl) {
+        const img = document.createElement("img");
+        img.src = data.president.photo;
+        img.alt = data.president.name || "President of the Star Hotels Association of Andhra Pradesh";
+        img.className = "leader-photo-img";
+        photoEl.innerHTML = "";
+        photoEl.className = "leader-photo-wrap";
+        photoEl.appendChild(img);
+      }
     }
   }
 
@@ -89,6 +95,64 @@
         card.appendChild(name);
         committeeContainer.appendChild(card);
       });
+    }
+  }
+
+  // 4. ASHA in Action / Field Engagements dynamic rendering
+  if (Array.isArray(data.events) && data.events.length > 0) {
+    const eventsContainer = document.getElementById("events-state");
+    if (eventsContainer) {
+      eventsContainer.className = "leadership-events-list";
+      eventsContainer.innerHTML = "";
+      data.events.forEach(function (evt) {
+        if (!evt || !evt.title) return;
+        const card = document.createElement("article");
+        card.className = "event-action-card";
+
+        if (evt.photo) {
+          const img = document.createElement("img");
+          img.className = "event-action-img";
+          img.src = evt.photo;
+          img.alt = evt.title;
+          img.loading = "lazy";
+          card.appendChild(img);
+        }
+
+        const info = document.createElement("div");
+        info.className = "event-action-info";
+
+        const meta = document.createElement("p");
+        meta.className = "event-action-meta";
+        meta.textContent = (evt.eventType || "Official Engagement") + " \u2022 " + (evt.date || "") + (evt.location ? " \u2022 " + evt.location : "");
+        info.appendChild(meta);
+
+        const h3 = document.createElement("h3");
+        h3.className = "event-action-title";
+        h3.textContent = evt.title;
+        info.appendChild(h3);
+
+        if (evt.description) {
+          const desc = document.createElement("p");
+          desc.className = "event-action-desc";
+          desc.textContent = evt.description;
+          info.appendChild(desc);
+        }
+
+        const links = document.createElement("div");
+        links.className = "card-links-row";
+        links.innerHTML = '<a class="ks-button ks-button-primary" href="' + (evt.detailUrl || "news.html") + '">View Meeting Record & Media &rarr;</a> ' +
+                          '<a class="ks-button ks-button-secondary" href="news.html">News & Events Registry &rarr;</a>';
+        info.appendChild(links);
+
+        card.appendChild(info);
+        eventsContainer.appendChild(card);
+      });
+
+      // Hide trailing placeholder note if present
+      const photoReqNotice = eventsContainer.nextElementSibling;
+      if (photoReqNotice && photoReqNotice.tagName === "P" && photoReqNotice.querySelector(".client-data-required")) {
+        photoReqNotice.style.display = "none";
+      }
     }
   }
 })();

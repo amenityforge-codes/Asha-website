@@ -54,5 +54,24 @@ window.ASHA_LEADERSHIP = {
 
   // ASHA in Action / Real Event Photos (array of verified event objects)
   // Schema: { title: "", date: "", location: "", eventType: "", photo: "", description: "" }
-  events: []
+  events: [
+    {
+      title: "ASHA Representatives Meet the Chief Minister of Andhra Pradesh",
+      date: "2026-06-26",
+      location: "Vijayawada / Amaravati",
+      eventType: "Government Consultation",
+      photo: "assets/events/cm-meeting-presentation.jpeg",
+      detailUrl: "news-cm-meeting.html",
+      description: "A delegation representing the Star Hotels Association of Andhra Pradesh met the Hon’ble Chief Minister to present association materials and discuss hospitality development across Andhra Pradesh."
+    },
+    {
+      title: "Representation on ITC for GST Submitted to Hon'ble Tourism Minister Kandula Durgesh",
+      date: "2025-10-08",
+      location: "Vijayawada",
+      eventType: "Government Representation",
+      photo: "assets/events/tourism-minister-gst-representation.jpeg",
+      detailUrl: "news-gst-representation.html",
+      description: "ASHA leadership delegation met Hon'ble Tourism Minister Kandula Durgesh in Vijayawada to present an official representation regarding Input Tax Credit (ITC) under GST for hotels and restaurants."
+    }
+  ]
 };
