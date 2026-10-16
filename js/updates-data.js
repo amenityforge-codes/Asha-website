@@ -172,6 +172,67 @@ window.ASHA_NEWS = [
     }
   },
   {
+    id: "news-amaravati-ceremony-2025",
+    title: "ASHA Representatives at the Amaravati Foundation Stone-Laying Ceremony",
+    category: "Official Ceremony & Amaravati Development",
+    date: "2025-11-28",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "Representatives of the Star Hotels Association of Andhra Pradesh attended the foundation stone-laying ceremony for 15 public sector banking and insurance offices in Amaravati. The ceremony was addressed by Chief Guest Smt. Nirmala Sitharaman, Hon'ble Union Minister for Finance & Corporate Affairs.",
+    description: "Representatives of the Star Hotels Association of Andhra Pradesh (ASHA) attended the foundation stone-laying ceremony for 15 public sector banking and insurance offices in Amaravati on November 28, 2025. The event was addressed by Chief Guest Smt. Nirmala Sitharaman, Hon'ble Union Minister for Finance & Corporate Affairs, and attended by Andhra Pradesh Chief Minister N. Chandrababu Naidu. The accompanying photographs document association representatives attending the ceremony, presenting representations, and participating at the ceremonial venue.",
+    image: "assets/events/amaravati-ceremony-representation.jpeg",
+    thumbnail: "assets/events/amaravati-ceremony-representation.jpeg",
+    location: "Amaravati",
+    detailUrl: "news-amaravati-ceremony.html",
+    gallery: [
+      {
+        id: "img-amaravati-rep",
+        src: "assets/events/amaravati-ceremony-representation.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-representation.jpeg",
+        title: "Presentation of Sectoral Memorandum to Union Finance Minister",
+        alt: "ASHA representatives presenting official memorandum to Union Finance Minister Smt. Nirmala Sitharaman in Amaravati",
+        caption: "ASHA representatives presenting an official memorandum concerning hospitality and state infrastructure to Union Finance Minister Smt. Nirmala Sitharaman.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-amaravati-outdoor",
+        src: "assets/events/amaravati-ceremony-delegation-outdoor.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-delegation-outdoor.jpeg",
+        title: "ASHA Representatives at the Amaravati Ceremony Venue",
+        alt: "ASHA representatives at the foundation stone-laying ceremony for banking and public insurance offices in Amaravati",
+        caption: "Association representatives attending the foundation stone-laying ceremony for banking and public insurance offices in Amaravati.",
+        type: "event-photo"
+      },
+      {
+        id: "img-amaravati-pavilion",
+        src: "assets/events/amaravati-ceremony-delegation-pavilion.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-delegation-pavilion.jpeg",
+        title: "Representatives at the Ceremonial Pavilion",
+        alt: "ASHA representatives attending the ceremonial assembly in Amaravati",
+        caption: "ASHA representatives inside the ceremonial pavilion at the foundation stone-laying event in Amaravati.",
+        type: "event-photo"
+      },
+      {
+        id: "img-amaravati-stage",
+        src: "assets/events/amaravati-ceremony-stage-inauguration.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-stage-inauguration.jpeg",
+        title: "Ceremonial Stage & Inaugural Dais",
+        alt: "Ceremonial stage backdrop featuring Chief Guest Smt. Nirmala Sitharaman and state leadership for the laying of foundation stone for 15 banking and public insurance offices",
+        caption: "Inaugural dais and stage backdrop at Amaravati featuring Chief Guest Smt. Nirmala Sitharaman, Hon'ble Union Minister for Finance & Corporate Affairs.",
+        type: "event-photo"
+      },
+      {
+        id: "img-amaravati-collage",
+        src: "assets/events/amaravati-ceremony-collage.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-collage.jpeg",
+        title: "Four-Photo Event Montage",
+        alt: "Four-photo collage documenting ASHA representatives at the Amaravati foundation stone-laying ceremony",
+        caption: "Four-photograph archival montage documenting ASHA representatives at the foundation stone-laying ceremony in Amaravati.",
+        type: "event-photo"
+      }
+    ]
+  },
+  {
     id: "news-gst-representation-2025",
     title: "Representation on ITC for GST Submitted to Hon'ble Tourism Minister Kandula Durgesh",
     category: "Government Representation / GST Policy / Hospitality Industry",
@@ -241,6 +302,70 @@ window.ASHA_EVENTS = [
     pressCoverage: window.ASHA_NEWS[0].pressCoverage
   },
   {
+    id: "event-amaravati-ceremony-2025",
+    title: "ASHA Representatives at the Amaravati Foundation Stone-Laying Ceremony",
+    type: "ceremony",
+    category: "Official Ceremony / Government Engagement / Amaravati Infrastructure",
+    date: "2025-11-28",
+    time: "Official Foundation Stone Ceremony",
+    location: "Amaravati",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "Representatives of the Star Hotels Association of Andhra Pradesh (ASHA) attended the foundation stone-laying ceremony for 15 public sector banking and insurance offices in Amaravati on November 28, 2025, addressed by Chief Guest Smt. Nirmala Sitharaman, Hon'ble Union Minister for Finance & Corporate Affairs.",
+    organizer: "Government of Andhra Pradesh & Public Financial Institutions",
+    participants: "ASHA Representatives, Chief Guest Smt. Nirmala Sitharaman, Chief Minister N. Chandrababu Naidu, Banking & Insurance Leaders",
+    image: "assets/events/amaravati-ceremony-representation.jpeg",
+    thumbnail: "assets/events/amaravati-ceremony-representation.jpeg",
+    detailUrl: "news-amaravati-ceremony.html",
+    gallery: [
+      {
+        id: "img-amaravati-rep",
+        src: "assets/events/amaravati-ceremony-representation.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-representation.jpeg",
+        title: "Presentation of Sectoral Memorandum to Union Finance Minister",
+        alt: "ASHA representatives presenting official memorandum to Union Finance Minister Smt. Nirmala Sitharaman in Amaravati",
+        caption: "ASHA representatives presenting an official memorandum concerning hospitality and state infrastructure to Union Finance Minister Smt. Nirmala Sitharaman.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-amaravati-outdoor",
+        src: "assets/events/amaravati-ceremony-delegation-outdoor.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-delegation-outdoor.jpeg",
+        title: "ASHA Representatives at the Amaravati Ceremony Venue",
+        alt: "ASHA representatives at the foundation stone-laying ceremony for banking and public insurance offices in Amaravati",
+        caption: "Association representatives attending the foundation stone-laying ceremony for banking and public insurance offices in Amaravati.",
+        type: "event-photo"
+      },
+      {
+        id: "img-amaravati-pavilion",
+        src: "assets/events/amaravati-ceremony-delegation-pavilion.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-delegation-pavilion.jpeg",
+        title: "Representatives at the Ceremonial Pavilion",
+        alt: "ASHA representatives attending the ceremonial assembly in Amaravati",
+        caption: "ASHA representatives inside the ceremonial pavilion at the foundation stone-laying event in Amaravati.",
+        type: "event-photo"
+      },
+      {
+        id: "img-amaravati-stage",
+        src: "assets/events/amaravati-ceremony-stage-inauguration.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-stage-inauguration.jpeg",
+        title: "Ceremonial Stage & Inaugural Dais",
+        alt: "Ceremonial stage backdrop featuring Chief Guest Smt. Nirmala Sitharaman and state leadership for the laying of foundation stone for 15 banking and public insurance offices",
+        caption: "Inaugural dais and stage backdrop at Amaravati featuring Chief Guest Smt. Nirmala Sitharaman, Hon'ble Union Minister for Finance & Corporate Affairs.",
+        type: "event-photo"
+      },
+      {
+        id: "img-amaravati-collage",
+        src: "assets/events/amaravati-ceremony-collage.jpeg",
+        originalFile: "assets/events/amaravati-ceremony-collage.jpeg",
+        title: "Four-Photo Event Montage",
+        alt: "Four-photo collage documenting ASHA representatives at the Amaravati foundation stone-laying ceremony",
+        caption: "Four-photograph archival montage documenting ASHA representatives at the foundation stone-laying ceremony in Amaravati.",
+        type: "event-photo"
+      }
+    ]
+  },
+  {
     id: "event-gst-representation-2025",
     title: "Representation on ITC for GST Submitted to Hon'ble Tourism Minister Kandula Durgesh",
     type: "meeting",
@@ -289,6 +414,14 @@ window.ASHA_GOVERNMENT_REPRESENTATIONS = [
     outcome: "Presentation of official materials and state hospitality dialogue",
     image: "assets/events/cm-meeting-presentation.jpeg",
     gallery: window.ASHA_NEWS[0].gallery
+  },
+  {
+    governmentBody: "Foundation Stone Ceremony for Banking & Public Insurance Offices",
+    date: "2025-11-28",
+    purpose: "ASHA attendance and presentation of sectoral memorandum to Union Finance Minister Smt. Nirmala Sitharaman",
+    representatives: "ASHA Representatives",
+    outcome: "Official memorandum submitted during foundation stone-laying ceremony in Amaravati",
+    image: "assets/events/amaravati-ceremony-representation.jpeg"
   },
   {
     governmentBody: "Ministry of Tourism, Culture and Cinematography, Government of Andhra Pradesh",

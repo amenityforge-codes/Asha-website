@@ -65,6 +65,15 @@ window.ASHA_LEADERSHIP = {
       description: "A delegation representing the Star Hotels Association of Andhra Pradesh met the Hon’ble Chief Minister to present association materials and discuss hospitality development across Andhra Pradesh."
     },
     {
+      title: "ASHA Representatives at the Amaravati Foundation Stone-Laying Ceremony",
+      date: "2025-11-28",
+      location: "Amaravati",
+      eventType: "Official Ceremony & Representation",
+      photo: "assets/events/amaravati-ceremony-representation.jpeg",
+      detailUrl: "news-amaravati-ceremony.html",
+      description: "Representatives of the Star Hotels Association of Andhra Pradesh attended the foundation stone-laying ceremony for 15 public sector banking and insurance offices in Amaravati, addressed by Union Finance Minister Smt. Nirmala Sitharaman."
+    },
+    {
       title: "Representation on ITC for GST Submitted to Hon'ble Tourism Minister Kandula Durgesh",
       date: "2025-10-08",
       location: "Vijayawada",

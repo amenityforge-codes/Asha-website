@@ -4149,6 +4149,20 @@ footer.site a {
   transform: translateX(3px);
 }
 
+.president-statement-hero--editorial {
+  display: block;
+}
+
+.president-statement-hero--editorial .statement-mark {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+}
+
+.presidents-statement-lead-banner {
+  box-shadow: var(--shadow);
+}
+
 @media (max-width: 768px) {
   .president-hero-grid {
     grid-template-columns: 1fr;
