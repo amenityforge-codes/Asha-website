@@ -26,37 +26,43 @@
       if (bioEl) bioEl.textContent = data.president.bio;
     }
 
-    if (data.president.photo) {
-      const photoEl = document.getElementById("president-photo");
-      if (photoEl) {
+    const photoEl = document.getElementById("president-photo");
+    if (photoEl) {
+      if (data.president.photo) {
         const img = document.createElement("img");
         img.src = data.president.photo;
         img.alt = data.president.name || "President of the Star Hotels Association of Andhra Pradesh";
-        img.className = "leader-photo-img";
         photoEl.innerHTML = "";
-        photoEl.className = "leader-photo-wrap";
         photoEl.appendChild(img);
+      } else {
+        photoEl.textContent = "RVS";
       }
     }
   }
 
   // 2. General Secretary dynamic update
-  if (data.generalSecretary && data.generalSecretary.verified && data.generalSecretary.name) {
-    const nameEl = document.getElementById("general-secretary-name");
-    if (nameEl) nameEl.textContent = data.generalSecretary.name;
+  if (data.generalSecretary) {
+    if (data.generalSecretary.verified && data.generalSecretary.name) {
+      const nameEl = document.getElementById("general-secretary-name");
+      if (nameEl) nameEl.textContent = data.generalSecretary.name;
+    }
 
-    const bioEl = document.getElementById("general-secretary-bio");
-    if (bioEl && data.generalSecretary.bio) bioEl.textContent = data.generalSecretary.bio;
+    if (data.generalSecretary.verified && data.generalSecretary.bio) {
+      const bioEl = document.getElementById("general-secretary-bio");
+      if (bioEl) bioEl.textContent = data.generalSecretary.bio;
+    }
 
     const photoEl = document.getElementById("general-secretary-photo");
-    if (photoEl && data.generalSecretary.photo) {
-      const img = document.createElement("img");
-      img.src = data.generalSecretary.photo;
-      img.alt = data.generalSecretary.name;
-      img.className = "leader-photo-img";
-      photoEl.innerHTML = "";
-      photoEl.className = "leader-photo-wrap";
-      photoEl.appendChild(img);
+    if (photoEl) {
+      if (data.generalSecretary.photo) {
+        const img = document.createElement("img");
+        img.src = data.generalSecretary.photo;
+        img.alt = data.generalSecretary.name;
+        photoEl.innerHTML = "";
+        photoEl.appendChild(img);
+      } else {
+        photoEl.textContent = "SMC";
+      }
     }
   }
 
@@ -73,13 +79,21 @@
 
         const photoDiv = document.createElement("div");
         photoDiv.className = "leader-photo";
+        photoDiv.style.display = "grid";
+        photoDiv.style.placeItems = "center";
+        photoDiv.style.fontFamily = "var(--font-display)";
+        photoDiv.style.fontSize = "1.8rem";
+        photoDiv.style.fontWeight = "600";
+        photoDiv.style.color = "var(--navy)";
+
         if (member.photo) {
           const img = document.createElement("img");
           img.src = member.photo;
           img.alt = member.name;
           photoDiv.appendChild(img);
         } else {
-          photoDiv.textContent = member.name.slice(0, 1).toUpperCase();
+          const initials = member.name.split(" ").map(function (s) { return s[0]; }).join("").toUpperCase();
+          photoDiv.textContent = initials || member.name.slice(0, 1).toUpperCase();
         }
 
         const role = document.createElement("p");
@@ -95,64 +109,6 @@
         card.appendChild(name);
         committeeContainer.appendChild(card);
       });
-    }
-  }
-
-  // 4. ASHA in Action / Field Engagements dynamic rendering
-  if (Array.isArray(data.events) && data.events.length > 0) {
-    const eventsContainer = document.getElementById("events-state");
-    if (eventsContainer) {
-      eventsContainer.className = "leadership-events-list";
-      eventsContainer.innerHTML = "";
-      data.events.forEach(function (evt) {
-        if (!evt || !evt.title) return;
-        const card = document.createElement("article");
-        card.className = "event-action-card";
-
-        if (evt.photo) {
-          const img = document.createElement("img");
-          img.className = "event-action-img";
-          img.src = evt.photo;
-          img.alt = evt.title;
-          img.loading = "lazy";
-          card.appendChild(img);
-        }
-
-        const info = document.createElement("div");
-        info.className = "event-action-info";
-
-        const meta = document.createElement("p");
-        meta.className = "event-action-meta";
-        meta.textContent = (evt.eventType || "Official Engagement") + " \u2022 " + (evt.date || "") + (evt.location ? " \u2022 " + evt.location : "");
-        info.appendChild(meta);
-
-        const h3 = document.createElement("h3");
-        h3.className = "event-action-title";
-        h3.textContent = evt.title;
-        info.appendChild(h3);
-
-        if (evt.description) {
-          const desc = document.createElement("p");
-          desc.className = "event-action-desc";
-          desc.textContent = evt.description;
-          info.appendChild(desc);
-        }
-
-        const links = document.createElement("div");
-        links.className = "card-links-row";
-        links.innerHTML = '<a class="ks-button ks-button-primary" href="' + (evt.detailUrl || "news.html") + '">View Meeting Record & Media &rarr;</a> ' +
-                          '<a class="ks-button ks-button-secondary" href="news.html">News & Events Registry &rarr;</a>';
-        info.appendChild(links);
-
-        card.appendChild(info);
-        eventsContainer.appendChild(card);
-      });
-
-      // Hide trailing placeholder note if present
-      const photoReqNotice = eventsContainer.nextElementSibling;
-      if (photoReqNotice && photoReqNotice.tagName === "P" && photoReqNotice.querySelector(".client-data-required")) {
-        photoReqNotice.style.display = "none";
-      }
     }
   }
 })();

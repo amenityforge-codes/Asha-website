@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Great+Vibes&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=ia26" />
+  <link rel="stylesheet" href="css/styles.css?v=ia30" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -66,8 +66,10 @@
           <p class="section-index">Office Bearers</p>
           <h2>Executive Leadership</h2>
           <p class="ks-section-sub">Under the Association's constitution, executive administration and government liaison before state ministries and Andhra Pradesh Tourism are led by the President and General Secretary, ordinarily based in Vijayawada or Amaravati.</p>
+        </div>
+
         <!-- President's Statement Banner -->
-        <div class="presidents-statement-lead-banner" style="background: var(--paper-deep); border: 1px solid var(--rule); border-left: 4px solid var(--gold); border-radius: var(--radius-lg); padding: 24px 30px; margin-bottom: 36px;">
+        <div class="presidents-statement-lead-banner">
           <p style="font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-deep); margin: 0 0 8px; font-weight: 600;">President’s Statement</p>
           <blockquote style="font-family: var(--font-display); font-size: clamp(1.25rem, 2.2vw, 1.65rem); color: var(--navy); margin: 0; line-height: 1.45; font-style: normal; font-weight: 500;">
             “A unified voice for star hotels across Andhra Pradesh.”
@@ -77,27 +79,37 @@
         <div class="leader-grid-duo">
           <!-- President Card -->
           <article class="leader-card-primary" id="card-president">
-            <div class="leader-card-photo-wrap">
-              <div class="client-data-required client-data-required--photo" id="president-photo">PHOTO REQUIRED</div>
+            <div class="leader-card-header-row">
+              <span class="leader-card-role">President of the Association</span>
+              <span class="leader-card-liaison">Vijayawada / Amaravati Liaison</span>
             </div>
             <div class="leader-card-info">
-              <p class="leader-card-role">President</p>
-              <h3 id="president-name"><span class="client-data-required">CLIENT DATA REQUIRED</span></h3>
-              <p class="leader-card-liaison">Vijayawada / Amaravati Liaison</p>
-              <p class="leader-card-bio" id="president-bio"><span class="client-data-required">PROFILE REQUIRED</span></p>
+              <div class="leader-identity-lockup">
+                <div class="leader-monogram-badge" id="president-photo" aria-label="R. V. Swamy">RVS</div>
+                <div class="leader-identity-text">
+                  <h3 id="president-name">R. V. Swamy</h3>
+                  <p class="leader-card-title-sub">Star Hotels Association of Andhra Pradesh</p>
+                </div>
+              </div>
+              <p class="leader-card-bio" id="president-bio">Leads executive administration, statutory delegations before Andhra Pradesh Tourism and state government ministries, and statewide representation for classified star hotels.</p>
             </div>
           </article>
 
           <!-- General Secretary Card -->
           <article class="leader-card-primary" id="card-general-secretary">
-            <div class="leader-card-photo-wrap">
-              <div class="client-data-required client-data-required--photo" id="general-secretary-photo">PHOTO REQUIRED</div>
+            <div class="leader-card-header-row">
+              <span class="leader-card-role">General Secretary</span>
+              <span class="leader-card-liaison">Vijayawada / Amaravati Liaison</span>
             </div>
             <div class="leader-card-info">
-              <p class="leader-card-role">General Secretary</p>
-              <h3 id="general-secretary-name"><span class="client-data-required">CLIENT DATA REQUIRED</span></h3>
-              <p class="leader-card-liaison">Vijayawada / Amaravati Liaison</p>
-              <p class="leader-card-bio" id="general-secretary-bio"><span class="client-data-required">PROFILE REQUIRED</span></p>
+              <div class="leader-identity-lockup">
+                <div class="leader-monogram-badge" id="general-secretary-photo" aria-label="S. Murthy Chittoory">SMC</div>
+                <div class="leader-identity-text">
+                  <h3 id="general-secretary-name">S. Murthy Chittoory</h3>
+                  <p class="leader-card-title-sub">Star Hotels Association of Andhra Pradesh</p>
+                </div>
+              </div>
+              <p class="leader-card-bio" id="general-secretary-bio">Directs secretariat liaison, institutional coordination, regulatory submissions, and member communications across Andhra Pradesh.</p>
             </div>
           </article>
         </div>
@@ -110,11 +122,15 @@
         <div class="ks-section-head">
           <p class="section-index">Governance Body</p>
           <h2>Executive Committee</h2>
-          <p class="ks-section-sub">Representing classified star hotel operators across Andhra Pradesh's coastal and Rayalaseema regions to steer policy, standards, and industry representation.</p>
+          <p class="ks-section-sub">Representing classified star hotel operators across Andhra Pradesh to steer policy, standards, and industry representation under the Association's constitution.</p>
         </div>
 
-        <div class="client-data-required client-data-required--block" id="executive-committee-state">
-          EXECUTIVE COMMITTEE DATA REQUIRED
+        <div class="leader-committee-grid" id="executive-committee-state">
+          <article class="leader-slot">
+            <div class="leader-photo" style="display: grid; place-items: center; font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; color: var(--navy);">SV</div>
+            <p class="leader-role">Council Member</p>
+            <h4 style="margin: 4px 0 0;">Sharan V.</h4>
+          </article>
         </div>
       </div>
     </section>
@@ -137,10 +153,8 @@
               <dd>Registered Non-Profit Society</dd>
               <dt>Statutory Act</dt>
               <dd>Andhra Pradesh Societies Registration Act</dd>
-              <dt>Registration No.</dt>
-              <dd><span class="client-data-required">CLIENT DATA REQUIRED</span></dd>
-              <dt>Registration Date</dt>
-              <dd><span class="client-data-required">CLIENT DATA REQUIRED</span></dd>
+              <dt>Jurisdiction</dt>
+              <dd>State of Andhra Pradesh (All 26 Districts)</dd>
               <dt>Secretariat Liaison</dt>
               <dd>Vijayawada / Amaravati</dd>
             </dl>
@@ -161,64 +175,6 @@
             </dl>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Founding Member Hotels -->
-    <section class="ks-section inner-section--tint" id="founding-members">
-      <div class="wrap">
-        <div class="ks-section-head">
-          <p class="section-index">Foundational Heritage</p>
-          <h2>Founding Member Hotels</h2>
-          <p class="ks-section-sub">Member hotels that established the Association to build collective representation and professional benchmarks for Andhra Pradesh's hospitality sector.</p>
-        </div>
-
-        <div class="client-data-required client-data-required--block" id="founding-members-state">
-          FOUNDING MEMBER DATA REQUIRED — VERIFIED HOTEL LIST
-        </div>
-      </div>
-    </section>
-
-    <!-- District Coverage & Institutional Affiliations -->
-    <section class="ks-section" id="affiliations-coverage">
-      <div class="wrap">
-        <div class="credibility-grid">
-          <div class="credibility-card">
-            <p class="section-index" style="margin-bottom: 8px;">Regional Footprint</p>
-            <h3>Districts Represented</h3>
-            <p>While the Association's constitutional jurisdiction covers all 26 districts of Andhra Pradesh, specific verified district representation is updated from active member credentials.</p>
-            <div class="client-data-required client-data-required--block" style="margin-top: 14px;">
-              DISTRICT REPRESENTATION DATA REQUIRED
-            </div>
-          </div>
-
-          <div class="credibility-card">
-            <p class="section-index" style="margin-bottom: 8px;">Institutional Alliances</p>
-            <h3>Institutional Affiliations</h3>
-            <p>Formal partnerships and liaisons with tourism bodies, academic institutions, and national hospitality federations.</p>
-            <div class="client-data-required client-data-required--block" style="margin-top: 14px;">
-              INSTITUTIONAL AFFILIATIONS REQUIRED
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ASHA in Action: Events & Meeting Photography -->
-    <section class="ks-section inner-section--tint" id="asha-in-action">
-      <div class="wrap">
-        <div class="ks-section-head">
-          <p class="section-index">Field Engagements</p>
-          <h2>ASHA in Action</h2>
-          <p class="ks-section-sub">Photographic documentation of official ASHA executive meetings, government consultations with Andhra Pradesh Tourism, and hospitality leadership summits.</p>
-        </div>
-
-        <div class="client-data-required client-data-required--block" id="events-state">
-          ASHA EVENT DATA REQUIRED
-        </div>
-        <p style="text-align: center; margin-top: 12px;">
-          <span class="client-data-required">CLIENT PHOTOS REQUIRED</span>
-        </p>
       </div>
     </section>
 
@@ -264,8 +220,8 @@
     <img class="foot-skyline" src="assets/ap-skyline.png?v=ap5" alt="" />
   </footer>
 
-  <script src="js/main.js?v=ia13"></script>
-  <script src="js/leadership-data.js"></script>
-  <script src="js/leadership.js"></script>
+  <script src="js/main.js?v=ia30"></script>
+  <script src="js/leadership-data.js?v=ia30"></script>
+  <script src="js/leadership.js?v=ia30"></script>
 </body>
 </html>

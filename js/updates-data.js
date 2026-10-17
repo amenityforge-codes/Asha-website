@@ -89,6 +89,30 @@
 
 window.ASHA_INITIATIVES = [
   {
+    id: "init-cm-meeting-2026",
+    title: "ASHA Representatives Meet the Chief Minister of Andhra Pradesh",
+    category: "advocacy",
+    description: "A delegation representing the Star Hotels Association of Andhra Pradesh met the Hon’ble Chief Minister to present association materials and discuss hospitality development across Andhra Pradesh.",
+    date: "2026-06-26",
+    location: "Vijayawada / Amaravati",
+    status: "Completed",
+    image: "assets/events/cm-meeting-presentation.jpeg",
+    link: "news-cm-meeting.html",
+    linkText: "View Meeting Record & Media \u2192"
+  },
+  {
+    id: "init-amaravati-ceremony-2025",
+    title: "ASHA Representatives at the Amaravati Foundation Stone-Laying Ceremony",
+    category: "advocacy",
+    description: "Representatives of the Star Hotels Association of Andhra Pradesh attended the foundation stone-laying ceremony for 15 public sector banking and insurance offices in Amaravati, addressed by Union Finance Minister Smt. Nirmala Sitharaman.",
+    date: "2025-11-28",
+    location: "Amaravati",
+    status: "Completed",
+    image: "assets/events/amaravati-ceremony-representation.jpeg",
+    link: "news-amaravati-ceremony.html",
+    linkText: "View Meeting Record & Media \u2192"
+  },
+  {
     id: "init-gst-representation-2025",
     title: "Representation on Input Tax Credit (ITC) for GST to Hon'ble Tourism Minister",
     category: "advocacy",
@@ -99,7 +123,8 @@ window.ASHA_INITIATIVES = [
     outcome: "Detailed memorandum submitted urging 5% GST with ITC; presented for ministerial review and state advocacy",
     status: "Completed",
     image: "assets/events/tourism-minister-gst-representation.jpeg",
-    link: "news-gst-representation.html"
+    link: "news-gst-representation.html",
+    linkText: "View Official Report & Details \u2192"
   }
 ];
 

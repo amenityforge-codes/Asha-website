@@ -144,7 +144,7 @@
         extLink.target = "_blank";
         extLink.rel = "noopener noreferrer";
       }
-      extLink.textContent = "Official Notice \u2192";
+      extLink.textContent = item.linkText || "View Details & Media \u2192";
       linksRow.appendChild(extLink);
     }
     if (linksRow.children.length > 0) {

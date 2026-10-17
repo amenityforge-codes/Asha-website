@@ -3488,74 +3488,205 @@ footer.site a {
 .leader-grid-duo {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-  margin: 32px 0 48px;
+  gap: 32px;
+  margin: 36px 0 52px;
 }
 
 .leader-card-primary {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 24px;
-  align-items: start;
-  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 32px;
   background: var(--raised);
   border: 1px solid var(--rule);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.leader-card-photo-wrap {
-  width: 100%;
+.leader-card-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -12px rgb(7 50 90 / 0.12);
 }
 
-.leader-photo-wrap {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--rule);
-  box-shadow: 0 4px 16px -4px rgb(7 50 90 / 0.12);
-  background: var(--paper-warm);
+#card-president {
+  border-top: 4px solid var(--gold);
 }
 
-.leader-photo-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  display: block;
+#card-general-secretary {
+  border-top: 4px solid var(--navy);
 }
 
-.leader-card-info h3 {
-  margin: 0 0 6px;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  color: var(--navy);
-  line-height: 1.25;
+.leader-card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
 }
 
 .leader-card-role {
-  margin: 0 0 4px;
+  margin: 0;
   color: var(--accent-deep);
   font-family: var(--font-mono);
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  background: rgb(217 107 39 / 0.1);
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(217 107 39 / 0.2);
 }
 
 .leader-card-liaison {
-  margin: 0 0 16px;
+  margin: 0;
   color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background: var(--paper-warm);
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+.leader-card-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.leader-identity-lockup {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.leader-monogram-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 8px rgb(7 50 90 / 0.06);
+  overflow: hidden;
+}
+
+.leader-monogram-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#card-president .leader-monogram-badge {
+  background: linear-gradient(135deg, #fffdf8 0%, #f6edd7 100%);
+  border: 2px solid rgba(212, 175, 55, 0.45);
+  color: var(--accent-deep);
+}
+
+#card-general-secretary .leader-monogram-badge {
+  background: linear-gradient(135deg, #f7f9fc 0%, #e8eef6 100%);
+  border: 2px solid rgba(7, 50, 90, 0.3);
+  color: var(--navy);
+}
+
+.leader-identity-text {
+  min-width: 0;
+  flex-grow: 1;
+}
+
+.leader-identity-text h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2vw, 1.85rem);
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.leader-identity-text .leader-card-title-sub {
+  margin: 4px 0 0;
   font-size: 0.88rem;
+  color: var(--muted);
   font-weight: 500;
 }
 
 .leader-card-bio {
   margin: 0;
   color: var(--ink);
-  font-size: 0.95rem;
-  line-height: 1.65;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.presidents-statement-lead-banner {
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 26px 32px;
+  margin-bottom: 36px;
+  box-shadow: 0 2px 8px rgb(7 50 90 / 0.04);
+}
+
+/* Executive Committee Grid */
+.leader-committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 280px));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.leader-committee-grid .leader-slot {
+  background: var(--raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  margin: 0;
+}
+
+.leader-committee-grid .leader-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  display: grid;
+  place-items: center;
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.leader-committee-grid .leader-role {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-deep);
+  margin: 0 0 6px;
+}
+
+.leader-committee-grid h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin: 0;
 }
 
 /* Institutional Credibility Cards */
