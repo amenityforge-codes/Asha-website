@@ -4221,15 +4221,15 @@ footer.site a {
 }
 
 .president-hero-quote {
-  margin: 0 0 16px;
+  margin: 0 0 20px;
   font-family: var(--font-heading);
   font-style: italic;
   font-size: clamp(1.15rem, 1.8vw, 1.45rem);
   color: rgb(251 248 242 / 0.95);
-  line-height: 1.5;
+  line-height: 1.55;
   border-left: 3px solid var(--accent);
-  padding-left: 18px;
-  max-width: 58ch;
+  padding-left: 20px;
+  max-width: 72ch;
 }
 
 .president-hero-notice {
