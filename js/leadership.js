@@ -107,7 +107,73 @@
         card.appendChild(photoDiv);
         card.appendChild(role);
         card.appendChild(name);
+
+        if (member.affiliation) {
+          const affil = document.createElement("p");
+          affil.style.margin = "4px 0 0";
+          affil.style.fontSize = "0.82rem";
+          affil.style.color = "var(--muted)";
+          affil.textContent = member.affiliation;
+          card.appendChild(affil);
+        }
+
         committeeContainer.appendChild(card);
+      });
+    }
+  }
+
+  // 4. Advisory Board dynamic rendering
+  if (Array.isArray(data.advisoryBoard) && data.advisoryBoard.length > 0) {
+    const advisoryContainer = document.getElementById("advisory-board-state");
+    if (advisoryContainer) {
+      advisoryContainer.className = "leader-committee-grid";
+      advisoryContainer.innerHTML = "";
+      data.advisoryBoard.forEach(function (member) {
+        if (!member || !member.name) return;
+        const card = document.createElement("article");
+        card.className = "leader-slot";
+
+        const photoDiv = document.createElement("div");
+        photoDiv.className = "leader-photo";
+        photoDiv.style.display = "grid";
+        photoDiv.style.placeItems = "center";
+        photoDiv.style.fontFamily = "var(--font-display)";
+        photoDiv.style.fontSize = "1.8rem";
+        photoDiv.style.fontWeight = "600";
+        photoDiv.style.color = "var(--navy)";
+
+        if (member.photo) {
+          const img = document.createElement("img");
+          img.src = member.photo;
+          img.alt = member.name;
+          photoDiv.appendChild(img);
+        } else {
+          const initials = member.name.split(" ").map(function (s) { return s[0]; }).join("").toUpperCase();
+          photoDiv.textContent = initials || member.name.slice(0, 1).toUpperCase();
+        }
+
+        const role = document.createElement("p");
+        role.className = "leader-role";
+        role.textContent = member.role || "Advisory Board Member";
+
+        const name = document.createElement("h4");
+        name.style.margin = "4px 0 0";
+        name.textContent = member.name;
+
+        card.appendChild(photoDiv);
+        card.appendChild(role);
+        card.appendChild(name);
+
+        if (member.affiliation) {
+          const affil = document.createElement("p");
+          affil.style.margin = "4px 0 0";
+          affil.style.fontSize = "0.82rem";
+          affil.style.color = "var(--muted)";
+          affil.textContent = member.affiliation;
+          card.appendChild(affil);
+        }
+
+        advisoryContainer.appendChild(card);
       });
     }
   }

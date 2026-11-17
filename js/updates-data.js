@@ -125,6 +125,21 @@ window.ASHA_INITIATIVES = [
     image: "assets/events/tourism-minister-gst-representation.jpeg",
     link: "news-gst-representation.html",
     linkText: "View Official Report & Details \u2192"
+  },
+  {
+    id: "init-asha-formation-2025",
+    title: "Senior Hoteliers Unite to Form ASHA to Strengthen A.P. Hospitality Sector",
+    category: "networking",
+    description: "Senior hoteliers from across Andhra Pradesh gathered to officially establish the Andhra Pradesh Star Hotels Association (ASHA) to elevate the State as a premier travel destination, promote excellence in hospitality, and foster collaborations with top-tier hotels.",
+    date: "2025-06-04",
+    time: "Published: June 04, 2025 11:17 PM IST | Updated: June 05, 2025 06:23 AM IST",
+    location: "Vijayawada / Andhra Pradesh",
+    participants: "Founding leadership across Vijayawada, Visakhapatnam, Kakinada, Tirupati, Vizianagaram, Guntur, and Rajamahendravaram",
+    outcome: "Official establishment of ASHA with full Executive Committee and Advisory Board published in The Hindu",
+    status: "Completed",
+    image: "assets/events/asha-formation-meeting.jpg",
+    link: "news-asha-formation.html",
+    linkText: "View Foundation Record & Press Coverage \u2192"
   }
 ];
 
@@ -304,6 +319,50 @@ window.ASHA_NEWS = [
         policyStatus: "Submitted representation urging 5% GST with ITC; no policy change or outcome claimed"
       }
     }
+  },
+  {
+    id: "news-asha-formation-2025",
+    title: "Top Hoteliers Unite, Form ASHA, to Strengthen Hospitality Sector in A.P.",
+    category: "Association Formation / State Hospitality Leadership",
+    date: "2025-06-04",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "Senior hoteliers from across Andhra Pradesh have come together to form the Andhra Pradesh Star Hotels Association (ASHA). The association aims to elevate the State as a premier travel destination, promote excellence in hospitality, and foster collaborations with top-tier hotels.",
+    description: "Senior hoteliers from across Andhra Pradesh convened to officially establish the Andhra Pradesh Star Hotels Association (ASHA). The inaugural assembly formed the apex representative body for star hotels in the state, electing office bearers and appointing an advisory board comprising eminent hospitality leaders.",
+    image: "assets/events/asha-formation-meeting.jpg",
+    thumbnail: "assets/events/asha-formation-meeting.jpg",
+    location: "Vijayawada / Andhra Pradesh",
+    detailUrl: "news-asha-formation.html",
+    gallery: [
+      {
+        id: "img-formation-assembly",
+        src: "assets/events/asha-formation-meeting.jpg",
+        title: "Inaugural Assembly of ASHA",
+        alt: "Senior hoteliers and founding office bearers at the inaugural assembly forming the Andhra Pradesh Star Hotels Association (ASHA)",
+        caption: "Senior hoteliers and founding office bearers gathered at the inaugural assembly establishing the Andhra Pradesh Star Hotels Association (ASHA).",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-hindu-report",
+        src: "assets/events/the-hindu-asha-formation-press-clipping.jpg",
+        title: "The Hindu Press Coverage",
+        alt: "The Hindu newspaper report titled 'Top hoteliers unite, form ASHA, to strengthen hospitality sector in A.P.'",
+        caption: "Press coverage by The Hindu Bureau (Published June 04, 2025 11:17 PM IST; Updated June 05, 2025 06:23 AM IST) reporting the formation of ASHA and announcing its elected leadership and advisory board.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "The Hindu",
+      portal: "The Hindu Bureau (thehindu.com)",
+      clippingSrc: "assets/events/the-hindu-asha-formation-press-clipping.jpg",
+      headline: "Top hoteliers unite, form ASHA, to strengthen hospitality sector in A.P.",
+      publishedTime: "June 04, 2025 11:17 pm IST",
+      updatedTime: "June 05, 2025 06:23 am IST",
+      byline: "THE HINDU BUREAU",
+      caption: "The Hindu coverage detailing the formation of ASHA by senior hoteliers across Andhra Pradesh, including the elected leadership and advisory board.",
+      verificationNotice: "Verified against The Hindu digital report (June 04–05, 2025)."
+    }
   }
 ];
 
@@ -427,6 +486,53 @@ window.ASHA_EVENTS = [
         isPress: true
       }
     ]
+  },
+  {
+    id: "event-asha-formation-2025",
+    title: "Top Hoteliers Unite to Form ASHA to Strengthen Hospitality Sector in A.P.",
+    type: "meeting",
+    category: "Inaugural Assembly / Association Formation / Industry Leadership",
+    date: "2025-06-04",
+    time: "Published: June 04, 2025 11:17 PM IST | Updated: June 05, 2025 06:23 AM IST",
+    location: "Vijayawada / Andhra Pradesh",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "Senior hoteliers from across Andhra Pradesh convened to establish the Andhra Pradesh Star Hotels Association (ASHA) to elevate the State as a premier travel destination, promote excellence in hospitality, and foster collaborations with top-tier hotels across the State.",
+    organizer: "Founding Executive Leadership of ASHA",
+    participants: "President R.V. Swamy (Hyatt Place Vijayawada), General Secretary S. Murthy Chittoory (Venky Residency Kakinada), Treasurer Gudisa Shivakumar (SVN Lake Palace Vizianagaram), Vice-Presidents Bala Krishna Reddy (Taj Bliss Tirupati) & Ghattamaneni Venkat (Daspalla Group Vizag), Joint Secretary M.V. Pavan Kartheek (Elegant Vizag), Executive Members Pandu Chowdhary (Shelton & La hospin Rajamahendravaram), Sharan Valluru (GRT Grand Vijayawada), Pratap N (Gowtham Grand Guntur), Nageswara Rao (Taj Vivanta Vijayawada), S. Prashant (Daspalla Hotels), alongside Advisory Board members Prabhu Kishore (Novotel / Varun Hospitality), Gokaraju Gangaraju (Lemon Tree Premiere), M. Rajaiah (Taj Vivanta), and Muttavarapu Murali Krishna (Fortune Murali Park).",
+    image: "assets/events/asha-formation-meeting.jpg",
+    thumbnail: "assets/events/asha-formation-meeting.jpg",
+    detailUrl: "news-asha-formation.html",
+    gallery: [
+      {
+        id: "img-formation-assembly",
+        src: "assets/events/asha-formation-meeting.jpg",
+        title: "Inaugural Assembly of ASHA",
+        alt: "Senior hoteliers and founding office bearers at the inaugural assembly forming the Andhra Pradesh Star Hotels Association (ASHA)",
+        caption: "Senior hoteliers and founding office bearers gathered at the inaugural assembly establishing the Andhra Pradesh Star Hotels Association (ASHA).",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-hindu-report",
+        src: "assets/events/the-hindu-asha-formation-press-clipping.jpg",
+        title: "The Hindu Press Coverage",
+        alt: "The Hindu report titled 'Top hoteliers unite, form ASHA, to strengthen hospitality sector in A.P.'",
+        caption: "Official coverage published by The Hindu Bureau (Published: June 04, 2025, 11:17 PM IST; Updated: June 05, 2025, 06:23 AM IST) reporting the formation of ASHA and announcing its elected leadership and advisory board.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "The Hindu",
+      portal: "The Hindu Bureau (thehindu.com)",
+      clippingSrc: "assets/events/the-hindu-asha-formation-press-clipping.jpg",
+      headline: "Top hoteliers unite, form ASHA, to strengthen hospitality sector in A.P.",
+      publishedTime: "June 04, 2025 11:17 pm IST",
+      updatedTime: "June 05, 2025 06:23 am IST",
+      byline: "THE HINDU BUREAU",
+      caption: "The Hindu coverage detailing the formation of ASHA by senior hoteliers across Andhra Pradesh, including the elected leadership and advisory board.",
+      verificationNotice: "Verified against The Hindu publication (June 04–05, 2025)."
+    }
   }
 ];
 

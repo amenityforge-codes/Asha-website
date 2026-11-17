@@ -59,7 +59,113 @@
  */
 
 // Verified Hotel Members (Classified 3-Star and above in Andhra Pradesh)
-window.ASHA_HOTEL_MEMBERS = [];
+// Verified from The Hindu official publication, June 04-05, 2025
+window.ASHA_HOTEL_MEMBERS = [
+  {
+    name: "Hyatt Place Vijayawada",
+    category: "hotel",
+    classification: "5-star",
+    city: "Vijayawada",
+    district: "NTR",
+    profile: "Represented by Chairman R. V. Swamy (President, ASHA). Premium international business hotel in Vijayawada."
+  },
+  {
+    name: "Venky Residency",
+    category: "hotel",
+    classification: "3-star",
+    city: "Kakinada",
+    district: "Kakinada",
+    profile: "Represented by Joint Managing Director S. Murthy Chittoory (General Secretary, ASHA). Prominent hospitality landmark in Kakinada."
+  },
+  {
+    name: "SVN Lake Palace",
+    category: "hotel",
+    classification: "3-star",
+    city: "Vizianagaram",
+    district: "Vizianagaram",
+    profile: "Represented by Managing Director Gudisa Shivakumar (Treasurer, ASHA). Renowned hospitality property in Vizianagaram."
+  },
+  {
+    name: "Taj Bliss",
+    category: "hotel",
+    classification: "4-star",
+    city: "Tirupati",
+    district: "Tirupati",
+    profile: "Represented by Managing Director Bala Krishna Reddy (Vice-President, ASHA). Leading star hotel serving pilgrimage and business travelers in Tirupati."
+  },
+  {
+    name: "Daspalla Group / Daspalla Hotels",
+    category: "hotel",
+    classification: "4-star",
+    city: "Visakhapatnam",
+    district: "Visakhapatnam",
+    profile: "Represented by Joint Managing Director Ghattamaneni Venkat (Vice-President, ASHA) and General Manager S. Prashant. Landmark hospitality chain in coastal Andhra Pradesh."
+  },
+  {
+    name: "Hotel Elegant",
+    category: "hotel",
+    classification: "3-star",
+    city: "Visakhapatnam",
+    district: "Visakhapatnam",
+    profile: "Represented by Managing Director M. V. Pavan Kartheek (Joint Secretary, ASHA). Prominent hospitality property in Visakhapatnam."
+  },
+  {
+    name: "Hotel Shelton & La hospin",
+    category: "hotel",
+    classification: "3-star",
+    city: "Rajamahendravaram",
+    district: "East Godavari",
+    profile: "Represented by Managing Director Pandu Chowdhary (Executive Member, ASHA). Leading hospitality properties in the Godavari region."
+  },
+  {
+    name: "GRT Grand Vijayawada",
+    category: "hotel",
+    classification: "4-star",
+    city: "Vijayawada",
+    district: "NTR",
+    profile: "Represented by Managing Director Sharan Valluru (Executive Member, ASHA). Upscale star hotel in Vijayawada."
+  },
+  {
+    name: "Gowtham Grand",
+    category: "hotel",
+    classification: "3-star",
+    city: "Guntur",
+    district: "Guntur",
+    profile: "Represented by Managing Director Pratap N. (Executive Member, ASHA). Prominent classified hotel in Guntur."
+  },
+  {
+    name: "Vivanta Vijayawada (Taj)",
+    category: "hotel",
+    classification: "5-star",
+    city: "Vijayawada",
+    district: "NTR",
+    profile: "Represented by Chairman M. Rajaiah (Advisory Board, ASHA) and General Manager Nageswara Rao (Executive Member, ASHA). Flagship 5-star hotel in Vijayawada."
+  },
+  {
+    name: "Novotel Visakhapatnam Varun Beach",
+    category: "hotel",
+    classification: "5-star",
+    city: "Visakhapatnam",
+    district: "Visakhapatnam",
+    profile: "Represented by Chairman Prabhu Kishore (Varun Hospitality / Advisory Board, ASHA). Premier coastal 5-star hotel in Visakhapatnam."
+  },
+  {
+    name: "Lemon Tree Premiere Vijayawada",
+    category: "hotel",
+    classification: "4-star",
+    city: "Vijayawada",
+    district: "NTR",
+    profile: "Represented by Chairman Gokaraju Gangaraju (Advisory Board, ASHA). Upscale business hotel in central Vijayawada."
+  },
+  {
+    name: "Fortune Murali Park",
+    category: "hotel",
+    classification: "4-star",
+    city: "Vijayawada",
+    district: "NTR",
+    profile: "Represented by Managing Director Muttavarapu Murali Krishna (Advisory Board, ASHA). Prominent Member ITC Hotel Group property in Vijayawada."
+  }
+];
 
 // Verified Industry Partners (Hospitality suppliers, consultants, service providers)
 window.ASHA_INDUSTRY_PARTNERS = [];
@@ -68,5 +174,5 @@ window.ASHA_INDUSTRY_PARTNERS = [];
 window.ASHA_INSTITUTIONAL_PARTNERS = [];
 
 // Unified dataset fallback for backwards compatibility
-window.ASHA_MEMBERS = [];
+window.ASHA_MEMBERS = window.ASHA_HOTEL_MEMBERS;
 
