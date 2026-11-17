@@ -3639,6 +3639,31 @@ footer.site a {
   box-shadow: 0 2px 8px rgb(7 50 90 / 0.04);
 }
 
+.secretary-statement-lead-banner {
+  border-left-color: var(--navy);
+}
+
+.leader-messages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.leader-messages-grid .presidents-statement-lead-banner {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 860px) {
+  .leader-messages-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
 /* Executive Committee Grid */
 .leader-committee-grid {
   display: grid;
@@ -4320,6 +4345,38 @@ footer.site a {
   .president-hero-footer {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+.leadership-messages-duo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.leadership-message-card {
+  padding: clamp(32px, 4vw, 44px) clamp(24px, 3.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.president-statement-hero .statement-mark,
+.president-statement-hero--editorial .statement-mark,
+.leadership-message-card .statement-mark {
+  display: none !important;
+}
+
+.leadership-message-card .president-hero-quote {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .leadership-messages-duo {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
