@@ -140,6 +140,20 @@ window.ASHA_INITIATIVES = [
     image: "assets/events/asha-formation-meeting.jpg",
     link: "news-asha-formation.html",
     linkText: "View Foundation Record & Press Coverage \u2192"
+  },
+  {
+    id: "init-union-tourism-minister-2025",
+    title: "ASHA Delegation Meets Hon'ble Union Tourism Minister",
+    category: "advocacy",
+    description: "A leadership delegation representing the Star Hotels Association of Andhra Pradesh met the Hon'ble Union Tourism Minister on 26 June 2025, presenting hospitality sector representations and discussing central support for state tourism development.",
+    date: "2025-06-26",
+    location: "Vijayawada / Andhra Pradesh",
+    participants: "ASHA Executive Leadership Delegation (President R. V. Swamy, Vice-President Ghattamaneni Venkat, Treasurer Gudisa Shivakumar, Council Members)",
+    outcome: "Presented hospitality development representations and felicitated central tourism leadership during official state visit",
+    status: "Completed",
+    image: "assets/events/union-tourism-minister-meeting.jpg",
+    link: "news-union-tourism-minister.html",
+    linkText: "View Meeting Record & Media \u2192"
   }
 ];
 
@@ -363,6 +377,30 @@ window.ASHA_NEWS = [
       caption: "The Hindu coverage detailing the formation of ASHA by senior hoteliers across Andhra Pradesh, including the elected leadership and advisory board.",
       verificationNotice: "Verified against The Hindu digital report (June 04–05, 2025)."
     }
+  },
+  {
+    id: "news-union-tourism-minister-2025",
+    title: "ASHA Delegation Meets Hon'ble Union Tourism Minister",
+    category: "Central Government Engagement / Tourism Policy",
+    date: "2025-06-26",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "A delegation representing the Star Hotels Association of Andhra Pradesh met the Hon'ble Union Tourism Minister during the central ministerial visit on 26 June 2025, discussing tourism development schemes, infrastructure support, and sector priorities for Andhra Pradesh star hotels.",
+    description: "A delegation representing the Star Hotels Association of Andhra Pradesh (ASHA) met the Hon'ble Union Tourism Minister in Vijayawada on 26 June 2025. The delegation felicitated the Minister and presented key sectoral representations advocating for central support, tourism corridor connectivity, and industrial incentives for the state's classified star hotels.",
+    image: "assets/events/union-tourism-minister-meeting.jpg",
+    thumbnail: "assets/events/union-tourism-minister-meeting.jpg",
+    location: "Vijayawada / Andhra Pradesh",
+    detailUrl: "news-union-tourism-minister.html",
+    gallery: [
+      {
+        id: "img-union-minister-meeting",
+        src: "assets/events/union-tourism-minister-meeting.jpg",
+        title: "ASHA Delegation with Hon'ble Union Tourism Minister",
+        alt: "ASHA leadership delegation meeting and felicitating the Hon'ble Union Tourism Minister on 26 June 2025",
+        caption: "ASHA leadership delegation meeting and felicitating the Hon'ble Union Tourism Minister during the official ministerial visit on 26 June 2025.",
+        type: "event-photo",
+        isPrimary: true
+      }
+    ]
   }
 ];
 
@@ -533,6 +571,33 @@ window.ASHA_EVENTS = [
       caption: "The Hindu coverage detailing the formation of ASHA by senior hoteliers across Andhra Pradesh, including the elected leadership and advisory board.",
       verificationNotice: "Verified against The Hindu publication (June 04–05, 2025)."
     }
+  },
+  {
+    id: "event-union-tourism-minister-2025",
+    title: "ASHA Delegation Meets Hon'ble Union Tourism Minister",
+    type: "meeting",
+    category: "Central Government Engagement / Tourism Policy",
+    date: "2025-06-26",
+    time: "Official Ministerial Consultation",
+    location: "Vijayawada / Andhra Pradesh",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "A delegation representing the Star Hotels Association of Andhra Pradesh (ASHA) met the Hon'ble Union Tourism Minister in Vijayawada on 26 June 2025. The delegation felicitated the Minister and discussed central tourism schemes, connectivity, and development priorities for Andhra Pradesh's hospitality industry.",
+    organizer: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    participants: "ASHA Leadership Delegation (President R. V. Swamy, Vice-President Ghattamaneni Venkat, Treasurer Gudisa Shivakumar, Council Members) & Hon'ble Union Tourism Minister",
+    image: "assets/events/union-tourism-minister-meeting.jpg",
+    thumbnail: "assets/events/union-tourism-minister-meeting.jpg",
+    detailUrl: "news-union-tourism-minister.html",
+    gallery: [
+      {
+        id: "img-union-minister-meeting",
+        src: "assets/events/union-tourism-minister-meeting.jpg",
+        title: "ASHA Delegation with Hon'ble Union Tourism Minister",
+        alt: "ASHA leadership delegation meeting and felicitating the Hon'ble Union Tourism Minister on 26 June 2025",
+        caption: "ASHA leadership delegation meeting and felicitating the Hon'ble Union Tourism Minister during the official ministerial visit on 26 June 2025.",
+        type: "event-photo",
+        isPrimary: true
+      }
+    ]
   }
 ];
 
@@ -561,6 +626,14 @@ window.ASHA_GOVERNMENT_REPRESENTATIONS = [
     representatives: "ASHA Delegation (President R.V. Swamy, General Secretary S. Murthy Chittoory, Council Member Sharan V.)",
     outcome: "Detailed memorandum presented urging 5% GST with ITC; submitted for ministerial review",
     image: "assets/events/tourism-minister-gst-representation.jpeg"
+  },
+  {
+    governmentBody: "Ministry of Tourism, Government of India",
+    date: "2025-06-26",
+    purpose: "Meeting and felicitation of Hon'ble Union Tourism Minister; submission of hospitality representations",
+    representatives: "ASHA Leadership Delegation (President R. V. Swamy, Vice-President Ghattamaneni Venkat, Treasurer Gudisa Shivakumar, Council Members)",
+    outcome: "Felicitated Union Minister with floral presentation; high-level discussions on central tourism assistance and state hospitality priorities",
+    image: "assets/events/union-tourism-minister-meeting.jpg"
   }
 ];
 
