@@ -168,6 +168,20 @@ window.ASHA_INITIATIVES = [
     image: "assets/events/asha-power-tariff-meeting.jpg",
     link: "news-power-tariff-representation.html",
     linkText: "View Official Report & Press Coverage \u2192"
+  },
+  {
+    id: "init-bar-policy-representation-2025",
+    title: "Key Policy Recommendations on Bar Policy & MICE Growth to Excise Department",
+    category: "advocacy",
+    description: "An ASHA delegation met with Prohibition & Excise Commissioner Nishant Kumar, IAS, and Principal Secretary Mukesh Kumar Meena, IAS, presenting key recommendations to strengthen the state bar policy, support premium brand availability, and foster MICE tourism.",
+    date: "2025-07-23",
+    location: "Vijayawada / Andhra Pradesh",
+    participants: "President R.V. Swamy, General Secretary S. Murthy Chittoory, Treasurer Sri Siva Kumar, Joint Secretary Pawan Karthik, Council Member Sharan Valluru",
+    outcome: "Detailed memorandum submitted advocating progressive bar policy, single-bottle indents, APSBCL depot flexibility, draft beer permissions, and 24-hour event permissions for star hotels",
+    status: "Completed",
+    image: "assets/events/excise-commissioner-delegation-presentation.jpg",
+    link: "news-bar-policy-representation.html",
+    linkText: "View Official Report & Press Coverage \u2192"
   }
 ];
 
@@ -458,6 +472,65 @@ window.ASHA_NEWS = [
       caption: "Deccan Chronicle report highlighting ASHA's appeal for power tariff rationalisation from ₹12.90 to ₹7 per unit and relief in municipal taxes.",
       verificationNotice: "Verified against Deccan Chronicle publication (Vijayawada, July 16, 2025)."
     }
+  },
+  {
+    id: "news-bar-policy-representation-2025",
+    title: "ASHA Presents Key Recommendations for Progressive Bar Policy to Foster Tourism & MICE",
+    category: "Government Engagement / Excise & Bar Policy Reform",
+    date: "2025-07-23",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "A delegation from the Andhra Pradesh Star Hotels Association met with Prohibition and Excise Commissioner Nishant Kumar, IAS, and Principal Secretary Mukesh Kumar Meena, IAS, to present progressive recommendations for strengthening the state bar policy.",
+    description: "A leadership delegation from the Andhra Pradesh Star Hotels Association (ASHA) met with Prohibition & Excise Commissioner Nishant Kumar, IAS, and Principal Secretary Mukesh Kumar Meena, IAS. The delegation presented key policy recommendations to foster the growth of star hotels, tourism, and MICE in Andhra Pradesh, including single-bottle indents, depot flexibility, draft beer permissions, and time-bound event approvals.",
+    image: "assets/events/excise-commissioner-delegation-presentation.jpg",
+    thumbnail: "assets/events/excise-commissioner-delegation-presentation.jpg",
+    location: "Vijayawada / Andhra Pradesh",
+    detailUrl: "news-bar-policy-representation.html",
+    gallery: [
+      {
+        id: "img-excise-delegation",
+        src: "assets/events/excise-commissioner-delegation-presentation.jpg",
+        title: "Presentation of Representation to Excise Commissioner Nishant Kumar, IAS",
+        alt: "ASHA delegation presenting the official representation on bar policy to Excise and Prohibition Commissioner Nishant Kumar, IAS",
+        caption: "ASHA leadership delegation presenting official bar policy recommendations to Prohibition & Excise Commissioner Nishant Kumar, IAS, at his office in Vijayawada.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-excise-roundtable",
+        src: "assets/events/excise-commissioner-roundtable.jpg",
+        title: "Roundtable Consultation on Bar Reforms with Excise Commissioner",
+        alt: "ASHA leadership seated across the conference table in structured dialogue with Excise Commissioner Nishant Kumar, IAS",
+        caption: "President R.V. Swamy and ASHA office bearers in constructive discussions regarding premium brand availability and progressive bar policy with Commissioner Nishant Kumar, IAS.",
+        type: "event-photo"
+      },
+      {
+        id: "img-excise-sec",
+        src: "assets/events/excise-principal-secretary-representation.jpg",
+        title: "Memorandum Submission to Principal Secretary Mukesh Kumar Meena, IAS",
+        alt: "ASHA delegation submitting sectoral memorandum to Principal Secretary Mukesh Kumar Meena, IAS",
+        caption: "ASHA representatives submitting official hospitality and excise recommendations to Principal Secretary (Excise & Prohibition) Mukesh Kumar Meena, IAS.",
+        type: "event-photo"
+      },
+      {
+        id: "img-hans-clipping",
+        src: "assets/events/the-hans-india-bar-policy-clipping.jpg",
+        title: "The Hans India Press Coverage",
+        alt: "The Hans India report titled 'ASHA for strengthening of bar policy'",
+        caption: "Official report in The Hans India (Vijayawada) covering ASHA's meeting with Excise Commissioner Nishant Kumar, IAS, and the presentation of bar policy recommendations.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "The Hans India",
+      portal: "The Hans India (Hans News Service, Vijayawada)",
+      clippingSrc: "assets/events/the-hans-india-bar-policy-clipping.jpg",
+      headline: "ASHA for strengthening of bar policy",
+      publishedTime: "July 2025",
+      byline: "HANS NEWS SERVICE",
+      caption: "The Hans India report documenting ASHA's meeting with Excise and Prohibition Commissioner Nishant Kumar, IAS, to formulate a progressive bar policy.",
+      verificationNotice: "Verified against The Hans India publication (Vijayawada)."
+    }
   }
 ];
 
@@ -701,6 +774,68 @@ window.ASHA_EVENTS = [
       caption: "Deccan Chronicle report highlighting ASHA's appeal for power tariff rationalisation from ₹12.90 to ₹7 per unit and relief in municipal taxes.",
       verificationNotice: "Verified against Deccan Chronicle publication (Vijayawada, July 16, 2025)."
     }
+  },
+  {
+    id: "event-bar-policy-representation-2025",
+    title: "ASHA Delegation Meets Excise & Prohibition Leadership on Progressive Bar Policy",
+    type: "meeting",
+    category: "Government Engagement / Excise & Bar Policy Reform",
+    date: "2025-07-23",
+    time: "Official Ministerial & Secretarial Consultation",
+    location: "Vijayawada / Andhra Pradesh",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "An ASHA leadership delegation met with Prohibition & Excise Commissioner Nishant Kumar, IAS, and Principal Secretary Mukesh Kumar Meena, IAS, to present policy recommendations for progressive bar policy reforms that promote star hotels, tourism, and MICE growth in Andhra Pradesh.",
+    organizer: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    participants: "President R.V. Swamy, General Secretary S. Murthy Chittoory, Treasurer Sri Siva Kumar, Joint Secretary Pawan Karthik, Council Member Sharan Valluru, Commissioner Nishant Kumar, IAS, and Principal Secretary Mukesh Kumar Meena, IAS",
+    image: "assets/events/excise-commissioner-delegation-presentation.jpg",
+    thumbnail: "assets/events/excise-commissioner-delegation-presentation.jpg",
+    detailUrl: "news-bar-policy-representation.html",
+    gallery: [
+      {
+        id: "img-excise-delegation",
+        src: "assets/events/excise-commissioner-delegation-presentation.jpg",
+        title: "Presentation of Representation to Excise Commissioner Nishant Kumar, IAS",
+        alt: "ASHA delegation presenting the official representation on bar policy to Excise and Prohibition Commissioner Nishant Kumar, IAS",
+        caption: "ASHA leadership delegation presenting official bar policy recommendations to Prohibition & Excise Commissioner Nishant Kumar, IAS, at his office in Vijayawada.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-excise-roundtable",
+        src: "assets/events/excise-commissioner-roundtable.jpg",
+        title: "Roundtable Consultation on Bar Reforms with Excise Commissioner",
+        alt: "ASHA leadership seated across the conference table in structured dialogue with Excise Commissioner Nishant Kumar, IAS",
+        caption: "President R.V. Swamy and ASHA office bearers in constructive discussions regarding premium brand availability and progressive bar policy with Commissioner Nishant Kumar, IAS.",
+        type: "event-photo"
+      },
+      {
+        id: "img-excise-sec",
+        src: "assets/events/excise-principal-secretary-representation.jpg",
+        title: "Memorandum Submission to Principal Secretary Mukesh Kumar Meena, IAS",
+        alt: "ASHA delegation submitting sectoral memorandum to Principal Secretary Mukesh Kumar Meena, IAS",
+        caption: "ASHA representatives submitting official hospitality and excise recommendations to Principal Secretary (Excise & Prohibition) Mukesh Kumar Meena, IAS.",
+        type: "event-photo"
+      },
+      {
+        id: "img-hans-clipping",
+        src: "assets/events/the-hans-india-bar-policy-clipping.jpg",
+        title: "The Hans India Press Coverage",
+        alt: "The Hans India report titled 'ASHA for strengthening of bar policy'",
+        caption: "Official report in The Hans India (Vijayawada) covering ASHA's meeting with Excise Commissioner Nishant Kumar, IAS, and the presentation of bar policy recommendations.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "The Hans India",
+      portal: "The Hans India (Hans News Service, Vijayawada)",
+      clippingSrc: "assets/events/the-hans-india-bar-policy-clipping.jpg",
+      headline: "ASHA for strengthening of bar policy",
+      publishedTime: "July 2025",
+      byline: "HANS NEWS SERVICE",
+      caption: "The Hans India report documenting ASHA's meeting with Excise and Prohibition Commissioner Nishant Kumar, IAS, to formulate a progressive bar policy.",
+      verificationNotice: "Verified against The Hans India publication (Vijayawada)."
+    }
   }
 ];
 
@@ -721,6 +856,14 @@ window.ASHA_GOVERNMENT_REPRESENTATIONS = [
     representatives: "ASHA President R. V. Swamy, Executive Committee, and Member Hoteliers",
     outcome: "Sector memorandum submitted; state acknowledged for reducing star hotel bar excise duty to ₹25 lakh; regional roundtables scheduled at Dasapalla Vizag and Sarovar Portico Kakinada",
     image: "assets/events/asha-power-tariff-meeting.jpg"
+  },
+  {
+    governmentBody: "Department of Prohibition & Excise, Government of Andhra Pradesh",
+    date: "2025-07-23",
+    purpose: "Presentation of recommendations on progressive bar policy, premium brand availability, and MICE tourism growth",
+    representatives: "ASHA Delegation (President R. V. Swamy, General Secretary S. Murthy Chittoory, Treasurer Sri Siva Kumar, Joint Secretary Pawan Karthik, Council Member Sharan Valluru)",
+    outcome: "Meetings with Commissioner Nishant Kumar, IAS, and Principal Secretary Mukesh Kumar Meena, IAS; constructive dialogue on single-bottle indents, depot flexibility, and 24-hr event approvals",
+    image: "assets/events/excise-commissioner-delegation-presentation.jpg"
   },
   {
     governmentBody: "Foundation Stone Ceremony for Banking & Public Insurance Offices",
