@@ -164,6 +164,22 @@ window.ASHA_HOTEL_MEMBERS = [
     city: "Vijayawada",
     district: "NTR",
     profile: "Represented by Managing Director Muttavarapu Murali Krishna (Advisory Board, ASHA). Prominent Member ITC Hotel Group property in Vijayawada."
+  },
+  {
+    name: "Hotel Dolphin Visakhapatnam",
+    category: "hotel",
+    classification: "4-star",
+    city: "Visakhapatnam",
+    district: "Visakhapatnam",
+    profile: "Landmark star hotel property in Visakhapatnam participating in ASHA state consultations on hospitality infrastructure and energy tariffs."
+  },
+  {
+    name: "Sarovar Portico Kakinada",
+    category: "hotel",
+    classification: "3-star",
+    city: "Kakinada",
+    district: "Kakinada",
+    profile: "Prominent classified hotel and regional executive host venue for ASHA industry consultations in the Godavari coastal corridor."
   }
 ];
 

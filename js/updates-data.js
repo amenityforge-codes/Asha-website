@@ -154,6 +154,20 @@ window.ASHA_INITIATIVES = [
     image: "assets/events/union-tourism-minister-meeting.jpg",
     link: "news-union-tourism-minister.html",
     linkText: "View Meeting Record & Media \u2192"
+  },
+  {
+    id: "init-power-tariff-representation-2025",
+    title: "Representation on Power Tariff & Municipal Tax Relief for Star Hotels",
+    category: "advocacy",
+    description: "ASHA appealed to the Government of Andhra Pradesh for a reduction in commercial electricity tariff from ₹12.90 to ₹7 per unit, extension of the ₹2.30/unit power concession to existing hotels, caution deposit relief, and a 50% concession on annual municipal taxes.",
+    date: "2025-07-16",
+    location: "Vijayawada / Visakhapatnam / Kakinada",
+    participants: "President R.V. Swamy, Treasurer Gudisa Shivakumar, Council Member Sharan Valluru, Vice-President Ghattamaneni Venkat, and hoteliers representing ~80 star hotels",
+    outcome: "Formal representation submitted for ₹7/unit tariff, parity for existing hotels under industry status, caution deposit easing, and 50% municipal tax rebate; state thanked for reducing bar excise duty to ₹25 lakh",
+    status: "Completed",
+    image: "assets/events/asha-power-tariff-meeting.jpg",
+    link: "news-power-tariff-representation.html",
+    linkText: "View Official Report & Press Coverage \u2192"
   }
 ];
 
@@ -401,6 +415,49 @@ window.ASHA_NEWS = [
         isPrimary: true
       }
     ]
+  },
+  {
+    id: "news-power-tariff-representation-2025",
+    title: "AP Hotels Seek Reduction in High Power Tariff and Municipal Tax Relief",
+    category: "Policy Representation / Energy & Municipal Reform",
+    date: "2025-07-16",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "Hoteliers operating classified star hotels across Andhra Pradesh have called on the State Government to reduce electricity tariff from ₹12.90 to ₹7 per unit, extend power concessions to existing properties, and provide relief on caution deposits and municipal taxes.",
+    description: "The Star Hotels Association of Andhra Pradesh convened an executive consultation on electricity tariffs and municipal taxation affecting around 80 member hotels. The association urged the State Government to lower the power tariff to ₹7 per unit (in line with Tamil Nadu and Punjab), extend the ₹2.30/unit power concession granted to new units under industry status to existing hotels as well, rationalise 2-month electricity caution deposits, and grant a 50% discount on municipal taxes.",
+    image: "assets/events/asha-power-tariff-meeting.jpg",
+    thumbnail: "assets/events/asha-power-tariff-meeting.jpg",
+    location: "Vijayawada / Andhra Pradesh",
+    detailUrl: "news-power-tariff-representation.html",
+    gallery: [
+      {
+        id: "img-power-tariff-meeting",
+        src: "assets/events/asha-power-tariff-meeting.jpg",
+        title: "ASHA Executive Consultation on Power Tariff & Taxation",
+        alt: "Senior hoteliers and ASHA leadership assembled at the roundtable discussion on power tariffs and municipal tax relief",
+        caption: "ASHA leadership and member hoteliers convened at the state executive session addressing high power tariffs, electricity caution deposits, and municipal taxation.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-deccan-clipping",
+        src: "assets/events/deccan-chronicle-power-tariff-clipping.jpg",
+        title: "Deccan Chronicle Press Coverage",
+        alt: "Deccan Chronicle report titled 'AP hotels want power tariff cut, call it too high'",
+        caption: "Press coverage by Deccan Chronicle (Vijayawada, July 16, 2025 by Sampat G. Samritan) detailing ASHA's appeal for ₹7/unit tariff, parity for existing hotels, and municipal tax relief.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "Deccan Chronicle",
+      portal: "Deccan Chronicle (Vijayawada Print & Digital Edition)",
+      clippingSrc: "assets/events/deccan-chronicle-power-tariff-clipping.jpg",
+      headline: "AP hotels want power tariff cut, call it too high",
+      publishedTime: "July 16, 2025",
+      byline: "SAMPAT G. SAMRITAN | DC",
+      caption: "Deccan Chronicle report highlighting ASHA's appeal for power tariff rationalisation from ₹12.90 to ₹7 per unit and relief in municipal taxes.",
+      verificationNotice: "Verified against Deccan Chronicle publication (Vijayawada, July 16, 2025)."
+    }
   }
 ];
 
@@ -598,6 +655,52 @@ window.ASHA_EVENTS = [
         isPrimary: true
       }
     ]
+  },
+  {
+    id: "event-power-tariff-representation-2025",
+    title: "ASHA State Roundtable on Power Tariff Rationalisation & Municipal Tax Relief",
+    type: "meeting",
+    category: "Policy Representation / Energy & Municipal Reform",
+    date: "2025-07-16",
+    time: "Executive Session & Press Briefing",
+    location: "Vijayawada / Visakhapatnam / Kakinada",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "ASHA leadership and hoteliers operating classified star hotels across Andhra Pradesh convened to formulate a unified appeal to the State Government seeking reduction of power tariff from ₹12.90 to ₹7 per unit, extension of power concessions to existing hotels, rationalisation of caution deposits, and relief on municipal taxation.",
+    organizer: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    participants: "ASHA President R. V. Swamy, Treasurer Gudisa Shivakumar, Council Member Sharan Valluru, Vice-President Ghattamaneni Venkat, and representatives of ~80 star hotels",
+    image: "assets/events/asha-power-tariff-meeting.jpg",
+    thumbnail: "assets/events/asha-power-tariff-meeting.jpg",
+    detailUrl: "news-power-tariff-representation.html",
+    gallery: [
+      {
+        id: "img-power-tariff-meeting",
+        src: "assets/events/asha-power-tariff-meeting.jpg",
+        title: "ASHA Executive Consultation on Power Tariff & Taxation",
+        alt: "Senior hoteliers and ASHA leadership assembled at the roundtable discussion on power tariffs and municipal tax relief",
+        caption: "ASHA leadership and member hoteliers convened at the state executive session addressing high power tariffs, electricity caution deposits, and municipal taxation.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-deccan-clipping",
+        src: "assets/events/deccan-chronicle-power-tariff-clipping.jpg",
+        title: "Deccan Chronicle Press Coverage",
+        alt: "Deccan Chronicle report titled 'AP hotels want power tariff cut, call it too high'",
+        caption: "Press coverage by Deccan Chronicle (Vijayawada, July 16, 2025 by Sampat G. Samritan) detailing ASHA's appeal for ₹7/unit tariff, parity for existing hotels, and municipal tax relief.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "Deccan Chronicle",
+      portal: "Deccan Chronicle (Vijayawada Print & Digital Edition)",
+      clippingSrc: "assets/events/deccan-chronicle-power-tariff-clipping.jpg",
+      headline: "AP hotels want power tariff cut, call it too high",
+      publishedTime: "July 16, 2025",
+      byline: "SAMPAT G. SAMRITAN | DC",
+      caption: "Deccan Chronicle report highlighting ASHA's appeal for power tariff rationalisation from ₹12.90 to ₹7 per unit and relief in municipal taxes.",
+      verificationNotice: "Verified against Deccan Chronicle publication (Vijayawada, July 16, 2025)."
+    }
   }
 ];
 
@@ -610,6 +713,14 @@ window.ASHA_GOVERNMENT_REPRESENTATIONS = [
     outcome: "Presentation of official materials and state hospitality dialogue",
     image: "assets/events/cm-meeting-presentation.jpeg",
     gallery: window.ASHA_NEWS[0].gallery
+  },
+  {
+    governmentBody: "Energy Department & Municipal Administration, Government of Andhra Pradesh",
+    date: "2025-07-16",
+    purpose: "Representation on commercial power tariff reduction (₹12.90 to ₹7/unit), parity for existing hotels under industry status, caution deposit relief, and 50% municipal tax rebate",
+    representatives: "ASHA President R. V. Swamy, Executive Committee, and Member Hoteliers",
+    outcome: "Sector memorandum submitted; state acknowledged for reducing star hotel bar excise duty to ₹25 lakh; regional roundtables scheduled at Dasapalla Vizag and Sarovar Portico Kakinada",
+    image: "assets/events/asha-power-tariff-meeting.jpg"
   },
   {
     governmentBody: "Foundation Stone Ceremony for Banking & Public Insurance Offices",
