@@ -182,6 +182,20 @@ window.ASHA_INITIATIVES = [
     image: "assets/events/excise-commissioner-delegation-presentation.jpg",
     link: "news-bar-policy-representation.html",
     linkText: "View Official Report & Press Coverage \u2192"
+  },
+  {
+    id: "init-visakha-expo-hotel-hub-2026",
+    title: "ASHA at AP Chambers Business Expo 2026: Visakhapatnam as 16 Five-Star Hotel Hub",
+    category: "tourism",
+    description: "ASHA President R. V. Swamy participated alongside Tourism Minister Kandula Durgesh, Union Civil Aviation Minister Ram Mohan Naidu, and MLA Ganta Srinivasa Rao at the AP Chambers Business Expo 2026 in Visakhapatnam, announcing 16 upcoming five-star hotels and launching the Godavari Pushkarams 2027 tourism campaign.",
+    date: "2026-09-12",
+    location: "Gadiraju Palace, Beach Road, Visakhapatnam",
+    participants: "ASHA President R. V. Swamy, Tourism Minister Kandula Durgesh, Union Civil Aviation Minister Kinjarapu Ram Mohan Naidu, MLA Ganta Srinivasa Rao, AP Chambers Leadership",
+    outcome: "Joint inauguration of Business Expo 2026, unveiling of 16 five-star hotel projects in Visakhapatnam, and launch of 'The Godavari Calls - Pushkaram 2027' campaign",
+    status: "Completed",
+    image: "assets/events/ap-chambers-business-expo-stage.jpg",
+    link: "news-visakha-expo-hotel-hub.html",
+    linkText: "View Official Expo Report & Media \u2192"
   }
 ];
 
@@ -531,6 +545,64 @@ window.ASHA_NEWS = [
       caption: "The Hans India report documenting ASHA's meeting with Excise and Prohibition Commissioner Nishant Kumar, IAS, to formulate a progressive bar policy.",
       verificationNotice: "Verified against The Hans India publication (Vijayawada)."
     }
+  },
+  {
+    id: "news-visakha-expo-hotel-hub-2026",
+    title: "Visakhapatnam Set to Emerge as Premier Hotel Hub with 16 Five-Star Properties: AP Chambers Business Expo 2026",
+    category: "State Conclave / Tourism Infrastructure & MICE Promotion",
+    date: "2026-09-12",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    summary: "At the AP Chambers Business Expo 2026 in Visakhapatnam, Tourism Minister Kandula Durgesh, MLA Ganta Srinivasa Rao, Union Minister Ram Mohan Naidu, and ASHA President R. V. Swamy highlighted the rapid expansion of Visakhapatnam's hospitality infrastructure, with 16 new five-star hotels underway to generate thousands of jobs.",
+    description: "The 3-day AP Chambers Business Expo 2026 was inaugurated at Gadiraju Palace on Beach Road, Visakhapatnam, by Tourism Minister Kandula Durgesh, MLA Ganta Srinivasa Rao, and ASHA President R. V. Swamy. State leadership projected 16 upcoming five-star hotels along the coastline to transform Visakhapatnam into a global conference and tourism hub. Simultaneously, Union Civil Aviation Minister Ram Mohan Naidu and Tourism Minister Kandula Durgesh joined ASHA in unveiling 'The Godavari Calls - Pushkaram 2027' tourism campaign.",
+    image: "assets/events/ap-chambers-business-expo-stage.jpg",
+    thumbnail: "assets/events/ap-chambers-business-expo-stage.jpg",
+    location: "Visakhapatnam / Andhra Pradesh",
+    detailUrl: "news-visakha-expo-hotel-hub.html",
+    gallery: [
+      {
+        id: "img-expo-stage",
+        src: "assets/events/ap-chambers-business-expo-stage.jpg",
+        title: "AP Chambers Business Expo Inaugural Dais",
+        alt: "Tourism Minister Kandula Durgesh, ASHA President R. V. Swamy, and business leaders on stage at AP Chambers Business Expo 2026",
+        caption: "Hon'ble Tourism Minister Kandula Durgesh, ASHA President R. V. Swamy, and AP Chambers dignitaries on the inaugural dais at Gadiraju Palace, Visakhapatnam.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-expo-ribbon",
+        src: "assets/events/ap-chambers-expo-ribbon-cutting.jpg",
+        title: "Ribbon-Cutting Ceremony of AP Chambers Business Expo",
+        alt: "Tourism Minister Kandula Durgesh, MLA Ganta Srinivasa Rao, and ASHA President R. V. Swamy cutting the ceremonial ribbon",
+        caption: "Hon'ble Tourism Minister Kandula Durgesh, MLA Ganta Srinivasa Rao, and ASHA President R. V. Swamy inaugurating the exhibition pavilions.",
+        type: "event-photo"
+      },
+      {
+        id: "img-godavari-calls",
+        src: "assets/events/godavari-calls-tourism-launch.jpg",
+        title: "Unveiling of 'The Godavari Calls - Pushkaram 2027' Campaign",
+        alt: "Union Civil Aviation Minister Ram Mohan Naidu, Tourism Minister Kandula Durgesh, and ASHA President R. V. Swamy unveiling Godavari Pushkarams poster",
+        caption: "Union Minister of Civil Aviation Kinjarapu Ram Mohan Naidu and Tourism Minister Kandula Durgesh alongside ASHA President R. V. Swamy launching 'The Godavari Calls - Pushkaram 2027'.",
+        type: "event-photo"
+      },
+      {
+        id: "img-surya-clipping",
+        src: "assets/events/surya-hotel-hub-press-clipping.jpg",
+        title: "Surya Daily Press Coverage (12 Sep 2026)",
+        alt: "Surya newspaper report titled 'Visakhapatnam gets a new look as Hotel Hub - 16 Five-Star Hotels soon'",
+        caption: "Press coverage in Surya daily (Page 3, 12 Sep 2026) reporting on 16 upcoming five-star hotels in Visakhapatnam and the inauguration of the Business Expo.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "Surya Telugu Daily (సూర్య)",
+      portal: "Surya Daily (suryaa.com) Page 3",
+      clippingSrc: "assets/events/surya-hotel-hub-press-clipping.jpg",
+      headline: "విశాఖకు హోటల్ హబ్‌గా కొత్త రూపం - త్వరలో 16 ఫైవ్ స్టార్ హోటళ్లు",
+      publishedTime: "12 September 2026",
+      caption: "Surya report covering the announcement of 16 upcoming five-star hotels in Visakhapatnam and the Business Expo 2026 inauguration.",
+      verificationNotice: "Verified against Surya newspaper publication (Page 3, 12 Sep 2026)."
+    }
   }
 ];
 
@@ -836,6 +908,67 @@ window.ASHA_EVENTS = [
       caption: "The Hans India report documenting ASHA's meeting with Excise and Prohibition Commissioner Nishant Kumar, IAS, to formulate a progressive bar policy.",
       verificationNotice: "Verified against The Hans India publication (Vijayawada)."
     }
+  },
+  {
+    id: "event-visakha-expo-hotel-hub-2026",
+    title: "AP Chambers Business Expo 2026 & 16 Five-Star Hotels Projection for Visakhapatnam",
+    type: "conclave",
+    category: "State Conclave / Tourism Infrastructure & MICE Promotion",
+    date: "2026-09-12",
+    time: "Official State Expo & Tourism Launch",
+    location: "Gadiraju Palace, Beach Road, Visakhapatnam",
+    association: "Star Hotels Association of Andhra Pradesh (ASHA)",
+    description: "ASHA leadership participated in the AP Chambers Business Expo 2026 in Visakhapatnam with Tourism Minister Kandula Durgesh, Union Civil Aviation Minister Ram Mohan Naidu, and MLA Ganta Srinivasa Rao. Discussions highlighted Visakhapatnam's transformation into a premier hotel hub with 16 new five-star hotels underway, alongside the official launch of 'The Godavari Calls - Pushkaram 2027' tourism campaign.",
+    organizer: "AP Chambers of Commerce and Industry Federation & ASHA Participation",
+    participants: "Tourism Minister Kandula Durgesh, Union Civil Aviation Minister Kinjarapu Ram Mohan Naidu, MLA Ganta Srinivasa Rao, ASHA President R. V. Swamy, AP Chambers Leadership",
+    image: "assets/events/ap-chambers-business-expo-stage.jpg",
+    thumbnail: "assets/events/ap-chambers-business-expo-stage.jpg",
+    detailUrl: "news-visakha-expo-hotel-hub.html",
+    gallery: [
+      {
+        id: "img-expo-stage",
+        src: "assets/events/ap-chambers-business-expo-stage.jpg",
+        title: "AP Chambers Business Expo Inaugural Dais",
+        alt: "Tourism Minister Kandula Durgesh, ASHA President R. V. Swamy, and business leaders on stage at AP Chambers Business Expo 2026",
+        caption: "Hon'ble Tourism Minister Kandula Durgesh, ASHA President R. V. Swamy, and AP Chambers dignitaries on the inaugural dais at Gadiraju Palace, Visakhapatnam.",
+        type: "event-photo",
+        isPrimary: true
+      },
+      {
+        id: "img-expo-ribbon",
+        src: "assets/events/ap-chambers-expo-ribbon-cutting.jpg",
+        title: "Ribbon-Cutting Ceremony of AP Chambers Business Expo",
+        alt: "Tourism Minister Kandula Durgesh, MLA Ganta Srinivasa Rao, and ASHA President R. V. Swamy cutting the ceremonial ribbon",
+        caption: "Hon'ble Tourism Minister Kandula Durgesh, MLA Ganta Srinivasa Rao, and ASHA President R. V. Swamy inaugurating the exhibition pavilions.",
+        type: "event-photo"
+      },
+      {
+        id: "img-godavari-calls",
+        src: "assets/events/godavari-calls-tourism-launch.jpg",
+        title: "Unveiling of 'The Godavari Calls - Pushkaram 2027' Campaign",
+        alt: "Union Civil Aviation Minister Ram Mohan Naidu, Tourism Minister Kandula Durgesh, and ASHA President R. V. Swamy unveiling Godavari Pushkarams poster",
+        caption: "Union Minister of Civil Aviation Kinjarapu Ram Mohan Naidu and Tourism Minister Kandula Durgesh alongside ASHA President R. V. Swamy launching 'The Godavari Calls - Pushkaram 2027'.",
+        type: "event-photo"
+      },
+      {
+        id: "img-surya-clipping",
+        src: "assets/events/surya-hotel-hub-press-clipping.jpg",
+        title: "Surya Daily Press Coverage (12 Sep 2026)",
+        alt: "Surya newspaper report titled 'Visakhapatnam gets a new look as Hotel Hub - 16 Five-Star Hotels soon'",
+        caption: "Press coverage in Surya daily (Page 3, 12 Sep 2026) reporting on 16 upcoming five-star hotels in Visakhapatnam and the inauguration of the Business Expo.",
+        type: "press-clipping",
+        isPress: true
+      }
+    ],
+    pressCoverage: {
+      source: "Surya Telugu Daily (సూర్య)",
+      portal: "Surya Daily (suryaa.com) Page 3",
+      clippingSrc: "assets/events/surya-hotel-hub-press-clipping.jpg",
+      headline: "విశాఖకు హోటల్ హబ్‌గా కొత్త రూపం - త్వరలో 16 ఫైవ్ స్టార్ హోటళ్లు",
+      publishedTime: "12 September 2026",
+      caption: "Surya report covering the announcement of 16 upcoming five-star hotels in Visakhapatnam and the Business Expo 2026 inauguration.",
+      verificationNotice: "Verified against Surya newspaper publication (Page 3, 12 Sep 2026)."
+    }
   }
 ];
 
@@ -848,6 +981,14 @@ window.ASHA_GOVERNMENT_REPRESENTATIONS = [
     outcome: "Presentation of official materials and state hospitality dialogue",
     image: "assets/events/cm-meeting-presentation.jpeg",
     gallery: window.ASHA_NEWS[0].gallery
+  },
+  {
+    governmentBody: "Ministry of Tourism, Government of Andhra Pradesh & Ministry of Civil Aviation, Government of India",
+    date: "2026-09-12",
+    purpose: "Inauguration of AP Chambers Business Expo 2026, announcement of 16 five-star hotels in Visakhapatnam, and launch of 'The Godavari Calls - Pushkaram 2027' tourism campaign",
+    representatives: "ASHA President R. V. Swamy alongside Tourism Minister Kandula Durgesh and Union Civil Aviation Minister Kinjarapu Ram Mohan Naidu",
+    outcome: "High-level state-industry partnership addressing 16 five-star hotel projects, ₹50,000 crore tourism investment roadmap, and hospitality readiness for Godavari Pushkarams 2027",
+    image: "assets/events/ap-chambers-business-expo-stage.jpg"
   },
   {
     governmentBody: "Energy Department & Municipal Administration, Government of Andhra Pradesh",
