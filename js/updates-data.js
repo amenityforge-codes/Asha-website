@@ -90,15 +90,15 @@
 window.ASHA_INITIATIVES = [
   {
     id: "init-cm-meeting-2026",
-    title: "ASHA Representatives Meet the Chief Minister of Andhra Pradesh",
+    title: "ASHA Donates ₹50 Lakh to Anna Canteen Initiative & Submits Hospitality Roadmap to Hon'ble CM",
     category: "advocacy",
-    description: "A delegation representing the Star Hotels Association of Andhra Pradesh met the Hon’ble Chief Minister to present association materials and discuss hospitality development across Andhra Pradesh.",
-    date: "2026-06-26",
-    location: "Vijayawada / Amaravati",
+    description: "An ASHA leadership delegation met Hon'ble Chief Minister N. Chandrababu Naidu at the State Secretariat, contributing a ₹50 lakh cheque towards the flagship Anna Canteen initiative and presenting the official Amaravati hospitality roadmap.",
+    date: "2024-06-30",
+    location: "State Secretariat, Amaravati",
     status: "Completed",
-    image: "assets/events/cm-meeting-presentation.jpeg",
+    image: "assets/events/cm-meeting-delegation.jpeg",
     link: "news-cm-meeting.html",
-    linkText: "View Meeting Record & Media \u2192"
+    linkText: "View Official Meeting Record & Press \u2192"
   },
   {
     id: "init-amaravati-ceremony-2025",
@@ -202,69 +202,82 @@ window.ASHA_INITIATIVES = [
 window.ASHA_NEWS = [
   {
     id: "news-cm-meeting-2026",
-    title: "ASHA Representatives Meet the Chief Minister of Andhra Pradesh",
-    category: "Official Meeting / Government Engagement",
-    date: "2026-06-26",
+    title: "Star Hotels Assn Donates ₹50 Lakh to Anna Canteen Initiative & Submits Hospitality Roadmap to CM Chandrababu Naidu",
+    category: "Official Meeting / Government Engagement & Social Welfare",
+    date: "2024-06-30",
     association: "Star Hotels Association of Andhra Pradesh (ASHA)",
-    summary: "A delegation representing the association met the Chief Minister of Andhra Pradesh. The supplied photographs document the meeting and presentation materials. The accompanying Telugu newspaper clipping provides additional media context.",
-    description: "A delegation representing the Star Hotels Association of Andhra Pradesh (ASHA) met the Hon’ble Chief Minister of Andhra Pradesh. The delegation presented association materials and representations regarding the state's hospitality sector, accompanied by photographic documentation and regional press coverage.",
-    image: "assets/events/cm-meeting-presentation.jpeg",
-    thumbnail: "assets/events/cm-meeting-presentation.jpeg",
-    location: "Vijayawada / Amaravati",
+    summary: "Members of the Andhra Pradesh Star Hotels Association met Chief Minister N. Chandrababu Naidu at the State Secretariat on Monday, presenting a cheque for ₹50 lakh towards the Anna Canteen initiative and submitting the official Amaravati hospitality roadmap.",
+    description: "A high-level leadership delegation from the Andhra Pradesh Star Hotels Association (ASHA) met Hon'ble Chief Minister Sri N. Chandrababu Naidu at the State Secretariat in Amaravati. The association contributed ₹50 lakh towards the government's flagship Anna Canteen initiative supporting affordable meals for the needy. The delegation also presented the association's official Amaravati hospitality roadmap brochure and held constructive discussions on state tourism and star hotel infrastructure.",
+    image: "assets/events/cm-meeting-delegation.jpeg",
+    thumbnail: "assets/events/cm-meeting-delegation.jpeg",
+    location: "State Secretariat, Amaravati",
     detailUrl: "news-cm-meeting.html",
     gallery: [
       {
-        id: "img-presentation",
-        src: "assets/events/cm-meeting-presentation.jpeg",
-        originalFile: "assets/events/Pic 2026-06-26 CM Meeting.jpeg",
-        title: "Presentation of Association Materials",
-        alt: "ASHA delegation presenting official association representation and materials to the Chief Minister of Andhra Pradesh",
-        caption: "ASHA representatives presenting official association documents and hospitality development materials to the Hon’ble Chief Minister of Andhra Pradesh.",
+        id: "img-cheque-delegation",
+        src: "assets/events/cm-meeting-delegation.jpeg",
+        originalFile: "assets/events/Pic 2026-06-26 CM Meeting (1).jpeg",
+        title: "Presentation of ₹50 Lakh Cheque for Anna Canteen Initiative",
+        alt: "ASHA leadership delegation presenting a ₹50 lakh cheque to Hon'ble Chief Minister N. Chandrababu Naidu at the State Secretariat",
+        caption: "ASHA members presenting a cheque for ₹50 lakh to Chief Minister N. Chandrababu Naidu at the State Secretariat in Amaravati to support the flagship Anna Canteen programme.",
         type: "event-photo",
         isPrimary: true
       },
       {
-        id: "img-delegation",
-        src: "assets/events/cm-meeting-delegation.jpeg",
-        originalFile: "assets/events/Pic 2026-06-26 CM Meeting (1).jpeg",
-        title: "Delegation with the Chief Minister",
-        alt: "Formal delegation of the Star Hotels Association of Andhra Pradesh with the Chief Minister in front of the Andhra Pradesh State emblem",
-        caption: "Delegation representing the Star Hotels Association of Andhra Pradesh with the Hon’ble Chief Minister in front of the Andhra Pradesh State emblem.",
+        id: "img-brochure-presentation",
+        src: "assets/events/cm-naidu-brochure-presentation.jpg",
+        originalFile: "assets/events/Pic 2026-06-26 CM Meeting.jpeg",
+        title: "Presentation of Official Amaravati Hospitality Roadmap Brochure",
+        alt: "Chief Minister N. Chandrababu Naidu and ASHA delegation displaying the official association brochure and representation",
+        caption: "Chief Minister N. Chandrababu Naidu alongside ASHA leadership holding the official association document outlining the hospitality roadmap for Amaravati and Andhra Pradesh.",
         type: "event-photo"
       },
       {
-        id: "img-portrait",
-        src: "assets/events/cm-meeting-portrait.jpeg",
+        id: "img-cm-sharan-portrait",
+        src: "assets/events/cm-naidu-sharan-portrait.jpg",
         originalFile: "assets/events/Pic 2026-06-26 CM Meeting (3).jpeg",
-        title: "Executive Representation",
-        alt: "Association executive representative alongside the Chief Minister of Andhra Pradesh",
-        caption: "Association executive representative alongside the Hon’ble Chief Minister during the delegation meeting.",
+        title: "Executive Representation with Chief Minister",
+        alt: "Chief Minister N. Chandrababu Naidu with GRT Hotels Chairman / ASHA Executive Member V. Sharan at the State Secretariat",
+        caption: "Hon'ble Chief Minister N. Chandrababu Naidu with GRT Hotels Chairman and ASHA Executive Member V. Sharan (Sharan Valluru) at the Secretariat.",
         type: "event-photo"
       },
       {
-        id: "img-clipping",
+        id: "img-sec-submission",
+        src: "assets/events/secretary-representation-submission.jpg",
+        title: "Sector Representation Submission to Secretariat Leadership",
+        alt: "ASHA delegation submitting formal hospitality representation memorandum to Principal Secretary Mukesh Kumar Meena, IAS",
+        caption: "ASHA delegation submitting formal hospitality and regulatory representation to Principal Secretary Mukesh Kumar Meena, IAS at the Andhra Pradesh Secretariat.",
+        type: "event-photo"
+      },
+      {
+        id: "img-hans-canteen-clipping",
+        src: "assets/events/the-hans-india-anna-canteen-clipping.jpg",
+        title: "The Hans India: Star Hotels Assn donates to Anna canteen initiative",
+        alt: "Newspaper report from The Hans India on ASHA donating ₹50 lakh to Anna Canteen initiative",
+        caption: "Report by Hans News Service (Amaravati) published in The Hans India on June 30, 2024, detailing ASHA's ₹50 lakh donation to the Anna Canteen initiative.",
+        type: "press-clipping",
+        isPress: true
+      },
+      {
+        id: "img-andhra-jyothy-clipping",
         src: "assets/events/cm-meeting-press-clipping.jpeg",
         originalFile: "assets/events/Pic 2026-06-26 CM Meeting (2).jpeg",
-        title: "Regional Telugu Newspaper Coverage",
-        alt: "Telugu newspaper report published by Andhra Jyothy covering the Star Hotels Association meeting with the Chief Minister",
-        caption: "Telugu newspaper coverage (Andhra Jyothy print edition). Provided as supporting media context; subject to publication approval and copyright verification.",
+        title: "Regional Telugu Newspaper Coverage (Andhra Jyothy)",
+        alt: "Telugu newspaper report published by Andhra Jyothy covering the Star Hotels Association meeting with Chief Minister N. Chandrababu Naidu",
+        caption: "Telugu print edition coverage by Andhra Jyothy reporting the delegation meeting and association presentation with the Chief Minister.",
         type: "press-clipping",
         isPress: true
       }
     ],
     pressCoverage: {
-      source: "Andhra Jyothy (ఆంధ్రజ్యోతి)",
-      portal: "www.andhrajyothy.com",
-      clippingSrc: "assets/events/cm-meeting-press-clipping.jpeg",
-      clippingOriginal: "assets/events/Pic 2026-06-26 CM Meeting (2).jpeg",
-      caption: "Telugu newspaper coverage (Andhra Jyothy print edition). Displayed as supporting media reference; subject to publication approval.",
-      verificationNotice: "Regional press coverage is archived for contextual media reference. Specific statements and financial references reported in press clippings are subject to formal confirmation by the ASHA Secretariat.",
-      // Internal review metadata (retained for administrative audit; not rendered as public alarm banners)
-      internalReviewNotes: {
-        provisionalDate: "26 June 2026 (based on image filenames; newspaper report datelined 29 June)",
-        financialReferenceFlagged: "₹50 Lakh reference in Andhra Jyothy report flagged for Secretariat review; omitted from official association statements until ratified",
-        attendeesMentionedInClipping: "Clipping reports association representatives met CM Chandrababu (names cited: RV Swamy, Pavan Karthik, C. Murthy, Malineni Rajaiah, Muttavarapu Murali Krishna, V. Sharan); preserved without unverified endorsement"
-      }
+      source: "The Hans India",
+      portal: "The Hans India (Hans News Service, Amaravati)",
+      clippingSrc: "assets/events/the-hans-india-anna-canteen-clipping.jpg",
+      headline: "Star Hotels Assn donates to Anna canteen initiative",
+      publishedTime: "30 June 2024",
+      byline: "HANS NEWS SERVICE, AMARAVATI",
+      caption: "The Hans India publication detailing ASHA's meeting with Chief Minister N. Chandrababu Naidu and ₹50 lakh contribution to the Anna Canteen initiative.",
+      verificationNotice: "Verified against The Hans India publication (Amaravati dateline, 30 June 2024) and Andhra Jyothy regional print coverage."
     }
   },
   {
@@ -609,18 +622,18 @@ window.ASHA_NEWS = [
 window.ASHA_EVENTS = [
   {
     id: "event-cm-meeting-2026",
-    title: "ASHA Representatives Meet the Chief Minister of Andhra Pradesh",
+    title: "ASHA Meeting with Chief Minister N. Chandrababu Naidu: ₹50 Lakh Anna Canteen Contribution & Hospitality Roadmap",
     type: "meeting",
-    category: "Official Meeting / Government Engagement",
-    date: "2026-06-26",
-    time: "Official Delegation Session",
-    location: "Vijayawada / Amaravati",
+    category: "Official Meeting / Government Engagement & Welfare",
+    date: "2024-06-30",
+    time: "State Secretariat Delegation Session",
+    location: "State Secretariat, Amaravati",
     association: "Star Hotels Association of Andhra Pradesh (ASHA)",
-    description: "A delegation representing the association met the Chief Minister of Andhra Pradesh. The supplied photographs document the meeting and presentation materials. The accompanying Telugu newspaper clipping provides additional media context.",
+    description: "Members of the Andhra Pradesh Star Hotels Association met Chief Minister N. Chandrababu Naidu at the State Secretariat on Monday, presenting a cheque for ₹50 lakh towards the Anna Canteen initiative and submitting the official Amaravati hospitality roadmap.",
     organizer: "Star Hotels Association of Andhra Pradesh (ASHA)",
-    participants: "ASHA Delegation & State Leadership",
-    image: "assets/events/cm-meeting-presentation.jpeg",
-    thumbnail: "assets/events/cm-meeting-presentation.jpeg",
+    participants: "Hon'ble Chief Minister N. Chandrababu Naidu, ASHA President R. V. Swamy (Hyatt Place), Vice-President Pawan Karthik, Secretary C. Murthy, Malineni Rajaiah (Taj Vivanta), Muttavarapu Murali (Murali Fortune), V. Sharan (GRT Hotels)",
+    image: "assets/events/cm-meeting-delegation.jpeg",
+    thumbnail: "assets/events/cm-meeting-delegation.jpeg",
     detailUrl: "news-cm-meeting.html",
     gallery: window.ASHA_NEWS[0].gallery,
     pressCoverage: window.ASHA_NEWS[0].pressCoverage
@@ -974,12 +987,12 @@ window.ASHA_EVENTS = [
 
 window.ASHA_GOVERNMENT_REPRESENTATIONS = [
   {
-    governmentBody: "Office of the Chief Minister, Government of Andhra Pradesh",
-    date: "2026-06-26",
-    purpose: "ASHA delegation meeting and presentation of hospitality sector representations",
-    representatives: "ASHA Delegation",
-    outcome: "Presentation of official materials and state hospitality dialogue",
-    image: "assets/events/cm-meeting-presentation.jpeg",
+    governmentBody: "Office of the Chief Minister, Government of Andhra Pradesh (Hon'ble CM Sri N. Chandrababu Naidu)",
+    date: "2024-06-30",
+    purpose: "Contribution of ₹50 lakh towards Anna Canteen initiative & presentation of Amaravati Hospitality Roadmap brochure",
+    representatives: "ASHA Delegation (President R. V. Swamy, Vice-President Pawan Karthik, Secretary C. Murthy, Malineni Rajaiah, Muttavarapu Murali, V. Sharan)",
+    outcome: "Presented ₹50 lakh cheque to Chief Minister for Anna Canteen welfare programme; submitted official hospitality roadmap; CM thanked association and commended industry commitment to social welfare",
+    image: "assets/events/cm-meeting-delegation.jpeg",
     gallery: window.ASHA_NEWS[0].gallery
   },
   {
