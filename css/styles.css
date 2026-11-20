@@ -4356,6 +4356,16 @@ footer.site a {
   margin: 0 auto;
 }
 
+.leadership-message-card.is-hidden,
+.secretary-statement-lead-banner.is-hidden {
+  display: none !important;
+}
+
+.leadership-messages-duo:has(> .is-hidden),
+.leader-messages-grid:has(> .is-hidden) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .leadership-message-card {
   padding: clamp(32px, 4vw, 44px) clamp(24px, 3.5vw, 36px);
   display: flex;
